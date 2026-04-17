@@ -8,6 +8,10 @@ namespace Input
         [SerializeField] private PlayerData playerData;
         [SerializeField] private InputHandler inputHandler;
 
+        private void Awake()
+        {
+            GameManagerScript.Instance.RegisterPlayer(transform);
+        }
         private void Update()
         {
             Move();
