@@ -2,7 +2,7 @@ using System;
 using Data;
 using UnityEngine;
 
-namespace Enemy
+namespace Controllers
 {
     public class EnemyController : MonoBehaviour
     {

@@ -1,7 +1,8 @@
 using Data;
+using Input;
 using UnityEngine;
 
-namespace Input
+namespace Controllers
 {
     public class PlayerController : MonoBehaviour
     {
