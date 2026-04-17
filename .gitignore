@@ -1,0 +1,33 @@
+# Unity generated
+Library/
+Temp/
+Obj/
+Logs/
+obj/
+Build/
+Builds/
+UserSettings/
+
+# Unity auto-generated VS/Rider files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JetBrains/VS
+.idea/
+.vs/
+
+# Keep these (don't ignore)
+!Assets/
+!ProjectSettings/
+!Packages/
