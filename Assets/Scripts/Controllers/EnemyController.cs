@@ -23,10 +23,6 @@ namespace Controllers
         private void Awake()
         {
             GetComponent<HealthComponent>().OnDeath += () => Destroy(gameObject);
-        }
-
-        private void Awake()
-        {
             playerTransform = GameManagerScript.Instance.Player;
         }
 
