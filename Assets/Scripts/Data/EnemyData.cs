@@ -1,4 +1,4 @@
-using Enemy.Attacks;
+using Data.Attacks;
 using UnityEngine;
 
 namespace Data

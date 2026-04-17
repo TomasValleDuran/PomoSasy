@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Enemy.Attacks
+namespace Data.Attacks
 {
     public abstract class AttackBehavior : ScriptableObject
     {

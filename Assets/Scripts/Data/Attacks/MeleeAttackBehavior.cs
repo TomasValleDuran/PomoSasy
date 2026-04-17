@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Enemy.Attacks
+namespace Data.Attacks
 {
     [CreateAssetMenu(fileName = "MeleeAttack", menuName = "Scriptable Objects/Attacks/Melee")]
     public class MeleeAttackBehavior : AttackBehavior

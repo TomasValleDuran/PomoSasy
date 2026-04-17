@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Enemy.Attacks
+namespace Data.Attacks
 {
     [CreateAssetMenu(fileName = "DashAttack", menuName = "Scriptable Objects/Attacks/Dash")]
     public class DashAttackBehavior : AttackBehavior
