@@ -13,14 +13,31 @@ namespace Controllers
         public event Action<bool> OnMovingChanged;
 
         private enum State { Chase, WindUp, Attack, Cooldown }
+
         private State _currentState = State.Chase;
         private bool _isMoving;
+        private bool _isRegistered;
 
         private float _stateTimer;
 
         private void Awake()
         {
             GetComponent<HealthComponent>().OnDeath += () => Destroy(gameObject);
+        }
+
+        private void Awake()
+        {
+            playerTransform = GameManagerScript.Instance.Player;
+        }
+
+        private void OnEnable()
+        {
+            RegisterEnemy();
+        }
+
+        private void OnDisable()
+        {
+            UnregisterEnemy();
         }
 
         private void Update()
@@ -95,6 +112,28 @@ namespace Controllers
 
             if (_stateTimer <= 0f)
                 _currentState = State.Chase;
+        }
+
+        private void RegisterEnemy()
+        {
+            if (_isRegistered || GameManagerScript.Instance == null || data == null)
+            {
+                return;
+            }
+
+            GameManagerScript.Instance.RegisterEnemy(data.EnemyType);
+            _isRegistered = true;
+        }
+
+        private void UnregisterEnemy()
+        {
+            if (!_isRegistered || GameManagerScript.Instance == null || data == null)
+            {
+                return;
+            }
+
+            GameManagerScript.Instance.UnregisterEnemy(data.EnemyType);
+            _isRegistered = false;
         }
     }
 }
