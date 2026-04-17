@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb46b9d3b6bf47428c01d725521dc97, type: 3}
   m_Name: SkeletonData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  maxHealth: 40
-  moveSpeed: 2
-  attackDamage: 10
-  attackBehavior: {fileID: 11400000, guid: 2c4bcd42e534342fb9144af427e4996d, type: 2}
-  windupDuration: 0.3
-  attackCooldown: 1
-  attackRange: 1
+  moveSpeed: 3
+  attackData: {fileID: 11400000, guid: c6017417a53bb4ede933e4403bf6e88f, type: 2}
   pointsOnDeath: 10

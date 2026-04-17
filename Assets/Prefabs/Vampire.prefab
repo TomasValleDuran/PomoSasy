@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 6142708775295726284}
   - component: {fileID: 5877459466907205428}
   - component: {fileID: 1520596649198933413}
+  - component: {fileID: 2700444853397630930}
+  - component: {fileID: 8517426391740852631}
   m_Layer: 0
   m_Name: Vampire
   m_TagString: Untagged
@@ -174,3 +176,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f71172f1f06e41a2a258d3780935a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy.EnemyAnimator
+--- !u!114 &2700444853397630930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061110575586292442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc757e48e42f94a68b8e2cdbcc2bf008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
+  healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
+--- !u!58 &8517426391740852631
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061110575586292442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.45

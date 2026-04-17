@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9a1811e9a9643ce94d49f81acef07e, type: 3}
-  m_Name: PlayerData
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerData
-  moveSpeed: 5
-  dashSpeed: 10
-  attackData: {fileID: 11400000, guid: fdc6019630ba249479eb78e809f6a4a3, type: 2}
+  m_Script: {fileID: 11500000, guid: 5705a2733927c4ac1964ff8f75e02b86, type: 3}
+  m_Name: HealthData
+  m_EditorClassIdentifier: Assembly-CSharp::Health.HealthData
+  maxHealth: 100

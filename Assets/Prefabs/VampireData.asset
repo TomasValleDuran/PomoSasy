@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb46b9d3b6bf47428c01d725521dc97, type: 3}
   m_Name: VampireData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  maxHealth: 70
   moveSpeed: 4
-  attackDamage: 10
-  attackBehavior: {fileID: 11400000, guid: 5d2f1aed36b0e4edead7670d11d048fe, type: 2}
-  windupDuration: 0.5
-  attackCooldown: 1.5
-  attackRange: 5
+  attackData: {fileID: 11400000, guid: 57593d63f5b5945ce936f9334d362954, type: 2}
   pointsOnDeath: 30

@@ -1,5 +1,6 @@
 using System;
 using Data;
+using Health;
 using UnityEngine;
 
 namespace Controllers
@@ -16,10 +17,17 @@ namespace Controllers
         private bool _isMoving;
 
         private float _stateTimer;
-        private Vector2 _dashTarget;
+
+        private void Awake()
+        {
+            GetComponent<HealthComponent>().OnDeath += () => Destroy(gameObject);
+        }
 
         private void Update()
         {
+            if (data == null || data.AttackData == null)
+                return;
+
             switch (_currentState)
             {
                 case State.Chase:    UpdateChase();    break;
@@ -33,7 +41,7 @@ namespace Controllers
         {
             float distance = Vector2.Distance(transform.position, playerTransform.position);
 
-            if (distance <= data.AttackRange)
+            if (distance <= data.AttackData.AttackRange)
             {
                 SetMoving(false);
                 EnterWindUp();
@@ -56,8 +64,7 @@ namespace Controllers
         {
             SetMoving(false);
             _currentState = State.WindUp;
-            _stateTimer = data.WindupDuration;
-            _dashTarget = playerTransform.position;
+            _stateTimer = data.AttackData.WindupDuration;
         }
 
         private void UpdateWindUp()
@@ -70,7 +77,7 @@ namespace Controllers
 
         private void UpdateAttack()
         {
-            bool finished = data.AttackBehavior.Execute(transform, _dashTarget, data.AttackDamage);
+            bool finished = data.AttackData.AttackBehavior.Execute(transform, playerTransform, data.AttackData.Damage, data.AttackData.AttackRange);
 
             if (finished)
                 EnterCooldown();
@@ -79,7 +86,7 @@ namespace Controllers
         private void EnterCooldown()
         {
             _currentState = State.Cooldown;
-            _stateTimer = data.AttackCooldown;
+            _stateTimer = data.AttackData.Cooldown;
         }
 
         private void UpdateCooldown()
