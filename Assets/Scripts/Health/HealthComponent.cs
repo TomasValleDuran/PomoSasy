@@ -16,9 +16,12 @@ namespace Health
 
         private void Awake()
         {
-            CurrentHealth = MaxHealth;
-            if (logHealthEvents)
-                Debug.Log($"[Health] {name}: initialized — {CurrentHealth:F1} / {MaxHealth:F1} HP", this);
+            ResetHealth();
+        }
+
+        private void OnEnable()
+        {
+            ResetHealth();
         }
 
         public void TakeDamage(float damage)
@@ -38,6 +41,15 @@ namespace Health
                     Debug.Log($"[Health] {name}: died (0 HP)", this);
                 OnDeath?.Invoke();
             }
+        }
+
+        public void ResetHealth()
+        {
+            CurrentHealth = MaxHealth;
+            OnDamaged?.Invoke(CurrentHealth);
+
+            if (logHealthEvents)
+                Debug.Log($"[Health] {name}: reset to {CurrentHealth:F1} / {MaxHealth:F1} HP", this);
         }
     }
 }

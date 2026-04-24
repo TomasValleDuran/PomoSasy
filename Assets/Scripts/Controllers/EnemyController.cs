@@ -9,6 +9,7 @@ namespace Controllers
     {
         [SerializeField] private EnemyData data;
         [SerializeField] private Transform playerTransform;
+        [SerializeField] private bool deactivateOnDeath = true;
 
         public event Action<bool> OnMovingChanged;
 
@@ -22,12 +23,23 @@ namespace Controllers
 
         private void Awake()
         {
-            GetComponent<HealthComponent>().OnDeath += () => Destroy(gameObject);
-            playerTransform = GameManagerScript.Instance.Player;
+            GetComponent<HealthComponent>().OnDeath += HandleDeath;
+            if (GameManagerScript.Instance != null)
+            {
+                playerTransform = GameManagerScript.Instance.Player;
+            }
         }
 
         private void OnEnable()
         {
+            if (playerTransform == null && GameManagerScript.Instance != null)
+            {
+                playerTransform = GameManagerScript.Instance.Player;
+            }
+
+            _currentState = State.Chase;
+            _stateTimer = 0f;
+            SetMoving(false);
             RegisterEnemy();
         }
 
@@ -52,6 +64,12 @@ namespace Controllers
 
         private void UpdateChase()
         {
+            if (playerTransform == null)
+            {
+                SetMoving(false);
+                return;
+            }
+
             float distance = Vector2.Distance(transform.position, playerTransform.position);
 
             if (distance <= data.AttackData.AttackRange)
@@ -130,6 +148,17 @@ namespace Controllers
 
             GameManagerScript.Instance.UnregisterEnemy(data.EnemyType);
             _isRegistered = false;
+        }
+
+        private void HandleDeath()
+        {
+            if (deactivateOnDeath)
+            {
+                gameObject.SetActive(false);
+                return;
+            }
+
+            Destroy(gameObject);
         }
     }
 }
