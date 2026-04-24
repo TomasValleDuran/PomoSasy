@@ -1,11 +1,20 @@
-﻿using UnityEngine;
-using UnityEngine.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Data
 {
+    [Serializable]
+    public class SpawnEntry
+    {
+        public GameObject prefab;
+        public int amount;
+    }
+
+    [CreateAssetMenu(fileName = "SpawnerData", menuName = "Scriptable Objects/SpawnerData")]
     public class SpawnerData : ScriptableObject
     {
         public float spawnInterval;
-        public GameObject entityPrefab;
+        public List<SpawnEntry> spawnEntries;
     }
 }
