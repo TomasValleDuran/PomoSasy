@@ -1,86 +1,97 @@
 using UnityEngine;
+using Data;
 using System.Collections.Generic;
+using UnityEditor;
 
 namespace Spawner
 {
     public class SpawnerController : MonoBehaviour
     {
-        [Header("Prefabs")]
-        public GameObject entityPrefab;
+        [Header("Data")]
+        public SpawnerData spawnerData;
 
         [Header("Spawn Settings")]
-        public float spawnInterval = 10f;
-        public Transform[] spawnPoints;
-        
-        [Header("Pool Settings")]
-        [SerializeField] private int initialPoolSize = 15;
-        [SerializeField] private bool allowPoolExpansion = false;
+        public float spawnRadius = 10f;
 
         private float _timer;
-        private readonly List<GameObject> _pool = new();
-
-        private void Awake()
-        {
-            InitializePool();
-        }
+        private readonly List<GameObject> _spawnPool = new();
 
         void Update()
         {
+            if (spawnerData == null || GameManagerScript.Instance.Player == null) return;
+
+            if (spawnerData.spawnInterval <= 0f)
+            {
+                SpawnNextEntity();
+                return;
+            }
+
             _timer += Time.deltaTime;
 
-            if (_timer >= spawnInterval)
+            if (_timer >= spawnerData.spawnInterval)
             {
-                SpawnEnemy();
-                _timer = 0f;
+                SpawnNextEntity();
+                _timer -= spawnerData.spawnInterval;
             }
         }
 
-        void SpawnEnemy()
+        void SpawnNextEntity()
         {
-            if (entityPrefab == null || spawnPoints.Length == 0) return;
-
-            var point = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            var enemy = GetPooledEnemy();
-            if (enemy == null) return;
-
-            enemy.transform.SetPositionAndRotation(point.position, point.rotation);
-            enemy.SetActive(true);
-        }
-
-        private void InitializePool()
-        {
-            _pool.Clear();
-
-            for (int i = 0; i < initialPoolSize; i++)
+            if (_spawnPool.Count == 0)
             {
-                CreatePooledEnemy();
+                RebuildSpawnPool();
             }
+
+            if (_spawnPool.Count == 0)
+            {
+                return;
+            }
+
+            GameObject prefab = _spawnPool[^1];
+            _spawnPool.RemoveAt(_spawnPool.Count - 1);
+
+            Vector3 spawnPos = GetRandomPositionAroundPlayer();
+            Spawn(prefab, spawnPos);
         }
 
-        private GameObject GetPooledEnemy()
+        private void Spawn(GameObject entity, Vector3 spawnPos)
         {
-            for (int i = 0; i < _pool.Count; i++)
+            Instantiate(entity, spawnPos, Quaternion.identity); // TODO: Use object pooling instead of instantiating
+        }
+
+        void RebuildSpawnPool()
+        {
+            _spawnPool.Clear();
+
+            if (spawnerData.spawnEntries == null)
             {
-                if (!_pool[i].activeInHierarchy)
+                return;
+            }
+
+            foreach (var entry in spawnerData.spawnEntries)
+            {
+                if (entry.prefab == null || entry.amount <= 0) continue;
+
+                for (int i = 0; i < entry.amount; i++)
                 {
-                    return _pool[i];
+                    _spawnPool.Add(entry.prefab);
                 }
             }
 
-            if (!allowPoolExpansion)
+            for (int i = 0; i < _spawnPool.Count; i++)
             {
-                return null;
+                int rand = Random.Range(i, _spawnPool.Count);
+                (_spawnPool[i], _spawnPool[rand]) = (_spawnPool[rand], _spawnPool[i]);
             }
-
-            return CreatePooledEnemy();
         }
 
-        private GameObject CreatePooledEnemy()
+        Vector3 GetRandomPositionAroundPlayer()
         {
-            var enemy = Instantiate(entityPrefab, transform.position, Quaternion.identity, transform);
-            enemy.SetActive(false);
-            _pool.Add(enemy);
-            return enemy;
+            Vector3 playerPos = GameManagerScript.Instance.Player.position;
+            Vector2 circle = Random.insideUnitCircle.normalized * spawnRadius;
+            Vector3 offset = new Vector3(circle.x, circle.y, 0f);
+
+            return playerPos + offset;
         }
     }
 }
