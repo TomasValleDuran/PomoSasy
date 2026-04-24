@@ -9,8 +9,16 @@ namespace Controllers
         [SerializeField] private PlayerData playerData;
         [SerializeField] private InputHandler inputHandler;
 
-        private void Awake()
+        private void Start()
         {
+            StartCoroutine(RegisterWhenReady());
+        }
+
+        private System.Collections.IEnumerator RegisterWhenReady()
+        {
+            while (!GameManagerScript.Instance)
+                yield return null;
+
             GameManagerScript.Instance.RegisterPlayer(transform);
         }
         private void Update()
