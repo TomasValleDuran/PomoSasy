@@ -1,7 +1,6 @@
 using UnityEngine;
 using Data;
 using System.Collections.Generic;
-using UnityEditor;
 
 namespace Spawner
 {
@@ -12,9 +11,11 @@ namespace Spawner
 
         [Header("Spawn Settings")]
         public float spawnRadius = 10f;
+        [SerializeField] private bool useEnemyPooling = true;
 
         private float _timer;
         private readonly List<GameObject> _spawnPool = new();
+        private readonly Dictionary<GameObject, List<GameObject>> _instancesByPrefab = new();
 
         void Update()
         {
@@ -56,7 +57,21 @@ namespace Spawner
 
         private void Spawn(GameObject entity, Vector3 spawnPos)
         {
-            Instantiate(entity, spawnPos, Quaternion.identity); // TODO: Use object pooling instead of instantiating
+            if (!useEnemyPooling)
+            {
+                Instantiate(entity, spawnPos, Quaternion.identity);
+                return;
+            }
+
+            if (TryGetInactiveInstance(entity, out GameObject pooledEnemy))
+            {
+                pooledEnemy.transform.SetPositionAndRotation(spawnPos, Quaternion.identity);
+                pooledEnemy.SetActive(true);
+                return;
+            }
+
+            GameObject spawnedEnemy = Instantiate(entity, spawnPos, Quaternion.identity);
+            RegisterInstance(entity, spawnedEnemy);
         }
 
         void RebuildSpawnPool()
@@ -92,6 +107,40 @@ namespace Spawner
             Vector3 offset = new Vector3(circle.x, circle.y, 0f);
 
             return playerPos + offset;
+        }
+
+        private bool TryGetInactiveInstance(GameObject prefab, out GameObject instance)
+        {
+            instance = null;
+
+            if (!_instancesByPrefab.TryGetValue(prefab, out List<GameObject> instances))
+                return false;
+
+            for (int i = 0; i < instances.Count; i++)
+            {
+                GameObject candidate = instances[i];
+                if (candidate == null)
+                    continue;
+
+                if (!candidate.activeInHierarchy)
+                {
+                    instance = candidate;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void RegisterInstance(GameObject prefab, GameObject instance)
+        {
+            if (!_instancesByPrefab.TryGetValue(prefab, out List<GameObject> instances))
+            {
+                instances = new List<GameObject>();
+                _instancesByPrefab[prefab] = instances;
+            }
+
+            instances.Add(instance);
         }
     }
 }
