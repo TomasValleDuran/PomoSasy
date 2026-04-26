@@ -406,10 +406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb30c633bfa496487d46a3ef4ff5b02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner.SpawnerController
-  entityPrefab: {fileID: 2804376934785104394, guid: cd386d1a60b8f49028c5d9f08952b2fe, type: 3}
-  spawnInterval: 2
-  spawnPoints:
-  - {fileID: 780296255}
+  spawnerData: {fileID: 11400000, guid: c9de19c972f8a0a4ca51ed16753296cf, type: 2}
+  spawnRadius: 10
+  useEnemyPooling: 1
 --- !u!4 &780296255
 Transform:
   m_ObjectHideFlags: 0
@@ -713,7 +712,7 @@ Transform:
   m_GameObject: {fileID: 1199680024}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.44447, y: -0.79064, z: 0}
+  m_LocalPosition: {x: 0.01, y: 17.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84134bcfb80c4d198e61770348e44bd3, type: 3}
   m_Name: SpawnerData1
   m_EditorClassIdentifier: Assembly-CSharp::Data.SpawnerData
-  spawnInterval: 0
-  spawnEntries: []
+  spawnInterval: 2
+  spawnEntries:
+  - prefab: {fileID: 6061110575586292442, guid: c2c9278eeadcc4d3788391407b862cc4, type: 3}
+    amount: 5
+  - prefab: {fileID: 2804376934785104394, guid: cd386d1a60b8f49028c5d9f08952b2fe, type: 3}
+    amount: 5

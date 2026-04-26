@@ -1,7 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Data;
 using Health;
 using UnityEngine;
+using Random = System.Random;
 
 namespace Controllers
 {
@@ -159,6 +162,60 @@ namespace Controllers
             }
 
             Destroy(gameObject);
+        }
+        
+        private void DropLoot()
+        {
+            var points = data.PointsOnDeath;
+            var coinsLoot = new List<PomoSasyConstants.CoinType>();
+
+            var coinMap = new Dictionary<PomoSasyConstants.CoinType, int>
+            {
+                { PomoSasyConstants.CoinType.Copper, PomoSasyConstants.CoinValues.Copper },
+                { PomoSasyConstants.CoinType.Silver, PomoSasyConstants.CoinValues.Silver },
+                { PomoSasyConstants.CoinType.Gold, PomoSasyConstants.CoinValues.Gold },
+                { PomoSasyConstants.CoinType.Platinum, PomoSasyConstants.CoinValues.Platinum }
+            };
+
+            var rng = new Random();
+
+            // --- 1. Split into chunks ---
+            var chunks = new List<int>();
+            int remaining = points;
+
+            while (remaining > 0)
+            {
+                // Chunk size: between 10% and 40% of remaining (tweakable)
+                int minChunk = Math.Max(1, remaining / 10);
+                int maxChunk = Math.Max(1, remaining / 2);
+
+                int chunk = rng.Next(minChunk, maxChunk + 1);
+                chunk = Math.Min(chunk, remaining);
+
+                chunks.Add(chunk);
+                remaining -= chunk;
+            }
+
+            // --- 2. Generate coins per chunk ---
+            foreach (var chunk in chunks)
+            {
+                int chunkRemaining = chunk;
+
+                while (chunkRemaining > 0)
+                {
+                    var validCoins = coinMap
+                        .Where(kv => kv.Value <= chunkRemaining)
+                        .ToList();
+
+                    // Slight bias toward bigger coins, but not absolute
+                    var chosen = validCoins
+                        .OrderByDescending(kv => kv.Value + rng.Next(-3, 4)) // controlled randomness
+                        .First();
+
+                    coinsLoot.Add(chosen.Key);
+                    chunkRemaining -= chosen.Value;
+                }
+            }
         }
     }
 }
