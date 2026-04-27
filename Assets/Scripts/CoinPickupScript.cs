@@ -1,5 +1,8 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using Controllers;
+using Random = UnityEngine.Random;
 
 public class CoinPickupScript : MonoBehaviour
 {
@@ -14,11 +17,10 @@ public class CoinPickupScript : MonoBehaviour
 
     [Header("Magnet")]
     [SerializeField] private float magnetSpeed = 6f;
-    [SerializeField] private float magnetAcceleration = 20f;
+    [SerializeField] private float maxDistance = 5f;
 
     private Transform player;
     private bool isMagnetActive = false;
-    private float currentMagnetSpeed;
 
     private void Start()
     {
@@ -28,35 +30,34 @@ public class CoinPickupScript : MonoBehaviour
 
     private IEnumerator BehaviorRoutine()
     {
-        // 1. Scatter
+        // Scatter
         yield return StartCoroutine(Scatter());
 
-        // 2. Delay (coins sit briefly)
+        // Delay
         yield return new WaitForSeconds(delayBeforeMagnet);
 
-        // 3. Activate magnet
+        // Activate magnet
         isMagnetActive = true;
-        currentMagnetSpeed = magnetSpeed;
     }
 
     private IEnumerator Scatter()
     {
-        Vector3 start = transform.position;
+        var start = transform.position;
 
-        Vector3 target = start + new Vector3(
+        var target = start + new Vector3(
             Random.Range(-scatterRange, scatterRange),
             Random.Range(-scatterRange, scatterRange),
             0f
         );
 
-        float t = 0f;
+        var t = 0f;
 
         while (t < 1f)
         {
             t += Time.deltaTime / scatterDuration;
             t = Mathf.Clamp01(t);
 
-            float easedT = 1f - Mathf.Pow(1f - t, 4f);
+            var easedT = 1f - Mathf.Pow(1f - t, 4f);
 
             transform.position = Vector3.Lerp(start, target, easedT);
             yield return null;
@@ -67,34 +68,31 @@ public class CoinPickupScript : MonoBehaviour
 
     private void Update()
     {
-        if (!isMagnetActive || player == null) return;
+        if (!isMagnetActive || !player) return;
 
-        // Accelerating magnet (feels great)
-        currentMagnetSpeed += magnetAcceleration * Time.deltaTime;
+        var distance = Vector3.Distance(transform.position, player.position);
+
+        if (distance > maxDistance) return;
+
+        var t = 1f - Mathf.Clamp01(distance / maxDistance);
+        t *= t;
+
+        var speed = magnetSpeed * t;
 
         transform.position = Vector3.MoveTowards(
             transform.position,
             player.position,
-            currentMagnetSpeed * Time.deltaTime
+            speed * Time.deltaTime
         );
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!isMagnetActive) return;
-
-        if (other.CompareTag("Player"))
-        {
-            Collect();
-        }
+        
+        if (transform.position == player.position) Collect();
     }
 
     private void Collect()
     {
-        int value = Utils.GetCoinValueFromType(coinType);
+        var value = Utils.GetCoinValueFromType(coinType);
+        WalletManagerScript.Instance.Add(value);
 
-        // PlayerWallet.Instance.Add(value);
-
-        Destroy(gameObject);
+        Destroy(gameObject); // TODO: Replace with pooling
     }
 }
