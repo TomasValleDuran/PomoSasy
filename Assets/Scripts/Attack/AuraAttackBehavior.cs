@@ -1,36 +1,29 @@
 using System.Collections.Generic;
 using Health;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Attack
 {
-    [CreateAssetMenu(fileName = "BasicAttack", menuName = "Scriptable Objects/Attacks/BasicAttack")]
-    public class BasicAttackBehavior : AttackBehavior
+    [CreateAssetMenu(fileName = "AuraAttack", menuName = "Scriptable Objects/Attacks/Aura")]
+    public class AuraAttackBehavior : AttackBehavior
     {
-        [Tooltip("Used only when AttackData attack range is 0 (legacy / optional). Prefer setting range on AttackData.")]
-        [FormerlySerializedAs("radius")]
         [SerializeField] private float fallbackRadius = 1.5f;
         [SerializeField] private LayerMask hitMask = ~0;
         [SerializeField] private GameObject visualPrefab;
 
-        /// <summary>Same radius <see cref="Execute"/> uses for OverlapCircle (AttackData range, or fallback).</summary>
-        public float GetEffectiveRadius(float attackRangeFromAttackData) =>
-            attackRangeFromAttackData > 0f ? attackRangeFromAttackData : fallbackRadius;
-
-        /// <summary>Area attack around the attacker. <paramref name="primaryTarget"/> is ignored.</summary>
         public override bool Execute(in AttackContext ctx)
         {
             if (ctx.attacker == null)
                 return true;
 
-            float r = GetEffectiveRadius(ctx.range);
-            var attackerRoot = ctx.attacker.root;
-            var hits = Physics2D.OverlapCircleAll(ctx.attacker.position, r, hitMask);
+            float radius = ctx.range > 0f ? ctx.range : fallbackRadius;
+            Collider2D[] hits = Physics2D.OverlapCircleAll(ctx.attacker.position, radius, hitMask);
             var damaged = new HashSet<GameObject>();
+            Transform attackerRoot = ctx.attacker.root;
 
-            foreach (Collider2D hit in hits)
+            for (int i = 0; i < hits.Length; i++)
             {
+                Collider2D hit = hits[i];
                 if (hit.transform.root == attackerRoot)
                     continue;
 

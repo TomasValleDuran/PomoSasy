@@ -113,7 +113,14 @@ namespace Controllers
 
         private void UpdateAttack()
         {
-            bool finished = data.AttackData.AttackBehavior.Execute(transform, playerTransform, data.AttackData.Damage, data.AttackData.AttackRange);
+            var ctx = new Attack.AttackContext(
+                transform,
+                playerTransform,
+                data.AttackData.Damage,
+                data.AttackData.AttackRange,
+                Time.deltaTime
+            );
+            bool finished = data.AttackData.AttackBehavior.Execute(ctx);
 
             if (finished)
                 EnterCooldown();
