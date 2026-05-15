@@ -7,36 +7,37 @@ namespace Attack
     public class DashAttackBehavior : AttackBehavior
     {
         [SerializeField] private float dashSpeed = 10f;
+        [SerializeField] private GameObject visualPrefab;
         public float DashSpeed => dashSpeed;
 
-        public override bool Execute(Transform attacker, Transform primaryTarget, float damage, float attackRange)
+        public override bool Execute(in AttackContext ctx)
         {
-            if (primaryTarget == null)
+            if (ctx.attacker == null || ctx.target == null)
                 return true;
 
-            DashAttackRuntime runtime = attacker.GetComponent<DashAttackRuntime>();
+            DashAttackRuntime runtime = ctx.attacker.GetComponent<DashAttackRuntime>();
             if (runtime == null)
-                runtime = attacker.gameObject.AddComponent<DashAttackRuntime>();
+                runtime = ctx.attacker.gameObject.AddComponent<DashAttackRuntime>();
 
             if (!runtime.IsActive)
             {
-                Vector2 direction = ((Vector2)primaryTarget.position - (Vector2)attacker.position).normalized;
+                Vector2 direction = ((Vector2)ctx.target.position - (Vector2)ctx.attacker.position).normalized;
                 if (direction.sqrMagnitude < 0.0001f)
                     direction = Vector2.right;
 
-                float travelDistance = Mathf.Max(attackRange, 0.1f);
+                float travelDistance = Mathf.Max(ctx.range, 0.1f);
                 runtime.Begin(direction, travelDistance);
             }
 
-            float step = dashSpeed * Time.deltaTime;
+            float step = dashSpeed * ctx.deltaTime;
             float moveAmount = Mathf.Min(step, runtime.RemainingDistance);
-            attacker.position += (Vector3)(runtime.Direction * moveAmount);
+            ctx.attacker.position += (Vector3)(runtime.Direction * moveAmount);
             runtime.RemainingDistance -= moveAmount;
 
-            float contactDistance = attackRange > 0f ? Mathf.Min(attackRange, 0.35f) : 0.1f;
-            if (!runtime.HasHit && Vector2.Distance(attacker.position, primaryTarget.position) <= contactDistance)
+            float contactDistance = ctx.range > 0f ? Mathf.Min(ctx.range, 0.35f) : 0.1f;
+            if (!runtime.HasHit && Vector2.Distance(ctx.attacker.position, ctx.target.position) <= contactDistance)
             {
-                primaryTarget.GetComponentInParent<IDamageable>()?.TakeDamage(damage);
+                ctx.target.GetComponentInParent<IDamageable>()?.TakeDamage(ctx.damage);
                 runtime.HasHit = true;
             }
 
@@ -46,5 +47,7 @@ namespace Attack
 
             return finished;
         }
+
+        public override GameObject CreateVisual(Transform attacker) => visualPrefab;
     }
 }

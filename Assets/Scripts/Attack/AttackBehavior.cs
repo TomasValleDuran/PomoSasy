@@ -4,10 +4,12 @@ namespace Attack
 {
     public abstract class AttackBehavior : ScriptableObject
     {
-        /// <param name="attacker"></param>
-        /// <param name="target"></param>
-        /// <param name="damage"></param>
-        /// <param name="attackRange">From <see cref="AttackData.AttackRange"/>. Melee uses it at strike time; BasicAttack ignores (uses its own radius).</param>
-        public abstract bool Execute(Transform attacker, Transform target, float damage, float attackRange);
+        public abstract bool Execute(in AttackContext ctx);
+
+        public virtual GameObject CreateVisual(Transform attacker) => null;
+
+        public virtual void OnEquip(Transform owner) { }
+
+        public virtual void OnUnequip(Transform owner) { }
     }
 }
