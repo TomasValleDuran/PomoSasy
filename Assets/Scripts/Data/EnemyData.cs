@@ -1,5 +1,6 @@
 using Attack;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -15,12 +16,15 @@ namespace Data
         [Header("Attack")]
         [SerializeField] private AttackData attackData;
 
+        [FormerlySerializedAs("pointsOnDeath")]
         [Header("Reward")]
-        [SerializeField] private int pointsOnDeath = 10;
+        [SerializeField] private int moneyOnDeath = 10;
+        [SerializeField] private int xpOnDeath = 5;
 
         public string EnemyType => string.IsNullOrWhiteSpace(enemyType) ? name : enemyType;
         public float MoveSpeed => moveSpeed;
         public AttackData AttackData => attackData;
-        public int PointsOnDeath => pointsOnDeath;
+        public int MoneyOnDeath => moneyOnDeath;
+        public int XpOnDeath => xpOnDeath;
     }
 }

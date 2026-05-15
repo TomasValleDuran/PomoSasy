@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   data: {fileID: 11400000, guid: 224a290c0e7bd45e99ca499b37691b71, type: 2}
   playerTransform: {fileID: 0}
+  deactivateOnDeath: 1
 --- !u!114 &1520596649198933413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
   healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
+  logHealthEvents: 0
 --- !u!58 &8517426391740852631
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -197,6 +199,7 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6061110575586292442}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -221,5 +224,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.45

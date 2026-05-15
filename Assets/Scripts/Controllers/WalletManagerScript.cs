@@ -7,8 +7,8 @@ namespace Controllers
     {
         public event Action<int> OnMoneyChanged;
 
-        private int value = 0;
-        public int CurrentMoney => value;
+        private int _value = 0;
+        public int CurrentMoney => _value;
         public static WalletManagerScript Instance { get; private set; }
 
         private void Awake()
@@ -19,16 +19,15 @@ namespace Controllers
 
         public void Add(int amount)
         {
-            value += amount;
-            Debug.Log(amount);
-            OnMoneyChanged?.Invoke(value);
+            _value += amount;
+            OnMoneyChanged?.Invoke(_value);
         }
 
 
         public void Subtract(int amount)
         {
-            value -= amount;
-            OnMoneyChanged?.Invoke(value);
+            _value -= amount;
+            OnMoneyChanged?.Invoke(_value);
         }
     }
 }

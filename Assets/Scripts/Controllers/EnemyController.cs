@@ -167,6 +167,7 @@ namespace Controllers
             if (deactivateOnDeath)
             {
                 DropLoot();
+                GiveXp();
                 gameObject.SetActive(false);
                 return;
             }
@@ -176,7 +177,12 @@ namespace Controllers
         
         private void DropLoot()
         {
-            LootManagerScript.Instance.DropCoins(data.PointsOnDeath, transform.position);
+            LootManagerScript.Instance.DropCoins(data.MoneyOnDeath, transform.position);
+        }
+
+        private void GiveXp()
+        {
+            XpManagerScript.Instance.Add(data.XpOnDeath);
         }
     }
 }
