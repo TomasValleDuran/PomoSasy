@@ -8,7 +8,9 @@ namespace Health
         [SerializeField] private HealthData healthData;
         [SerializeField] private bool logHealthEvents = false;
 
-        public float MaxHealth => healthData != null ? healthData.MaxHealth : 0f;
+        private float maxHealthMultiplier = 1f;
+
+        public float MaxHealth => healthData != null ? healthData.MaxHealth * maxHealthMultiplier : 0f;
         public float CurrentHealth { get; private set; }
 
         public event Action OnDeath;
@@ -50,6 +52,11 @@ namespace Health
 
             if (logHealthEvents)
                 Debug.Log($"[Health] {name}: reset to {CurrentHealth:F1} / {MaxHealth:F1} HP", this);
+        }
+
+        public void MultiplyMaxHealth(float multiplier)
+        {
+            maxHealthMultiplier *= multiplier;
         }
     }
 }

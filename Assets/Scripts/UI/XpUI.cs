@@ -3,10 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-
 namespace UI
 {
     public class XpUI : MonoBehaviour
@@ -20,7 +16,7 @@ namespace UI
             XpManagerScript.Instance.OnLevelChanged += UpdateLevel;
 
             UpdateXp(
-                XpManagerScript.Instance.CurrentXp,
+                XpManagerScript.Instance.CurrentLevelXp,
                 XpManagerScript.Instance.XpForNextLevel
             );
             UpdateLevel(XpManagerScript.Instance.CurrentLevel);
@@ -28,8 +24,9 @@ namespace UI
 
         private void OnDestroy()
         {
-            if (XpManagerScript.Instance != null)
-                XpManagerScript.Instance.OnXpChanged -= UpdateXp;
+            if (!XpManagerScript.Instance) return;
+            XpManagerScript.Instance.OnXpChanged -= UpdateXp;
+            XpManagerScript.Instance.OnLevelChanged -= UpdateLevel;
         }
         
         private void UpdateLevel(int level)

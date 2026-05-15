@@ -17,6 +17,8 @@
             public const float XpPerLevelMultiplier = 4f;
             public const int MaxLevel = 20;
             public const int BaseXpForLevelUp = 30;
+            public const int BasePlayerHealth = 100;
+            public const float PlayerHealthMultiplierPerLevel = 1.2f;
         }
     }
     public enum CoinType { Copper, Silver, Gold, Platinum }

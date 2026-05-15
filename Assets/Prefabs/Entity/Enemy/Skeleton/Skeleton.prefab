@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2387487189649788823}
   - component: {fileID: 8074713881867409728}
   - component: {fileID: 9145944485610867596}
+  - component: {fileID: -2152109126343744152}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -123,6 +124,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.76, y: 0.76}
   m_EdgeRadius: 0
+--- !u!114 &-2152109126343744152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804376934785104394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd41072ec28eb404b9e9d0692fd4391e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.HealthUI
+  fillImage: {fileID: 0}
 --- !u!1 &6922691627851273860
 GameObject:
   m_ObjectHideFlags: 0
