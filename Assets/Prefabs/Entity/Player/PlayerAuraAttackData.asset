@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6478990abcdef12345678, type: 3}
   m_Name: PlayerAuraAttackData
   m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackData
-  damage: 10
-  cooldown: 0.2
+  damage: 15
+  cooldown: 0.5
   attackBehavior: {fileID: 11400000, guid: d4b803f5ecbc4f55b66923da7ca059cb, type: 2}
-  windupDuration: 0
   attackRange: 3
+  windupDuration: 0

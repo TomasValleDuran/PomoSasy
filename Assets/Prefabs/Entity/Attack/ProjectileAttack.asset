@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc9c9786ad547db8384aa5c2f89ee8e, type: 3}
   m_Name: ProjectileAttack
   m_EditorClassIdentifier: Assembly-CSharp::Attack.ProjectileAttackBehavior
-  fallbackRange: 20
+  fallbackRange: 100
+  projectileSpeed: 12
+  spawnOffset: 0.2
   hitMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  visualPrefab: {fileID: 0}
+  projectilePrefab: {fileID: 7412450066411065521, guid: 134b0dac508bd4699acb75ad56915c57, type: 3}
+  equippedVisualPrefab: {fileID: 0}
