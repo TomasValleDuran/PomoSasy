@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -557, y: -307}
+  m_AnchoredPosition: {x: -32, y: -32}
   m_SizeDelta: {x: 192, y: 128}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &367049298
@@ -343,7 +343,7 @@ Canvas:
   m_GameObject: {fileID: 475194183}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1683664071}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -578,11 +578,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 367049297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.699997, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 16, y: 0}
   m_SizeDelta: {x: 64, y: 64}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &934781501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,11 +977,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 367049297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 38.149963, y: 0.0000076293945}
-  m_SizeDelta: {x: -76.3, y: -54.31}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 95.7331, y: 73.69}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1611362097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,10 +1496,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1682030660124946218, guid: 0ed49b7e9efc94e659285079e73d83fe, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3903984496227364784, guid: 0ed49b7e9efc94e659285079e73d83fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -1552,8 +1548,7 @@ PrefabInstance:
       propertyPath: inputHandler
       value: 
       objectReference: {fileID: 1392613992}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
