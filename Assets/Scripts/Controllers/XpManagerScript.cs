@@ -1,4 +1,5 @@
 using System;
+using Health;
 using UnityEngine;
 
 namespace Controllers
@@ -18,10 +19,18 @@ namespace Controllers
         public int CurrentLevelXp => _currentLevelXp;
         public static XpManagerScript Instance { get; private set; }
 
+        private HealthComponent _playerHealth;
+
         private void Awake()
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            OnLevelChanged += RestorePlayerHealth;
+        }
+
+        private void OnDestroy()
+        {
+            OnLevelChanged -= RestorePlayerHealth;
         }
 
         public void Add(int amount)
@@ -29,7 +38,7 @@ namespace Controllers
             _value += amount;
             _currentLevelXp += amount;
             LevelUp();
-            OnXpChanged?.Invoke(_value, _xpForNextLevel);
+            OnXpChanged?.Invoke(_currentLevelXp, _xpForNextLevel);  
             Debug.Log($"Added {amount} XP. Total XP: {_value}. Current Level: {_level}. Current XP: {_currentLevelXp}/{_xpForNextLevel}");
         }
         
@@ -48,6 +57,22 @@ namespace Controllers
 
                 _xpForNextLevel = Mathf.CeilToInt(_xpForNextLevel * PomoSasyConstants.Config.Leveling.XpPerLevelMultiplier);
             }
+        }
+
+        private void RestorePlayerHealth(int level)
+        {
+            if (_playerHealth == null)
+            {
+                var player = GameObject.FindGameObjectWithTag("Player");
+                if (player == null || !player.TryGetComponent(out _playerHealth))
+                {
+                    Debug.LogWarning("XpManagerScript could not find the player's HealthComponent.");
+                    return;
+                }
+            }
+
+            _playerHealth.MultiplyMaxHealth(PomoSasyConstants.Config.Leveling.PlayerHealthMultiplierPerLevel);
+            _playerHealth.ResetHealth();
         }
     }
 }

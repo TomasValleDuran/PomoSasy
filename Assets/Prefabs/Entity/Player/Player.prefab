@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 8888005091940628105}
   - component: {fileID: -7124096260685327130}
   - component: {fileID: -1682030660124946218}
+  - component: {fileID: 2442123933342732502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc757e48e42f94a68b8e2cdbcc2bf008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
-  healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
+  healthData: {fileID: 11400000, guid: d79d10fafce415142b3825ccd40275e3, type: 2}
   logHealthEvents: 1
 --- !u!114 &8897904175141533427
 MonoBehaviour:
@@ -300,6 +301,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Controllers.PlayerAttacker
   playerData: {fileID: 11400000, guid: ebc8851cbf5b94d2382bd3fdfb06245c, type: 2}
+  loadout: {fileID: 0}
+  targetingRange: 12
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &8888005091940628105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,12 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4852823f9319432e8a2363187eb7e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerAttackAreaVisualizer
-  playerData: {fileID: 11400000, guid: ebc8851cbf5b94d2382bd3fdfb06245c, type: 2}
   radiusVisual: {fileID: 4406461583499989989}
-  diameterScaleMultiplier: 1
-  hideWhenNotBasicAttack: 1
-  drawPhysicsRadiusGizmo: 1
-  gizmoColor: {r: 0, g: 1, b: 0.25, a: 0.9}
 --- !u!61 &-7124096260685327130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -391,6 +392,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &2442123933342732502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5353717693576475568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8d7a95e9a74f4ab48955be7a67f689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Attack.PlayerAttackLoadout
+  playerData: {fileID: 0}
 --- !u!1 &7886919285965089938
 GameObject:
   m_ObjectHideFlags: 0
