@@ -11,6 +11,13 @@
     public class Config
     {
         public const float HighValueLootBias = 5f;
+
+        public class Leveling
+        {
+            public const float XpPerLevelMultiplier = 4f;
+            public const int MaxLevel = 20;
+            public const int BaseXpForLevelUp = 30;
+        }
     }
     public enum CoinType { Copper, Silver, Gold, Platinum }
 }

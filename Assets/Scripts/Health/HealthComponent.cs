@@ -6,7 +6,7 @@ namespace Health
     public class HealthComponent : MonoBehaviour, IDamageable
     {
         [SerializeField] private HealthData healthData;
-        [SerializeField] private bool logHealthEvents = true;
+        [SerializeField] private bool logHealthEvents = false;
 
         public float MaxHealth => healthData != null ? healthData.MaxHealth : 0f;
         public float CurrentHealth { get; private set; }

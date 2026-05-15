@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   data: {fileID: 11400000, guid: 4c1786788fd9243e1a972f8db5b086c2, type: 2}
   playerTransform: {fileID: 0}
+  deactivateOnDeath: 1
 --- !u!114 &2387487189649788823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
   healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
-  logHealthEvents: 1
+  logHealthEvents: 0
 --- !u!61 &9145944485610867596
 BoxCollider2D:
   m_ObjectHideFlags: 0
