@@ -1,3 +1,4 @@
+using System.Collections;
 using Health;
 using UnityEngine;
 
@@ -5,6 +6,11 @@ namespace Attack
 {
     public class ProjectileRuntime : MonoBehaviour
     {
+        private static readonly int OnHitHash = Animator.StringToHash("OnHit");
+
+        [SerializeField] private float hitAnimationDuration = 0.2f;
+        [SerializeField] private float visualAngleOffset = 0f;
+
         private Transform _owner;
         private Vector2 _direction;
         private float _speed;
@@ -12,11 +18,20 @@ namespace Attack
         private float _remainingDistance;
         private LayerMask _hitMask;
         private bool _initialized;
+        private bool _isDespawning;
+        private Animator _animator;
+
+        private void Awake()
+        {
+            _animator = GetComponentInChildren<Animator>();
+        }
 
         public void Initialize(Transform owner, Vector2 direction, float speed, float damage, float maxDistance, LayerMask hitMask)
         {
             _owner = owner;
             _direction = direction.sqrMagnitude > 0.0001f ? direction.normalized : Vector2.right;
+            float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle + visualAngleOffset);
             _speed = Mathf.Max(speed, 0.01f);
             _damage = damage;
             _remainingDistance = Mathf.Max(maxDistance, 0.01f);
@@ -26,7 +41,7 @@ namespace Attack
 
         private void Update()
         {
-            if (!_initialized)
+            if (!_initialized || _isDespawning)
                 return;
 
             float step = _speed * Time.deltaTime;
@@ -39,7 +54,7 @@ namespace Attack
             if (hit.collider != null && (_owner == null || hit.transform.root != _owner.root))
             {
                 hit.collider.GetComponentInParent<IDamageable>()?.TakeDamage(_damage);
-                Destroy(gameObject);
+                BeginDespawn();
                 return;
             }
 
@@ -47,7 +62,37 @@ namespace Attack
             _remainingDistance -= castDistance;
 
             if (_remainingDistance <= 0f)
+                BeginDespawn();
+        }
+
+        private void BeginDespawn()
+        {
+            if (_isDespawning)
+                return;
+
+            _isDespawning = true;
+
+            if (_animator == null)
+            {
                 Destroy(gameObject);
+                return;
+            }
+
+            _animator.SetTrigger(OnHitHash);
+
+            if (hitAnimationDuration <= 0f)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            StartCoroutine(DestroyAfterHitAnimation());
+        }
+
+        private IEnumerator DestroyAfterHitAnimation()
+        {
+            yield return new WaitForSeconds(hitAnimationDuration);
+            Destroy(gameObject);
         }
     }
 }
