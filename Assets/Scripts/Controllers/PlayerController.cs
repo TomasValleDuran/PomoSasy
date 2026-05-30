@@ -1,6 +1,7 @@
 using Data;
 using Input;
 using UnityEngine;
+using Upgrades;
 
 namespace Controllers
 {
@@ -8,9 +9,12 @@ namespace Controllers
     {
         [SerializeField] private PlayerData playerData;
         [SerializeField] private InputHandler inputHandler;
+        [SerializeField] private PlayerUpgradeModifiers upgradeModifiers;
 
         private void Start()
         {
+            if (upgradeModifiers == null)
+                upgradeModifiers = GetComponent<PlayerUpgradeModifiers>();
             StartCoroutine(RegisterWhenReady());
         }
 
@@ -31,8 +35,8 @@ namespace Controllers
             Vector2 input = inputHandler.MoveInput.normalized;
 
             Vector3 movement = new Vector3(input.x, input.y, 0f);
-
-            transform.position += movement * (playerData.MoveSpeed * Time.deltaTime);
+            float moveSpeedMultiplier = upgradeModifiers != null ? upgradeModifiers.MoveSpeedMultiplier : 1f;
+            transform.position += movement * (playerData.MoveSpeed * moveSpeedMultiplier * Time.deltaTime);
         }
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using Health;
 using UnityEngine;
+using Upgrades;
 
 namespace Controllers
 {
@@ -35,11 +36,12 @@ namespace Controllers
 
         public void Add(int amount)
         {
-            _value += amount;
-            _currentLevelXp += amount;
+            int effectiveAmount = GetEffectiveXpAmount(amount);
+            _value += effectiveAmount;
+            _currentLevelXp += effectiveAmount;
             LevelUp();
             OnXpChanged?.Invoke(_currentLevelXp, _xpForNextLevel);  
-            Debug.Log($"Added {amount} XP. Total XP: {_value}. Current Level: {_level}. Current XP: {_currentLevelXp}/{_xpForNextLevel}");
+            Debug.Log($"Added {effectiveAmount} XP. Total XP: {_value}. Current Level: {_level}. Current XP: {_currentLevelXp}/{_xpForNextLevel}");
         }
         
         public bool CheckLevelUp()
@@ -73,6 +75,20 @@ namespace Controllers
 
             _playerHealth.MultiplyMaxHealth(PomoSasyConstants.Config.Leveling.PlayerHealthMultiplierPerLevel);
             _playerHealth.ResetHealth();
+        }
+
+        private int GetEffectiveXpAmount(int amount)
+        {
+            if (amount <= 0)
+                return 0;
+
+            if (GameManagerScript.Instance == null || GameManagerScript.Instance.Player == null)
+                return amount;
+
+            if (!GameManagerScript.Instance.Player.TryGetComponent(out PlayerUpgradeModifiers modifiers))
+                return amount;
+
+            return Mathf.Max(1, Mathf.RoundToInt(amount * modifiers.XpGainMultiplier));
         }
     }
 }
