@@ -15,5 +15,5 @@ MonoBehaviour:
   damage: 25
   cooldown: 1
   attackBehavior: {fileID: 11400000, guid: f7cb5f2e5403e4b13a72ba8dd45c85be, type: 2}
-  attackRange: 1
+  attackRange: 2
   windupDuration: 0

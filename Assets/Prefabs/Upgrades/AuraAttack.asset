@@ -15,12 +15,12 @@ MonoBehaviour:
   upgradeId: aura_attack_damage
   displayName: Aura Attack Damage
   description: Increase the damage of your aura attack
-  icon: {fileID: 0}
+  icon: {fileID: 1714798345293990466, guid: 6a2e657dc35269c4ab4fcd6faff6fa50, type: 3}
   maxLevel: 5
-  upgradeKind: 0
+  upgradeKind: 1
   passiveEffectType: 0
   passiveMultiplierPerLevel: 1.1
-  targetAttack: {fileID: 0}
+  targetAttack: {fileID: 11400000, guid: 9f50d31f9c5a4f95a80c38588517e03c, type: 2}
   attackDamageMultiplierPerLevel: 1.15
   attackCooldownMultiplierPerLevel: 0.93
   attackRangeMultiplierPerLevel: 1.08

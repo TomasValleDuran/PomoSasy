@@ -17,6 +17,10 @@ MonoBehaviour:
   description: Increase the amount of xp you gain
   icon: {fileID: 1541905913424304517, guid: 27e63d9a2cf748840b3ce5a7007d0eb2, type: 3}
   maxLevel: 5
-  effectType: 1
-  attackFamily: 0
-  multiplierPerLevel: 1.15
+  upgradeKind: 0
+  passiveEffectType: 1
+  passiveMultiplierPerLevel: 1.1
+  targetAttack: {fileID: 0}
+  attackDamageMultiplierPerLevel: 1.15
+  attackCooldownMultiplierPerLevel: 0.93
+  attackRangeMultiplierPerLevel: 1.08

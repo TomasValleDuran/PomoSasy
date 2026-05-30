@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e63c01727044c65ad014626b15ecd5, type: 3}
   m_Name: BasicAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrades.UpgradeDefinition
-  upgradeId: basic_attack_cooldown
-  displayName: Basic Attack Cooldown
-  description: Lower the cooldown of your basic attack
+  upgradeId: basic_attack
+  displayName: Basic Attack
+  description: Upgrade your basic attack
   icon: {fileID: -6999556948872556331, guid: 6c3069116ff25b04292b3fdcfe4cae62, type: 3}
   maxLevel: 5
-  upgradeKind: 0
+  upgradeKind: 1
   passiveEffectType: 0
   passiveMultiplierPerLevel: 1.1
-  targetAttack: {fileID: 0}
+  targetAttack: {fileID: 11400000, guid: fdc6019630ba249479eb78e809f6a4a3, type: 2}
   attackDamageMultiplierPerLevel: 1.15
   attackCooldownMultiplierPerLevel: 0.93
   attackRangeMultiplierPerLevel: 1.08

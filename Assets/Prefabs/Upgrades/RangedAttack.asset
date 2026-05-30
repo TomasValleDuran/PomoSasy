@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e63c01727044c65ad014626b15ecd5, type: 3}
   m_Name: RangedAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrades.UpgradeDefinition
-  upgradeId: 
-  displayName: 
-  description: 
-  icon: {fileID: 0}
+  upgradeId: ranged_attack
+  displayName: Fireball
+  description: Upgrade your fireball attack
+  icon: {fileID: 4489321270292501251, guid: 9a80d55f3f0078b4584cba0caf93bbd0, type: 3}
   maxLevel: 5
-  upgradeKind: 0
+  upgradeKind: 1
   passiveEffectType: 0
   passiveMultiplierPerLevel: 1.1
-  targetAttack: {fileID: 0}
+  targetAttack: {fileID: 11400000, guid: a6060c7764cdf4e6eb1af52c908ba6db, type: 2}
   attackDamageMultiplierPerLevel: 1.15
   attackCooldownMultiplierPerLevel: 0.93
   attackRangeMultiplierPerLevel: 1.08

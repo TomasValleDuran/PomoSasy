@@ -15,5 +15,4 @@ MonoBehaviour:
   moveSpeed: 5
   dashSpeed: 10
   startingAttacks:
-  - {fileID: 11400000, guid: a6060c7764cdf4e6eb1af52c908ba6db, type: 2}
-  - {fileID: 11400000, guid: 9f50d31f9c5a4f95a80c38588517e03c, type: 2}
+  - {fileID: 11400000, guid: fdc6019630ba249479eb78e809f6a4a3, type: 2}

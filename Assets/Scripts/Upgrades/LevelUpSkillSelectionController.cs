@@ -33,6 +33,7 @@ namespace Upgrades
         private readonly List<UpgradeOffer> _bufferedOffers = new(3);
         private int _pendingSelections;
         private bool _isShowingSelection;
+        private bool _pauseRequestedBySelection;
         private Controllers.PlayerController _playerController;
         private Controllers.PlayerAttacker _playerAttacker;
 
@@ -58,6 +59,8 @@ namespace Upgrades
         {
             if (xpManager != null)
                 xpManager.OnLevelChanged -= HandleLevelChanged;
+
+            SetSelectionPause(false);
         }
 
         private void HandleLevelChanged(int level)
@@ -70,7 +73,10 @@ namespace Upgrades
         private void ShowNextSelection()
         {
             if (selectionUI == null)
+            {
+                SetSelectionPause(false);
                 return;
+            }
 
             List<UpgradeDefinition> candidates = GetAvailableCandidates();
             if (candidates.Count == 0)
@@ -208,7 +214,10 @@ namespace Upgrades
         private void SetPlayerControlBlocked(bool blocked)
         {
             if (!blockPlayerControlsWhileSelecting || GameManagerScript.Instance == null || GameManagerScript.Instance.Player == null)
+            {
+                SetSelectionPause(false);
                 return;
+            }
 
             if (_playerController == null)
                 GameManagerScript.Instance.Player.TryGetComponent(out _playerController);
@@ -219,6 +228,30 @@ namespace Upgrades
                 _playerController.enabled = !blocked;
             if (_playerAttacker != null)
                 _playerAttacker.enabled = !blocked;
+
+            SetSelectionPause(blocked);
+        }
+
+        private void SetSelectionPause(bool paused)
+        {
+            if (GameManagerScript.Instance == null)
+                return;
+
+            if (paused)
+            {
+                if (_pauseRequestedBySelection)
+                    return;
+
+                GameManagerScript.Instance.RequestPause();
+                _pauseRequestedBySelection = true;
+                return;
+            }
+
+            if (!_pauseRequestedBySelection)
+                return;
+
+            GameManagerScript.Instance.ReleasePause();
+            _pauseRequestedBySelection = false;
         }
     }
 }

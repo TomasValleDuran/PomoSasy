@@ -8,6 +8,9 @@ public class GameManagerScript : MonoBehaviour
     public Transform Player { get; private set; }
 
     private readonly Dictionary<string, int> _enemyCounts = new();
+    private int _pauseRequestCount;
+
+    public bool IsPaused => _pauseRequestCount > 0;
 
     private void Awake()
     {
@@ -20,6 +23,16 @@ public class GameManagerScript : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+            _pauseRequestCount = 0;
+            Time.timeScale = 1f;
+        }
     }
 
     public void RegisterPlayer(Transform player)
@@ -71,5 +84,22 @@ public class GameManagerScript : MonoBehaviour
     public IReadOnlyDictionary<string, int> GetAllEnemyCounts()
     {
         return _enemyCounts;
+    }
+
+    public void RequestPause()
+    {
+        _pauseRequestCount++;
+        ApplyPauseState();
+    }
+
+    public void ReleasePause()
+    {
+        _pauseRequestCount = Mathf.Max(0, _pauseRequestCount - 1);
+        ApplyPauseState();
+    }
+
+    private void ApplyPauseState()
+    {
+        Time.timeScale = IsPaused ? 0f : 1f;
     }
 }
