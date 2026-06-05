@@ -11,6 +11,7 @@ public class GameManagerScript : MonoBehaviour
     private int _pauseRequestCount;
 
     public bool IsPaused => _pauseRequestCount > 0;
+    public bool IsGameOver { get; private set; }
 
     private void Awake()
     {
@@ -84,6 +85,18 @@ public class GameManagerScript : MonoBehaviour
     public IReadOnlyDictionary<string, int> GetAllEnemyCounts()
     {
         return _enemyCounts;
+    }
+
+    public void SetGameOver()
+    {
+        IsGameOver = true;
+    }
+
+    public void ResetGameState()
+    {
+        IsGameOver = false;
+        _pauseRequestCount = 0;
+        Time.timeScale = 1f;
     }
 
     public void RequestPause()
