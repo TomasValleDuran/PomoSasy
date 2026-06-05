@@ -1,4 +1,4 @@
-﻿public static class PomoSasyConstants 
+public static class PomoSasyConstants 
 {
     public class CoinValues
     {
@@ -14,7 +14,7 @@
 
         public class Leveling
         {
-            public const float XpPerLevelMultiplier = 4f;
+            public const float XpPerLevelMultiplier = 1.5f;
             public const int MaxLevel = 20;
             public const int BaseXpForLevelUp = 30;
             public const int BasePlayerHealth = 100;
