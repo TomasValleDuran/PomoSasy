@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 public class SceneLoader : MonoBehaviour
@@ -18,6 +18,9 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(int index)
     {
+        if (GameManagerScript.Instance != null)
+            GameManagerScript.Instance.ResetGameState();
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(index);
     }
     
