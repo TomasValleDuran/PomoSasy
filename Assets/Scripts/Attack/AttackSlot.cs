@@ -11,6 +11,7 @@ namespace Attack
         private float _cooldownTimer;
         private Transform _owner;
         private GameObject _visualInstance;
+        private AudioSource _audioSource;
         private PlayerUpgradeModifiers _upgradeModifiers;
 
         public AttackData AttackData => attackData;
@@ -28,7 +29,12 @@ namespace Attack
             _cooldownTimer = 0f;
             _upgradeModifiers = null;
             if (_owner != null)
+            {
                 _owner.TryGetComponent(out _upgradeModifiers);
+                _audioSource = null;
+                _owner.TryGetComponent(out _audioSource);
+                
+            }
 
             AttackBehavior behavior = attackData?.AttackBehavior;
             if (behavior == null || owner == null)
@@ -76,7 +82,10 @@ namespace Attack
 
             bool finished = behavior.Execute(slotContext);
             if (finished)
+            {
+                AttackAudioPlayer.Play(_audioSource, attackData);
                 _cooldownTimer = effectiveCooldown;
+            }
         }
 
         public void Unequip()
@@ -90,6 +99,7 @@ namespace Attack
 
             _visualInstance = null;
             _owner = null;
+            _audioSource = null;
             _upgradeModifiers = null;
             _cooldownTimer = 0f;
         }
