@@ -17,3 +17,4 @@ MonoBehaviour:
   attackBehavior: {fileID: 11400000, guid: f7cb5f2e5403e4b13a72ba8dd45c85be, type: 2}
   attackRange: 2
   windupDuration: 0
+  attackSfx: {fileID: 8300000, guid: 7e2b714b28781b643b0618b52f0f5ca2, type: 3}

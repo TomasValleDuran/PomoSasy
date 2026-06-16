@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Attack;
 using Data;
 using Health;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace Controllers
         [SerializeField] private EnemyData data;
         [SerializeField] private Transform playerTransform;
         [SerializeField] private bool deactivateOnDeath = true;
+        [SerializeField] public AudioSource attackAudioSource;
 
         public event Action<bool> OnMovingChanged;
 
@@ -27,10 +29,12 @@ namespace Controllers
         private void Awake()
         {
             GetComponent<HealthComponent>().OnDeath += HandleDeath;
+
+            if (!TryGetComponent(out attackAudioSource))
+                attackAudioSource = gameObject.AddComponent<AudioSource>();
+
             if (GameManagerScript.Instance != null)
-            {
                 playerTransform = GameManagerScript.Instance.Player;
-            }
         }
 
         private void OnEnable()
@@ -123,7 +127,10 @@ namespace Controllers
             bool finished = data.AttackData.AttackBehavior.Execute(ctx);
 
             if (finished)
+            {
+                AttackAudioPlayer.Play(attackAudioSource, data.AttackData);
                 EnterCooldown();
+            }
         }
 
         private void EnterCooldown()
