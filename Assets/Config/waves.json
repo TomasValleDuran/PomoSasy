@@ -1,0 +1,38 @@
+{
+  "waves": [
+    {
+      "waveName": "Warm-up",
+      "startDelay": 2.0,
+      "spawnInterval": 1.5,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 5 }
+      ]
+    },
+    {
+      "waveName": "More bones",
+      "startDelay": 4.0,
+      "spawnInterval": 1.2,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 8 }
+      ]
+    },
+    {
+      "waveName": "Mixed",
+      "startDelay": 4.0,
+      "spawnInterval": 1.0,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 8 },
+        { "enemy": "Vampire", "amount": 3 }
+      ]
+    },
+    {
+      "waveName": "Swarm",
+      "startDelay": 5.0,
+      "spawnInterval": 0.7,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 12 },
+        { "enemy": "Vampire", "amount": 6 }
+      ]
+    }
+  ]
+}

@@ -100,5 +100,28 @@ namespace Attack
                 break;
             }
         }
+
+        /// <summary>Replace the whole loadout with the given attacks (used when restoring a save).</summary>
+        public void RebuildFrom(IReadOnlyList<AttackData> attacks)
+        {
+            for (int i = 0; i < _slots.Count; i++)
+                _slots[i].Unequip();
+            _slots.Clear();
+
+            _hasBuilt = true;
+
+            if (attacks == null)
+                return;
+
+            for (int i = 0; i < attacks.Count; i++)
+            {
+                if (attacks[i] == null)
+                    continue;
+
+                AttackSlot slot = new AttackSlot(attacks[i]);
+                slot.Equip(transform);
+                _slots.Add(slot);
+            }
+        }
     }
 }

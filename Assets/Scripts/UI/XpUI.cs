@@ -40,5 +40,14 @@ namespace UI
             Debug.Log(percentage);
             _xpImage.fillAmount = percentage;
         }
+
+        /// <summary>Re-read the XP manager and refresh the UI (used after restoring a saved game).</summary>
+        public void ForceRefresh()
+        {
+            if (!XpManagerScript.Instance) return;
+
+            UpdateLevel(XpManagerScript.Instance.CurrentLevel);
+            UpdateXp(XpManagerScript.Instance.CurrentLevelXp, XpManagerScript.Instance.XpForNextLevel);
+        }
     }
 }

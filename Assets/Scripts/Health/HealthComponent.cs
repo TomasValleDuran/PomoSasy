@@ -58,5 +58,19 @@ namespace Health
         {
             maxHealthMultiplier *= multiplier;
         }
+
+        /// <summary>Current max-health multiplier, exposed so a save can snapshot it.</summary>
+        public float MaxHealthMultiplier => maxHealthMultiplier;
+
+        /// <summary>
+        /// Restore health to an absolute snapshot (multiplier + current HP). Used when loading a
+        /// saved game; overrides any multiplier accumulated during scene init.
+        /// </summary>
+        public void RestoreState(float savedCurrentHealth, float savedMaxHealthMultiplier)
+        {
+            maxHealthMultiplier = Mathf.Max(0.01f, savedMaxHealthMultiplier);
+            CurrentHealth = Mathf.Clamp(savedCurrentHealth, 0f, MaxHealth);
+            OnDamaged?.Invoke(CurrentHealth);
+        }
     }
 }

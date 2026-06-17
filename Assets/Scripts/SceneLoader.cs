@@ -1,18 +1,35 @@
-using System;
 using UnityEngine;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader Instance { get; private set; }
+    private static SceneLoader _instance;
+
+    /// <summary>
+    /// Self-healing singleton: if no SceneLoader exists yet (e.g. you pressed Play directly in the
+    /// Gameplay scene instead of starting from MainMenu), one is created on demand so callers never
+    /// hit a null Instance.
+    /// </summary>
+    public static SceneLoader Instance
+    {
+        get
+        {
+            if (_instance == null)
+                _instance = new GameObject(nameof(SceneLoader)).AddComponent<SceneLoader>();
+
+            return _instance;
+        }
+    }
+
     public void Awake()
     {
-        if (Instance != null && Instance != this)
+        // Read the backing field (not the property) to avoid recursively creating an instance.
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        Instance = this;
+        _instance = this;
         DontDestroyOnLoad(gameObject);
     }
 

@@ -131,6 +131,34 @@ namespace Upgrades
             return _upgradeLevels.TryGetValue(upgrade.UpgradeId, out int level) ? level : 0;
         }
 
+        // ---- Save / restore -------------------------------------------------
+
+        /// <summary>The configured upgrade pool, exposed so a save can resolve unlockable attacks.</summary>
+        public IReadOnlyList<UpgradeDefinition> AvailableUpgrades => availableUpgrades;
+
+        /// <summary>Visit each upgrade's pick count (used to snapshot into a save).</summary>
+        public void CaptureLevels(System.Action<string, int> visitor)
+        {
+            if (visitor == null)
+                return;
+
+            foreach (KeyValuePair<string, int> kv in _upgradeLevels)
+                visitor(kv.Key, kv.Value);
+        }
+
+        public void ClearLevels()
+        {
+            _upgradeLevels.Clear();
+        }
+
+        public void RestoreLevel(string upgradeId, int level)
+        {
+            if (string.IsNullOrEmpty(upgradeId))
+                return;
+
+            _upgradeLevels[upgradeId] = Mathf.Max(0, level);
+        }
+
         private void HandleUpgradeSelected(UpgradeDefinition upgrade)
         {
             if (upgrade == null)

@@ -96,6 +96,41 @@ namespace Upgrades
             return GetSet(attackData).RangeMultiplier;
         }
 
+        // ---- Save / restore (absolute setters; no accumulation) -------------
+
+        public void SetMoveSpeedMultiplier(float value)
+        {
+            MoveSpeedMultiplier = Mathf.Max(0.01f, value);
+        }
+
+        public void SetXpGainMultiplier(float value)
+        {
+            XpGainMultiplier = Mathf.Max(0.01f, value);
+        }
+
+        public void SetAttackMultipliers(AttackData attackData, float damage, float cooldown, float range)
+        {
+            if (attackData == null)
+                return;
+
+            SetSet(attackData, new AttackModifierSet
+            {
+                DamageMultiplier = Mathf.Max(0.01f, damage),
+                CooldownMultiplier = Mathf.Max(0.01f, cooldown),
+                RangeMultiplier = Mathf.Max(0.01f, range)
+            });
+        }
+
+        /// <summary>Visit every per-attack modifier set (used to snapshot into a save).</summary>
+        public void CaptureAttackModifiers(System.Action<AttackData, float, float, float> visitor)
+        {
+            if (visitor == null)
+                return;
+
+            foreach (System.Collections.Generic.KeyValuePair<AttackData, AttackModifierSet> kv in _attackModifiers)
+                visitor(kv.Key, kv.Value.DamageMultiplier, kv.Value.CooldownMultiplier, kv.Value.RangeMultiplier);
+        }
+
         private AttackModifierSet GetSet(AttackData attackData)
         {
             if (attackData == null)

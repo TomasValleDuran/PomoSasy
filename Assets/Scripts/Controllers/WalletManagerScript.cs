@@ -29,5 +29,12 @@ namespace Controllers
             _value -= amount;
             OnMoneyChanged?.Invoke(_value);
         }
+
+        /// <summary>Set the wallet to an absolute value (used when restoring a saved game).</summary>
+        public void RestoreMoney(int amount)
+        {
+            _value = Mathf.Max(0, amount);
+            OnMoneyChanged?.Invoke(_value);
+        }
     }
 }

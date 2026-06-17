@@ -1,5 +1,7 @@
 using Controllers;
 using Health;
+using Save;
+using Spawner;
 using TMPro;
 using UnityEngine;
 
@@ -9,9 +11,14 @@ namespace UI
     {
         [SerializeField] private GameObject pauseDialog;
         [SerializeField] private GameObject gameOverDialog;
+        [SerializeField] private GameObject victoryDialog;
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text totalXpText;
         [SerializeField] private TMP_Text moneyText;
+
+        [Header("Victory stats (optional)")]
+        [SerializeField] private TMP_Text victoryLevelText;
+        [SerializeField] private TMP_Text victoryMoneyText;
 
         private bool _pauseRequestedByUi;
         private bool _pauseRequestedByGameOver;
@@ -19,6 +26,7 @@ namespace UI
         private HealthComponent _playerHealth;
         private PlayerController _playerController;
         private PlayerAttacker _playerAttacker;
+        private WaveSpawner _waveSpawner;
 
         private void Awake()
         {
@@ -27,10 +35,17 @@ namespace UI
 
             if (gameOverDialog != null)
                 gameOverDialog.SetActive(false);
+
+            if (victoryDialog != null)
+                victoryDialog.SetActive(false);
         }
 
         private void Start()
         {
+            _waveSpawner = FindFirstObjectByType<WaveSpawner>();
+            if (_waveSpawner != null)
+                _waveSpawner.OnAllWavesCompleted += HandleVictory;
+
             var player = GameObject.FindGameObjectWithTag("Player");
             if (player == null || !player.TryGetComponent(out _playerHealth))
                 return;
@@ -43,6 +58,9 @@ namespace UI
             if (_playerHealth != null)
                 _playerHealth.OnDeath -= HandlePlayerDeath;
 
+            if (_waveSpawner != null)
+                _waveSpawner.OnAllWavesCompleted -= HandleVictory;
+
             ReleaseGameOverPause();
         }
 
@@ -52,6 +70,8 @@ namespace UI
                 return;
 
             SetPause(true);
+            // No save here on purpose: the run is only persisted at the START of each wave
+            // (see GameSaveCoordinator) so partial-wave progress can't be farmed by quitting.
         }
 
         public void ClosePause()
@@ -64,11 +84,13 @@ namespace UI
             if (_isGameOver)
                 return;
 
-            SetPause(!_pauseRequestedByUi);
+            bool willPause = !_pauseRequestedByUi;
+            SetPause(willPause);
         }
 
         public void ExitGame()
         {
+            // The save is the snapshot from the start of the current wave; leave it untouched.
             SetPause(false);
             SceneLoader.Instance.LoadMainMenu();
         }
@@ -79,6 +101,42 @@ namespace UI
             SceneLoader.Instance.LoadMainMenu();
         }
 
+        public void ExitToMainMenuFromVictory()
+        {
+            ReleaseGameOverPause();
+            SceneLoader.Instance.LoadMainMenu();
+        }
+
+        private void HandleVictory()
+        {
+            if (_isGameOver)
+                return;
+
+            _isGameOver = true;
+            GameManagerScript.Instance?.SetGameOver();
+
+            // The run is over (won) — drop the save so "Continue" won't reload a finished run.
+            SaveSystem.Delete();
+
+            SetPause(false);
+            SetPlayerControlBlocked(true);
+            PopulateVictoryStats();
+
+            if (victoryDialog != null)
+                victoryDialog.SetActive(true);
+
+            RequestGameOverPause();
+        }
+
+        private void PopulateVictoryStats()
+        {
+            if (XpManagerScript.Instance != null && victoryLevelText != null)
+                victoryLevelText.text = $"You reached level {XpManagerScript.Instance.CurrentLevel}.";
+
+            if (WalletManagerScript.Instance != null && victoryMoneyText != null)
+                victoryMoneyText.text = $"You earned {WalletManagerScript.Instance.CurrentMoney} coins.";
+        }
+
         private void HandlePlayerDeath()
         {
             if (_isGameOver)
@@ -86,6 +144,9 @@ namespace UI
 
             _isGameOver = true;
             GameManagerScript.Instance?.SetGameOver();
+
+            // The run is over — drop the save so "Continue" won't load a dead player.
+            SaveSystem.Delete();
 
             SetPause(false);
             SetPlayerControlBlocked(true);

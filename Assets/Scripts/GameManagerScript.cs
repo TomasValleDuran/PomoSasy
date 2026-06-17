@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,17 @@ public class GameManagerScript : MonoBehaviour
     public Transform Player { get; private set; }
 
     private readonly Dictionary<string, int> _enemyCounts = new();
+    private int _totalEnemiesAlive;
     private int _pauseRequestCount;
 
     public bool IsPaused => _pauseRequestCount > 0;
     public bool IsGameOver { get; private set; }
+
+    /// <summary>Total enemies currently alive across all types. Used by the wave system.</summary>
+    public int TotalEnemiesAlive => _totalEnemiesAlive;
+
+    /// <summary>Fired whenever an enemy is registered or unregistered.</summary>
+    public event Action OnEnemyCountChanged;
 
     private void Awake()
     {
@@ -51,25 +59,37 @@ public class GameManagerScript : MonoBehaviour
         if (_enemyCounts.ContainsKey(enemyType))
         {
             _enemyCounts[enemyType]++;
-            return;
+        }
+        else
+        {
+            _enemyCounts[enemyType] = 1;
         }
 
-        _enemyCounts[enemyType] = 1;
+        _totalEnemiesAlive++;
+        OnEnemyCountChanged?.Invoke();
     }
 
     public void UnregisterEnemy(string enemyType)
     {
-        if (string.IsNullOrWhiteSpace(enemyType) || !_enemyCounts.ContainsKey(enemyType))
+        if (string.IsNullOrWhiteSpace(enemyType))
+        {
+            enemyType = "Unknown";
+        }
+
+        if (!_enemyCounts.ContainsKey(enemyType))
         {
             return;
         }
 
         _enemyCounts[enemyType]--;
+        _totalEnemiesAlive = Mathf.Max(0, _totalEnemiesAlive - 1);
 
         if (_enemyCounts[enemyType] <= 0)
         {
             _enemyCounts.Remove(enemyType);
         }
+
+        OnEnemyCountChanged?.Invoke();
     }
 
     public int GetEnemyCount(string enemyType)
@@ -96,6 +116,9 @@ public class GameManagerScript : MonoBehaviour
     {
         IsGameOver = false;
         _pauseRequestCount = 0;
+        _enemyCounts.Clear();
+        _totalEnemiesAlive = 0;
+        OnEnemyCountChanged?.Invoke();
         Time.timeScale = 1f;
     }
 

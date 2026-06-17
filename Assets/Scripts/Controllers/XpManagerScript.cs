@@ -61,6 +61,31 @@ namespace Controllers
             }
         }
 
+        /// <summary>Copy current XP/level state into a save snapshot.</summary>
+        public void CaptureInto(Save.GameSaveData data)
+        {
+            if (data == null)
+                return;
+
+            data.level = _level;
+            data.totalXp = _value;
+            data.currentLevelXp = _currentLevelXp;
+            data.xpForNextLevel = _xpForNextLevel;
+        }
+
+        /// <summary>
+        /// Restore XP/level by setting fields directly. Fires NO events on purpose, so it does not
+        /// re-trigger the level-up popup or the per-level health scaling. The UI is refreshed
+        /// separately (see GameSaveCoordinator / XpUI.ForceRefresh).
+        /// </summary>
+        public void RestoreState(int level, int totalXp, int currentLevelXp, int xpForNextLevel)
+        {
+            _level = Mathf.Max(1, level);
+            _value = Mathf.Max(0, totalXp);
+            _currentLevelXp = Mathf.Max(0, currentLevelXp);
+            _xpForNextLevel = Mathf.Max(1, xpForNextLevel);
+        }
+
         private void RestorePlayerHealth(int level)
         {
             if (_playerHealth == null)

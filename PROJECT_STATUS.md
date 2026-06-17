@@ -29,8 +29,8 @@ y que probablemente la cátedra evalúe:
 
 | # | Pilar | Estado | Tipo |
 |---|-------|--------|------|
-| 1 | **Sistema de guardado / Continuar partida** | ❌ Falta entero | [CÓDIGO] + [UNITY] |
-| 2 | **Sistema de oleadas (waves) con condición de victoria** | ❌ Falta (tenés spawner infinito) | [CÓDIGO] + [UNITY] |
+| 1 | **Sistema de guardado / Continuar partida** | ✅ Terminado y probado (16/jun) | [CÓDIGO] ✅ + [UNITY] ✅ |
+| 2 | **Sistema de oleadas (waves) con condición de victoria** | 🟢 Código ✅ + Unity cableándose (16/jun) | [CÓDIGO] ✅ + [UNITY] 🔄 |
 | 3 | **Variedad de IA de movimiento de enemigos (Chase/Flee/MaintainDistance)** | 🟡 Solo Chase | [CÓDIGO] |
 
 Y un puñado de cosas chicas incompletas (animación de ataque, barra de vida de enemigos,
@@ -50,7 +50,11 @@ XP/nivel, upgrades al subir de nivel, vida, pausa, game over, economía de moned
 | Lane | Quién | Tarea | Estado |
 |------|-------|-------|--------|
 | 🔊 Audio / SFX / música | **Compañero** | Agregando sonidos | 🔄 En progreso — **NO TOCAR** |
-| 💾 Guardado + Continuar + Menú | **Nosotros (vos + yo)** | Persistencia y cableado del menú | ▶️ Arrancando ahora |
+| 💾 Guardado + Continuar + Menú | **Nosotros (vos + yo)** | Persistencia y cableado del menú | ✅ **Terminado (16/jun)** |
+
+> ✅ **Sprint cerrado el 16/jun:** guardado/continuar andando, menú con título "Survivors",
+> New Game, Continue (aparece solo si hay save) y Settings (stub). Loop probado: jugar →
+> pausar/salir → continuar. Próximo: ver sección 4 (oleadas, IA, etc.).
 
 **Por qué van juntas Menú + Guardado + Continuar:**
 1. **Guardado** = un `SaveManager` que escribe a disco el estado de la partida.
@@ -204,7 +208,20 @@ pegan.
 ---
 
 ### 2.10 Spawning de enemigos — **oleadas vs spawner infinito**
-**Estado: ❌ Falta el sistema de oleadas / condición de victoria**
+**Estado: 🟢 Código ✅ + Unity cableado en curso (16/jun) — falta probar el loop completo**
+
+> ✅ Código escrito: `WaveSpawner` (+ `WaveConfigJson`, `EnemyPool`), `WaveData` (SO de fallback),
+> `WaveUI` y la victoria en `GameplayUI`. `GameManagerScript` ahora expone `TotalEnemiesAlive` +
+> `OnEnemyCountChanged`. Las oleadas se configuran por **JSON** (`Assets/Config/waves.json`); los
+> enemigos se referencian por id y se resuelven con el **Enemy Catalog** del `WaveSpawner`.
+> El `WaveSpawner` spawnea cada oleada, espera a que mueran **todos** los enemigos, avanza, y al
+> terminar la última dispara `OnAllWavesCompleted` (victoria → diálogo + borra el save). Reusa tu pooling.
+>
+> 🔄 **Unity (hecho hoy):** `WaveSpawner` en la escena con el JSON + catálogo, `SpawnerController`
+> viejo desactivado, `WaveUI` agregado y `VictoryDialog` cableado. **Falta:** terminar de asignar
+> los textos del `WaveUI` y probar el loop completo (oleada→oleada→victoria + continuar). Pasos en **3.6**.
+
+<details><summary>Contexto original (lo que faltaba)</summary>
 
 - **Ejemplo:** `WaveHandler` + `WaveData` (SO). Oleadas definidas, selección de enemigo por
   **peso/probabilidad**, delay entre enemigos y entre oleadas, lleva la cuenta de enemigos vivos,
@@ -215,14 +232,30 @@ pegan.
 
 **Qué falta:** progresión por oleadas y condición de ganar. Es uno de los gaps grandes.
 
-**Tipo: [CÓDIGO]** (la lógica) **+ [UNITY]** (crear los `WaveData` assets y cablear).
-Te puedo escribir un `WaveSpawner` que reaproveche tu pooling actual pero organizado en
-oleadas con condición de victoria, manteniendo tu estilo.
+**Tipo: [CÓDIGO]** ✅ hecho **+ [UNITY]** (crear los `WaveData` assets y cablear — ver 3.6).
+
+</details>
 
 ---
 
 ### 2.11 Guardado / Cargar / Continuar partida
-**Estado: ❌ Falta entero — es el gap más grande**
+**Estado: ✅ TERMINADO Y PROBADO (16/jun)**
+
+> "Continuar" = retoma la partida (nivel, XP, vida, monedas, upgrades, loadout y posición del
+> player; los enemigos arrancan de cero). **Actualizado:** ahora guarda **al inicio de cada
+> oleada** (no al pausar/salir/cerrar) para evitar farmeo de XP, y al continuar te deja al
+> principio de la oleada guardada. Al morir o ganar, borra el save (la corrida terminó). Detalle
+> en 3.6 F.
+>
+> Archivos nuevos: `Save/SaveSystem.cs`, `Save/GameSaveData.cs`, `Save/GameSaveCoordinator.cs`.
+> Tocados: `XpManagerScript`, `WalletManagerScript`, `HealthComponent`, `PlayerUpgradeModifiers`,
+> `LevelUpSkillSelectionController`, `PlayerAttackLoadout`, `XpUI`, `GameplayUI`, `MainMenuUi`.
+> Unity: `GameSaveCoordinator` en la escena Gameplay + botones cableados.
+>
+> **Bonus de la sesión:** `SceneLoader` ahora es un singleton *self-healing* (se crea solo si no
+> existe), así no rompe cuando hacés Play directo en la escena Gameplay.
+
+<details><summary>Contexto original (lo que faltaba)</summary>
 
 - **Ejemplo:** `GameStateManager` serializa a JSON en disco (`Application.persistentDataPath`):
   nivel, XP, vida, posición, armas equipadas y estado de oleadas. Permite **Continuar** desde
@@ -238,6 +271,8 @@ oleadas con condición de victoria, manteniendo tu estilo.
 loadout) **+ [UNITY]** (botón Continue que se habilite/deshabilite según haya save).
 Puedo portar/adaptar la idea del `GameStateManager` del ejemplo a tu arquitectura (singletons
 `XpManagerScript`, `WalletManagerScript`, `PlayerUpgradeModifiers`, `PlayerAttackLoadout`).
+
+</details>
 
 ---
 
@@ -268,24 +303,28 @@ Sistema completo y vistoso. ✅➕ Nada que hacer.
 ---
 
 ### 2.15 Menú principal
-**Estado: 🟡 Incompleto**
+**Estado: ✅ TERMINADO (16/jun)**
 
-`MainMenuUi.cs`: `ContinueGame()` y `NewGame()` **llaman a lo mismo** (`LoadGameplay`). Sin
-sistema de guardado, "Continuar" no tiene sentido todavía. Se arregla junto con 2.11.
-**Tipo: [MIXTO]**.
+Menú armado con **título "Survivors"**, **New Game**, **Continue** y **Settings** (stub).
+`MainMenuUi.cs`: **"Continuar"** marca `ContinueRequested` y retoma el save; **"Nueva partida"**
+borra el save y carga limpio; el botón **"Continuar" aparece solo si hay save** (se oculta con
+`SetActive`); **"Settings"** llama a `OpenSettings()` (no hace nada por ahora, como se pidió).
 
 ---
 
 ### 2.16 Escenas y Build Settings
-**Estado: 🟡 Desprolijo**
+**Estado: 🟢 Casi listo — falta solo sacar `Gameplay 1` del build**
 
-- En Build Settings tenés `MainMenu` (índice 0) y **`Gameplay 1`** (índice 1).
-- Pero en el repo hay **`Gameplay 1`**, **`Gameplay 2`** (más grande y más reciente — 5/jun) y
-  `SampleScene`. No queda claro cuál es la buena. `Gameplay 2` parece la versión en la que
-  estás trabajando, pero **no está en el build**.
+- ✅ `Gameplay 2` renombrada a **`Gameplay`** (GUID preservado) y puesta en **Build index 1**.
+  `MainMenu` en índice 0. El loop menú↔gameplay funciona.
+- ⏳ **Pendiente menor:** `Gameplay 1` quedó colgando en el **build index 2**. Sacala de
+  **File → Build Settings** y mové `Gameplay 1.unity` + `SampleScene.unity` a `Assets/_Old/`.
 
-**Acción [UNITY]:** decidir cuál gameplay es la canónica, ponerla en Build Settings y borrar
-las otras (o moverlas a una carpeta `_Old`). Pasos en la sección 3.3.
+**Nota de conflictos con el compañero (sonido):** NO duplicar la escena para "evitar
+conflicts" — dos escenas Unity divergidas no se pueden auto-mergear. Mejor: coordinar turnos
+sobre la escena, que el sonido vaya en prefabs/AudioManager, y/o activar Unity Smart Merge.
+
+**Acción [UNITY]:** pasos en la sección 3.3.
 
 ---
 
@@ -313,14 +352,55 @@ las otras (o moverlas a una carpeta `_Old`). Pasos en la sección 3.3.
 5. Verificá que `SkillSelectionUI` y sus `optionCards` (los `SkillOptionCardView`) estén
    asignados.
 
-### 3.3 Limpiar escenas / Build Settings (para 2.16)
-1. **File → Build Settings** (o **Build Profiles** en Unity 6).
-2. Mirá qué escena de gameplay querés como definitiva (`Gameplay 1` o `Gameplay 2`).
-3. Si es `Gameplay 2`: arrastrala a la lista de **Scenes In Build**, sacá `Gameplay 1`.
-4. En el Project, mové las escenas que ya no uses a una carpeta `Assets/_Old/` (no las borres
-   de una si no estás seguro).
-5. Asegurate de que `MainMenu` quede en índice **0** y el gameplay en índice **1** (así
-   `SceneLoader.LoadMainMenu()` / `LoadGameplay()` siguen funcionando).
+### 3.3 Renombrar Gameplay 2 → Gameplay y limpiar Build (para 2.16)
+0. ⚠️ **Commiteá primero tus cambios de `Gameplay 2`** (tenés cambios sin guardar en git),
+   así el rename queda limpio.
+1. En la **Project window** de Unity: click derecho en `Gameplay 2` → **Rename** → `Gameplay`.
+   Hacerlo dentro de Unity mantiene el GUID y el `.meta`, así **no se rompe el Build Settings**.
+2. **File → Build Settings** (o **Build Profiles** en Unity 6): sacá `Gameplay 1`, dejá
+   `Gameplay` en el índice **1** y `MainMenu` en el **0**.
+   (Esto importa: `SceneLoader.LoadGameplay()` hace `LoadScene(1)`.)
+3. Mové `Gameplay 1.unity` y `SampleScene.unity` a `Assets/_Old/` (no las borres de una).
+4. **No hagas una copia de la escena** para trabajar en paralelo — coordinás turnos con tu
+   compañero en su lugar (ver nota en 2.16).
+
+### 3.5 Cablear el sistema de guardado (para 2.11 / 2.15) — ✅ HECHO (16/jun)
+Queda como referencia de lo que se cableó:
+
+**A) Build Settings (si no lo hiciste en 3.3):**
+1. **File → Build Settings**: sacá `Gameplay 1`, dejá `Gameplay` en índice **1**, `MainMenu` en **0**.
+
+**B) Agregar el coordinador a la escena de Gameplay:**
+1. Abrí la escena `Gameplay`.
+2. Click derecho en la jerarquía → **Create Empty**. Nombralo `SaveCoordinator`
+   (o usá un objeto de managers que ya tengas, ej. el que tiene XpManager/WalletManager).
+3. Con el objeto seleccionado → **Add Component** → buscá **GameSaveCoordinator** → agregalo.
+   No tiene campos que asignar. Listo.
+4. Guardá la escena.
+
+**C) Cablear el botón "Continuar" del menú:**
+1. Abrí la escena `MainMenu`.
+2. Seleccioná el objeto que tiene el script **MainMenuUI**.
+3. En el Inspector vas a ver un campo nuevo **Continue Button** → arrastrá ahí el botón
+   "Continuar" de la jerarquía.
+4. Verificá los **OnClick** de los botones (siguen igual que antes):
+   - Botón "Continuar" → `MainMenuUI.ContinueGame`
+   - Botón "Nueva partida" → `MainMenuUI.NewGame`
+5. Guardá la escena.
+
+**D) Chequeo del player (debería estar ya):**
+- El player tiene el **Tag = "Player"**.
+- Tiene los componentes `HealthComponent`, `PlayerUpgradeModifiers`, `PlayerAttackLoadout`.
+  (Si falta `PlayerUpgradeModifiers`, el sistema igual no rompe: se saltea esa parte.)
+
+**E) Probar el loop:**
+1. Play en `MainMenu` → "Nueva partida" → jugá, subí de nivel, agarrá monedas.
+2. Pausá (o salí al menú). Debería guardar.
+3. Volvé al menú: el botón "Continuar" tiene que estar **habilitado**.
+4. "Continuar" → tenés que aparecer con tu nivel/vida/monedas/upgrades/posición de antes.
+5. Probá morir → volver al menú → "Continuar" tiene que estar **deshabilitado** (save borrado).
+6. El save queda en `Application.persistentDataPath/savegame.json` (en Mac:
+   `~/Library/Application Support/<compañía>/<juego>/savegame.json`) por si querés inspeccionarlo.
 
 ### 3.4 Animator: agregar estado de ataque (para 2.9)
 1. Abrí el Animator Controller del player (en `Assets/AnimatorControllers/`).
@@ -331,21 +411,77 @@ las otras (o moverlas a una carpeta `_Old`). Pasos en la sección 3.3.
 5. Desmarcá **Has Exit Time** en esas transiciones para que responda al instante.
 6. (Te paso el script que setea `isAttacking` cuando se ejecuta el ataque.)
 
----
+### 3.6 Cablear el sistema de oleadas (para 2.10)
+**A) Las oleadas se configuran por JSON** (`Assets/Config/waves.json`):
+- Ya hay un ejemplo creado con 4 oleadas de dificultad creciente. Editás ese archivo y listo —
+  al volver a Play, toma los cambios (Unity reimporta el `.json` al guardarlo).
+- Formato: una lista `waves`, cada una con `waveName`, `startDelay` (respiro antes de arrancar),
+  `spawnInterval` (segundos entre enemigos) y `entries` (qué enemigo y cuántos). Ejemplo:
+  ```json
+  { "waveName": "Mixed", "startDelay": 4.0, "spawnInterval": 1.0,
+    "entries": [ { "enemy": "Skeleton", "amount": 8 }, { "enemy": "Vampire", "amount": 3 } ] }
+  ```
+- Los `enemy` son **ids de texto**, no prefabs (un JSON no puede referenciar prefabs). El mapeo
+  id→prefab se hace una sola vez en el Inspector (paso B.4, **Enemy Catalog**). Para tocar
+  cantidades/intervalos/orden de oleadas no hace falta abrir Unity; para agregar un **tipo nuevo**
+  de enemigo, sumalo al catálogo una vez.
+- *(El `WaveData` ScriptableObject sigue existiendo como fallback: si NO asignás un JSON, usa el SO.
+  Si asignás el JSON, el SO se ignora.)*
+
+**B) Poner el WaveSpawner en la escena:**
+1. Abrí la escena `Gameplay`.
+2. **Desactivá o borrá el objeto que tiene `SpawnerController`** (el spawner infinito). ⚠️ No
+   dejes los dos corriendo: el `WaveSpawner` espera a que mueran *todos* los enemigos para
+   avanzar, y el spawner infinito nunca lo dejaría llegar a cero.
+3. Create Empty → nombralo `WaveSpawner` → **Add Component → WaveSpawner**.
+4. Configuralo:
+   - **Waves Json** → arrastrá `Assets/Config/waves.json`.
+   - **Enemy Catalog** → agregá un elemento por cada enemigo: **Id** = el texto que usás en el
+     JSON (`Skeleton`, `Vampire`…) y **Prefab** = el prefab correspondiente.
+   - **Spawn Radius** (ej. 10, igual que el spawner viejo) y dejá **Use Enemy Pooling** tildado.
+
+**C) UI del contador de oleada:**
+1. En el Canvas de Gameplay, creá un **TMP Text** arriba (ej. "Wave 1 / 3"). Opcional: otro para
+   "Enemies: N", y un objeto banner (panel con texto) que aparezca al empezar cada oleada.
+2. Create Empty `WaveUI` (o usá el objeto del `GameplayUI`) → **Add Component → WaveUI**.
+3. Asigná: **Wave Text** (obligatorio), **Enemies Text** y **Wave Banner**/**Wave Banner Text**
+   (opcionales). **Wave Spawner** se autocompleta si lo dejás vacío, pero podés arrastrarlo.
+
+**D) Diálogo de victoria:**
+1. Duplicá tu `gameOverDialog`, renombralo `victoryDialog`, cambiá el texto a "¡Ganaste!".
+2. Seleccioná el objeto con `GameplayUI` → asigná **Victory Dialog** = ese panel. Opcional:
+   **Victory Level Text** / **Victory Money Text** para mostrar stats.
+3. En el botón de salir del `victoryDialog`, en **OnClick** llamá a
+   `GameplayUI.ExitToMainMenuFromVictory`.
+
+**E) Probar:** Play → matá toda la oleada 1 → debería arrancar la 2 tras el delay → al limpiar
+la última, aparece el diálogo de victoria y el save se borra.
+
+**F) Nuevo comportamiento del guardado (anti-exploit):**
+- El juego ahora guarda **al inicio de cada oleada** (solo se conserva el último snapshot). Ya
+  **no** se guarda al pausar / salir al menú / cerrar la app.
+- Por qué: antes podías casi limpiar una oleada (juntando XP/levels), salir, y "Continuar" te
+  dejaba todo ese progreso mientras los enemigos reaparecían → farmeo infinito de stats. Ahora,
+  al continuar, retomás **desde el principio de la oleada en curso**: perdés el progreso parcial
+  de esa oleada (es el costo intencional para cerrar el exploit).
+- "Continuar" además te reposiciona en la oleada guardada (no arranca siempre de la 1).
 
 ## 4. Plan sugerido (orden de prioridad)
 
-### 🎯 Sprint actual — Menú + Guardado + Continuar (nosotros)
-Hacer en este orden (cada paso depende del anterior):
+### ✅ Sprint cerrado (16/jun) — Menú + Guardado + Continuar
 
-| Paso | Tarea | Tipo | Notas |
-|------|-------|------|-------|
-| 0 | Decidir escena canónica de gameplay y ponerla en Build (2.16 / 3.3) | [UNITY] | Bloquea todo lo demás |
-| 1 | `SaveManager` que capture estado (XP, nivel, vida, monedas, upgrades, loadout) | [CÓDIGO] | Yo lo escribo |
-| 2 | Guardar a disco (JSON en `persistentDataPath`) + borrar save en "Nueva partida" | [CÓDIGO] | Yo lo escribo |
-| 3 | Restaurar el estado al cargar Gameplay (Continuar) | [CÓDIGO] | Yo lo escribo |
-| 4 | `MainMenuUi`: "Continuar" habilitado solo si hay save; "Nueva" borra save (2.15) | [MIXTO] | Código yo + cablear botón vos |
-| 5 | Probar el loop completo: jugar → guardar → salir → continuar | [UNITY] | Test manual juntos |
+| Paso | Tarea | Tipo | Estado |
+|------|-------|------|--------|
+| 0 | Renombrar `Gameplay 2` → `Gameplay` (3.3) | [UNITY] | ✅ Hecho (GUID preservado) |
+| 0b | `Gameplay` en Build index 1 | [UNITY] | ✅ Hecho (falta sacar `Gameplay 1`, ver 2.16) |
+| 1 | `SaveSystem` + `GameSaveData` | [CÓDIGO] | ✅ Hecho |
+| 2 | Captura de estado (XP, nivel, vida, monedas, upgrades, loadout, posición) | [CÓDIGO] | ✅ Hecho |
+| 3 | Restaurar al continuar + guardar al pausar/salir/cerrar | [CÓDIGO] | ✅ Hecho |
+| 4 | `MainMenuUi` + menú (título, New Game, Continue condicional, Settings stub) | [MIXTO] | ✅ Hecho |
+| 5 | Cablear en Unity (coordinator + botones) — sección **3.5** | [UNITY] | ✅ Hecho |
+| 6 | Probar el loop: jugar → pausar → salir → continuar | [UNITY] | ✅ Probado |
+
+**Único colgado menor:** sacar `Gameplay 1` del Build Settings (ver 2.16).
 
 ### 🔊 En paralelo — tu compañero
 | Tarea | Tipo | Notas |
@@ -355,7 +491,7 @@ Hacer en este orden (cada paso depende del anterior):
 ### ⏭️ Después del sprint (orden sugerido)
 | Prioridad | Tarea | Tipo | Por qué |
 |-----------|-------|------|---------|
-| 🔴 Alta | Sistema de oleadas + victoria (2.10) | [CÓDIGO]+[UNITY] | Define el "loop" del juego |
+| 🟢 Casi (probar) | Sistema de oleadas + victoria (2.10) | [CÓDIGO] ✅ + [UNITY] 🔄 (3.6) | Define el "loop" del juego |
 | 🟠 Media | Variedad de IA de enemigos (2.3) | [CÓDIGO] | Da profundidad y es del ejemplo |
 | 🟠 Media | Animación de ataque (2.9) | [MIXTO] | Pulido visible |
 | 🟡 Baja | Barra de vida de enemigos (2.6) | [MIXTO] | Pulido visible |
@@ -379,15 +515,15 @@ Hacer en este orden (cada paso depende del anterior):
 | Popup de mejoras al subir nivel | ✓ | ✓ | ✅ |
 | Animación caminar/idle | ✓ | ✓ | ✅ |
 | Animación de ataque | ✓ | ✗ | ❌ |
-| Oleadas + condición de victoria | ✓ | ✗ | ❌ (spawner infinito) |
+| Oleadas + condición de victoria | ✓ | ✓ | 🟢 código ✅ + Unity en curso, falta probar (3.6) |
 | Pooling de enemigos | ✗ | ✓ | ➕ |
-| Guardar / Cargar / Continuar | ✓ | ✗ | ❌ |
+| Guardar / Cargar / Continuar | ✓ | ✓ | ✅ terminado y probado (16/jun) |
 | Pausa | ✓ | ✓✓ | ➕ pause stacking |
 | Game Over con stats | ✗ | ✓ | ➕ |
 | Economía de monedas / loot | ✗ | ✓ | ➕ |
 | Sistema de upgrades (pasivos/ataque) | parcial | ✓✓ | ➕ |
-| Menú principal | ✓ | parcial | 🟡 |
-| Escenas / Build ordenado | ✓ | desprolijo | 🟡 |
+| Menú principal | ✓ | ✓ | ✅ terminado (título, New/Continue/Settings) |
+| Escenas / Build ordenado | ✓ | ✓ | 🟢 casi (falta sacar `Gameplay 1` del build) |
 | Audio / SFX / música | ✗ | en progreso | 🔄 compañero (no tocar) |
 
 ---
