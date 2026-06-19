@@ -15,5 +15,10 @@ MonoBehaviour:
   fallbackRadius: 1.5
   hitMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  visualPrefab: {fileID: 7412450066411065521, guid: c1465f1d76ec3479581a7f05bff4249b, type: 3}
+    m_Bits: 128
+  arcAngleDegrees: 180
+  swingVisualPrefab: {fileID: 8909321788725307308, guid: 868478ac6bb9443c8b7db99d57a07798, type: 3}
+  visualSpawnOffset: 0
+  visualLifetime: 0.2
+  visualAngleOffset: 0
+  visualPrefab: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Data;
 using UnityEngine;
@@ -12,6 +13,20 @@ namespace Attack
         private bool _hasBuilt;
 
         public IReadOnlyList<AttackSlot> Slots => _slots;
+
+        /// <summary>Raised whenever any equipped slot fires. Drives the player's attack animation.</summary>
+        public event Action OnAttackPerformed;
+
+        // Single place that builds + equips a slot and forwards its attack event to the loadout.
+        private AttackSlot CreateAndEquipSlot(AttackData attackData)
+        {
+            AttackSlot slot = new AttackSlot(attackData);
+            slot.OnAttackPerformed += RaiseAttackPerformed;
+            slot.Equip(transform);
+            return slot;
+        }
+
+        private void RaiseAttackPerformed() => OnAttackPerformed?.Invoke();
 
         private void Awake()
         {
@@ -57,9 +72,7 @@ namespace Attack
                 if (attackData == null)
                     continue;
 
-                AttackSlot slot = new AttackSlot(attackData);
-                slot.Equip(transform);
-                _slots.Add(slot);
+                _slots.Add(CreateAndEquipSlot(attackData));
             }
         }
 
@@ -80,9 +93,7 @@ namespace Attack
             if (attackData == null)
                 return;
 
-            AttackSlot slot = new AttackSlot(attackData);
-            slot.Equip(transform);
-            _slots.Add(slot);
+            _slots.Add(CreateAndEquipSlot(attackData));
         }
 
         public void RemoveAttack(AttackData attackData)
@@ -118,9 +129,7 @@ namespace Attack
                 if (attacks[i] == null)
                     continue;
 
-                AttackSlot slot = new AttackSlot(attacks[i]);
-                slot.Equip(transform);
-                _slots.Add(slot);
+                _slots.Add(CreateAndEquipSlot(attacks[i]));
             }
         }
     }

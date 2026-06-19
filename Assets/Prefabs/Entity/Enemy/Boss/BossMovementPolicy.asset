@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 072e241319ea945ca87f21cec0bf2049, type: 3}
-  m_Name: MeleeAttack
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy.Attacks.MeleeAttackBehavior
+  m_Script: {fileID: 11500000, guid: a7a4f56912a874f798db7e81649d01df, type: 3}
+  m_Name: BossMovementPolicy
+  m_EditorClassIdentifier: Assembly-CSharp::Movement.ChasePolicy

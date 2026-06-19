@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3435993072004000467}
   - component: {fileID: 5087550607309399741}
   - component: {fileID: 5930250622012114413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1520596649198933413}
   - component: {fileID: 2700444853397630930}
   - component: {fileID: 8517426391740852631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vampire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,6 +165,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 224a290c0e7bd45e99ca499b37691b71, type: 2}
   playerTransform: {fileID: 0}
   deactivateOnDeath: 1
+  attackAudioSource: {fileID: 0}
 --- !u!114 &1520596649198933413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f71172f1f06e41a2a258d3780935a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy.EnemyAnimator
+  attackAnimationDuration: 0.45
 --- !u!114 &2700444853397630930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc757e48e42f94a68b8e2cdbcc2bf008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
-  healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
+  healthData: {fileID: 11400000, guid: 357610804d1654ad5b428a06fb81608f, type: 2}
   logHealthEvents: 0
 --- !u!58 &8517426391740852631
 CircleCollider2D:

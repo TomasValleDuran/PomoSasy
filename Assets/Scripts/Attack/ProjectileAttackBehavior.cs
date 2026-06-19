@@ -15,6 +15,9 @@ namespace Attack
         [SerializeField] private GameObject projectilePrefab;
         [SerializeField] private GameObject equippedVisualPrefab;
 
+        public override bool HasTargetInRange(in AttackContext ctx) =>
+            TargetWithinRange(ctx, ctx.range > 0f ? ctx.range : fallbackRange);
+
         public override bool Execute(in AttackContext ctx)
         {
             if (ctx.attacker == null)

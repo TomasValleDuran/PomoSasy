@@ -44,6 +44,9 @@ namespace Save
         // Wave progress (0-based index of the wave the snapshot was taken at the START of)
         public int currentWave;
 
+        // Run clock at the moment of the snapshot (seconds survived so far)
+        public float elapsedSeconds;
+
         // Health (absolute snapshot — restored directly, no recomputation)
         public float currentHealth;
         public float maxHealthMultiplier = 1f;

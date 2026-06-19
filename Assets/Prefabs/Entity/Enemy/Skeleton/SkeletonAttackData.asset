@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SkeletonAttackData
   m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackData
   damage: 15
-  cooldown: 1
+  cooldown: 0.8
   attackBehavior: {fileID: 11400000, guid: 2c4bcd42e534342fb9144af427e4996d, type: 2}
-  windupDuration: 0.5
   attackRange: 1
+  windupDuration: 0.2
   attackSfx: {fileID: 0}

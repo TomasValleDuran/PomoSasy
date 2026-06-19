@@ -19,6 +19,8 @@ namespace UI
         [Tooltip("Shown briefly when a new wave starts. Leave empty to disable.")]
         [SerializeField] private GameObject waveBanner;
         [SerializeField] private TMP_Text waveBannerText;
+        [Tooltip("Optional second line, e.g. '12 enemies incoming'. Leave empty to hide.")]
+        [SerializeField] private TMP_Text waveBannerSubtitle;
         [SerializeField] private float bannerSeconds = 2f;
 
         private Coroutine _bannerRoutine;
@@ -60,7 +62,8 @@ namespace UI
             if (waveText != null)
                 waveText.text = $"Wave {waveNumber} / {totalWaves}";
 
-            ShowBanner($"Wave {waveNumber}");
+            int incoming = waveSpawner != null ? waveSpawner.CurrentWavePlannedEnemyCount : 0;
+            ShowBanner($"Wave {waveNumber}", incoming > 0 ? $"{incoming} enemies incoming" : string.Empty);
             UpdateEnemiesLeft();
         }
 
@@ -81,13 +84,16 @@ namespace UI
             enemiesText.text = $"Enemies: {GameManagerScript.Instance.TotalEnemiesAlive}";
         }
 
-        private void ShowBanner(string message)
+        private void ShowBanner(string message, string subtitle)
         {
             if (waveBanner == null)
                 return;
 
             if (waveBannerText != null)
                 waveBannerText.text = message;
+
+            if (waveBannerSubtitle != null)
+                waveBannerSubtitle.text = subtitle;
 
             if (_bannerRoutine != null)
                 StopCoroutine(_bannerRoutine);
@@ -97,9 +103,10 @@ namespace UI
 
         private IEnumerator BannerRoutine()
         {
-            waveBanner.SetActive(true);
+            // Animates in/out if the banner has a DialogAnimator, otherwise plain on/off.
+            DialogAnimator.Set(waveBanner, true);
             yield return new WaitForSeconds(bannerSeconds);
-            waveBanner.SetActive(false);
+            DialogAnimator.Set(waveBanner, false);
             _bannerRoutine = null;
         }
     }

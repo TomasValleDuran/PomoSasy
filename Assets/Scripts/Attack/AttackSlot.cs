@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Upgrades;
 
@@ -8,11 +10,15 @@ namespace Attack
     {
         [SerializeField] private AttackData attackData;
 
+        /// <summary>Raised when this slot fires its attack. Drives the player's attack animation.</summary>
+        public event Action OnAttackPerformed;
+
         private float _cooldownTimer;
         private Transform _owner;
         private GameObject _visualInstance;
         private AudioSource _audioSource;
         private PlayerUpgradeModifiers _upgradeModifiers;
+        private IAttackPulse[] _pulseTargets;
 
         public AttackData AttackData => attackData;
         public bool IsEquipped => _owner != null;
@@ -46,13 +52,17 @@ namespace Attack
             if (visualPrefab == null)
                 return;
 
-            _visualInstance = Object.Instantiate(visualPrefab, owner.position, Quaternion.identity, owner);
+            _visualInstance = UnityEngine.Object.Instantiate(visualPrefab, owner.position, Quaternion.identity, owner);
             MonoBehaviour[] behaviours = _visualInstance.GetComponentsInChildren<MonoBehaviour>(true);
+            List<IAttackPulse> pulseTargets = null;
             for (int i = 0; i < behaviours.Length; i++)
             {
                 if (behaviours[i] is IAttackVisual attackVisual)
                     attackVisual.Initialize(attackData, behavior);
+                if (behaviours[i] is IAttackPulse pulse)
+                    (pulseTargets ??= new List<IAttackPulse>()).Add(pulse);
             }
+            _pulseTargets = pulseTargets?.ToArray();
         }
 
         public void Tick(in AttackContext baseContext)
@@ -80,11 +90,26 @@ namespace Attack
                 baseContext.deltaTime
             );
 
+            // No valid target in range: stay idle (no fire, no audio, no attack animation) and keep
+            // the cooldown ready so the attack lands the instant an enemy steps into range.
+            if (!behavior.HasTargetInRange(slotContext))
+            {
+                _cooldownTimer = 0f;
+                return;
+            }
+
             bool finished = behavior.Execute(slotContext);
             if (finished)
             {
                 AttackAudioPlayer.Play(_audioSource, attackData);
                 _cooldownTimer = effectiveCooldown;
+                OnAttackPerformed?.Invoke();
+
+                if (_pulseTargets != null)
+                {
+                    for (int i = 0; i < _pulseTargets.Length; i++)
+                        _pulseTargets[i].Pulse();
+                }
             }
         }
 
@@ -95,9 +120,10 @@ namespace Attack
                 behavior.OnUnequip(_owner);
 
             if (_visualInstance != null)
-                Object.Destroy(_visualInstance);
+                UnityEngine.Object.Destroy(_visualInstance);
 
             _visualInstance = null;
+            _pulseTargets = null;
             _owner = null;
             _audioSource = null;
             _upgradeModifiers = null;

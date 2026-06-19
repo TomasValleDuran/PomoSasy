@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6478990abcdef12345678, type: 3}
+  m_Name: MageAttackData
+  m_EditorClassIdentifier: Assembly-CSharp::Attack.AttackData
+  damage: 12
+  cooldown: 1.5
+  attackBehavior: {fileID: 11400000, guid: 35189506e2fae4051bc356cbe780ec46, type: 2}
+  attackRange: 7
+  windupDuration: 0.5
+  attackSfx: {fileID: 0}

@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 2387487189649788823}
   - component: {fileID: 8074713881867409728}
   - component: {fileID: 9145944485610867596}
-  - component: {fileID: -2152109126343744152}
   - component: {fileID: -2972016673216555928}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f71172f1f06e41a2a258d3780935a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy.EnemyAnimator
+  attackAnimationDuration: 0.3
 --- !u!114 &8074713881867409728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc757e48e42f94a68b8e2cdbcc2bf008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
-  healthData: {fileID: 11400000, guid: fadbf517dc2cf43119606659c97c0377, type: 2}
+  healthData: {fileID: 11400000, guid: ee3a637a1c83a49f989e866dd209bc50, type: 2}
   logHealthEvents: 0
 --- !u!61 &9145944485610867596
 BoxCollider2D:
@@ -126,19 +126,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.76, y: 0.76}
   m_EdgeRadius: 0
---- !u!114 &-2152109126343744152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2804376934785104394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd41072ec28eb404b9e9d0692fd4391e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI.HealthUI
-  fillImage: {fileID: 0}
 --- !u!82 &-2972016673216555928
 AudioSource:
   m_ObjectHideFlags: 0
@@ -247,7 +234,7 @@ GameObject:
   - component: {fileID: 4981592088927465855}
   - component: {fileID: 1058584672399572738}
   - component: {fileID: 6563254817078653952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

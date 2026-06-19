@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb46b9d3b6bf47428c01d725521dc97, type: 3}
   m_Name: VampireData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyType: 
+  enemyType: Vampire
   moveSpeed: 4
+  movementPolicy: {fileID: 11400000, guid: 042ffecd728a349309cda21137c6eb47, type: 2}
   attackData: {fileID: 11400000, guid: 57593d63f5b5945ce936f9334d362954, type: 2}
   moneyOnDeath: 30
   xpOnDeath: 25
