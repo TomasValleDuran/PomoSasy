@@ -95,7 +95,6 @@ namespace Attack
             if (result.PlaySfx)
                 AttackAudioPlayer.Play(_audioSource, attackData);
                 _cooldownTimer = effectiveCooldown;
-            }
             if (result.Finished)
                             _cooldownTimer = effectiveCooldown;
 

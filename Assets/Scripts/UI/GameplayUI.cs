@@ -22,7 +22,7 @@ namespace UI
         [SerializeField] private AudioClip uiWindowOpenSfx;
         [SerializeField] private AudioSource uiAudioSource;
         [SerializeField] private AudioClip buttonClickSfx;
-        [SerializeField] [Range(0f, 1f)]
+         [Range(0f, 1f)]
         [Header("Victory stats (optional)")]
         [SerializeField] private TMP_Text victoryLevelText;
         [SerializeField] private TMP_Text victoryMoneyText;
@@ -39,7 +39,7 @@ namespace UI
 
         private void Awake()
         {
-            UIAudioPlayer.ConfigureButtonClick(buttonClickSfx, buttonClickVolume);
+            UIAudioPlayer.ConfigureButtonClick(buttonClickSfx, 0.5f);
 
             if (pauseDialog != null)
                 pauseDialog.SetActive(false);

@@ -71,7 +71,6 @@ namespace Attack
                 IDamageable damageable = collider.GetComponentInParent<IDamageable>();
                 if (damageable == null)
                     continue;
-                AttackAudioPlayer.PlayAtPoint(hit.point, _attackSfx);
                 damageable.TakeDamage(_damage);
                 BeginDespawn();
                 return;
