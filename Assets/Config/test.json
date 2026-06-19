@@ -5,7 +5,7 @@
       "startDelay": 2.0,
       "spawnInterval": 1.5,
       "entries": [
-        { "enemy": "Vampire", "amount": 3 }
+        { "enemy": "Boss", "amount": 1 }
       ]
     },
     {

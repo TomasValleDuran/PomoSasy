@@ -13,10 +13,13 @@ namespace Enemy
         private Coroutine _attackRoutine;
         private bool _hasAttackParam;
         private bool _hasDeadParam;
+        private bool _hasDamagedParam;
+        private float _lastHealth;
 
         private static readonly int IsWalking = Animator.StringToHash("isWalking");
         private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
         private static readonly int IsDead = Animator.StringToHash("isDead");
+        private static readonly int IsDamaged = Animator.StringToHash("isDamaged");
 
         private void Awake()
         {
@@ -24,7 +27,8 @@ namespace Enemy
             _controller = GetComponent<EnemyController>();
             _hasAttackParam = HasParameter(_animator, IsAttacking);
             _hasDeadParam = HasParameter(_animator, IsDead);
-            _controller.healthComponent.OnDamaged += OnDamageTaken;
+            _hasDamagedParam = HasParameter(_animator, IsDamaged);
+            _controller.healthComponent.OnDamaged += OnHealthChanged;
         }
 
         private void OnEnable()
@@ -80,9 +84,14 @@ namespace Enemy
                 _animator.SetBool(IsWalking, isMoving);
         }
 
-        private void OnDamageTaken(float _)
+        // HealthComponent.OnDamaged fires on every health change, including spawn/reset/heal.
+        // Only play the hit reaction when HP actually dropped.
+        private void OnHealthChanged(float currentHealth)
         {
-            _animator.SetTrigger("IsDamaged");
+            if (currentHealth < _lastHealth && _animator != null && _hasDamagedParam)
+                _animator.SetTrigger(IsDamaged);
+
+            _lastHealth = currentHealth;
         }
         private void HandleAttackPerformed()
                 {

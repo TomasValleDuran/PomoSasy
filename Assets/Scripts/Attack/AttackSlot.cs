@@ -91,34 +91,27 @@ namespace Attack
                 attackData.AttackSfx
             );
 
-            AttackExecutionResult result = behavior.ExecuteWithResult(slotContext);
-            if (result.PlaySfx)
+            // No valid target in range: stay idle (no fire, no audio, no attack animation) and keep
+            // the cooldown ready so the attack lands the instant an enemy steps into range.
+            if (!behavior.HasTargetInRange(slotContext))
+            {
+                _cooldownTimer = 0f;
+                return;
+            }
+
+            bool finished = behavior.Execute(slotContext);
+            if (finished)
+            {
                 AttackAudioPlayer.Play(_audioSource, attackData);
                 _cooldownTimer = effectiveCooldown;
-            if (result.Finished)
-                            _cooldownTimer = effectiveCooldown;
+                OnAttackPerformed?.Invoke();
 
-            // No valid target in range: stay idle (no fire, no audio, no attack animation) and keep
-                        // the cooldown ready so the attack lands the instant an enemy steps into range.
-                        if (!behavior.HasTargetInRange(slotContext))
-                        {
-                            _cooldownTimer = 0f;
-                            return;
-                        }
-
-                        bool finished = behavior.Execute(slotContext);
-                        if (finished)
-                        {
-                            AttackAudioPlayer.Play(_audioSource, attackData);
-                            _cooldownTimer = effectiveCooldown;
-                            OnAttackPerformed?.Invoke();
-
-                            if (_pulseTargets != null)
-                            {
-                                for (int i = 0; i < _pulseTargets.Length; i++)
-                                    _pulseTargets[i].Pulse();
-                            }
-                        }
+                if (_pulseTargets != null)
+                {
+                    for (int i = 0; i < _pulseTargets.Length; i++)
+                        _pulseTargets[i].Pulse();
+                }
+            }
         }
 
         public void Unequip()

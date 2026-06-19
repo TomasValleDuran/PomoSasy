@@ -152,10 +152,10 @@ namespace UI
         private void PopulateVictoryStats(int rank)
         {
             if (XpManagerScript.Instance != null && victoryLevelText != null)
-                victoryLevelText.text = $"Level {XpManagerScript.Instance.CurrentLevel}";
+                victoryLevelText.text = $"Reached Level {XpManagerScript.Instance.CurrentLevel}";
 
             if (WalletManagerScript.Instance != null && victoryMoneyText != null)
-                victoryMoneyText.text = $"{WalletManagerScript.Instance.CurrentMoney:N0}";
+                victoryMoneyText.text = $"Collected {WalletManagerScript.Instance.CurrentMoney:N0} Coins";
 
             if (victoryTimeText != null && SurvivalTimer.Instance != null)
                 victoryTimeText.text = SurvivalTimer.Format(SurvivalTimer.Instance.ElapsedSeconds);
@@ -190,14 +190,14 @@ namespace UI
             if (XpManagerScript.Instance != null)
             {
                 if (levelText != null)
-                    levelText.text = $"Level {XpManagerScript.Instance.CurrentLevel}";
+                    levelText.text = $"Reached Level {XpManagerScript.Instance.CurrentLevel}";
 
                 if (totalXpText != null)
-                    totalXpText.text = $"{XpManagerScript.Instance.CurrentXp:N0} XP";
+                    totalXpText.text = $"Earned {XpManagerScript.Instance.CurrentXp:N0} XP";
             }
 
             if (WalletManagerScript.Instance != null && moneyText != null)
-                moneyText.text = $"{WalletManagerScript.Instance.CurrentMoney:N0}";
+                moneyText.text = $"Collected {WalletManagerScript.Instance.CurrentMoney:N0} Coins";
 
             if (survivedTimeText != null && SurvivalTimer.Instance != null)
                 survivedTimeText.text = SurvivalTimer.Format(SurvivalTimer.Instance.ElapsedSeconds);

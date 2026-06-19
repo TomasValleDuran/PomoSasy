@@ -21,6 +21,11 @@ namespace Controllers
         [SerializeField, Min(0f)] private float deathAnimationDuration = 0f;
         [SerializeField] public AudioSource attackAudioSource;
         [SerializeField] public HealthComponent healthComponent;
+        [Header("Facing")]
+        [Tooltip("Sprite flipped on X so the enemy faces where it's heading. Auto-found in children if left empty.")]
+        [SerializeField] private SpriteRenderer spriteRenderer;
+        [Tooltip("Tick if the art's default (un-flipped) facing points RIGHT.")]
+        [SerializeField] private bool spriteFacesRight = true;
 
         public event Action<bool> OnMovingChanged;
         /// <summary>Raised once at the moment a strike begins (after wind-up). Drives the attack animation.</summary>
@@ -45,6 +50,9 @@ namespace Controllers
 
             if (!TryGetComponent(out attackAudioSource))
                 attackAudioSource = gameObject.AddComponent<AudioSource>();
+
+            if (spriteRenderer == null)
+                spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
             if (GameManagerScript.Instance != null)
                 playerTransform = GameManagerScript.Instance.Player;
@@ -112,7 +120,19 @@ namespace Controllers
 
             Vector2 direction = ResolveMoveDirection();
             SetMoving(direction != Vector2.zero);
+            FaceDirection(direction.x);
             transform.position += (Vector3)direction * (data.MoveSpeed * Time.deltaTime);
+        }
+
+        // Mirrors the sprite so it faces its heading. dirX > 0 faces right, < 0 faces left;
+        // near-zero is ignored so the enemy keeps its current facing when moving vertically.
+        private void FaceDirection(float dirX)
+        {
+            if (spriteRenderer == null || Mathf.Abs(dirX) < 0.01f)
+                return;
+
+            bool facingLeft = dirX < 0f;
+            spriteRenderer.flipX = spriteFacesRight ? facingLeft : !facingLeft;
         }
 
         // Asks the enemy's MovementPolicy where to go; falls back to chasing the player straight.
@@ -134,6 +154,8 @@ namespace Controllers
         private void EnterWindUp()
         {
             SetMoving(false);
+            if (playerTransform != null)
+                FaceDirection(playerTransform.position.x - transform.position.x);
             _currentState = State.WindUp;
             _stateTimer = data.AttackData.WindupDuration;
 

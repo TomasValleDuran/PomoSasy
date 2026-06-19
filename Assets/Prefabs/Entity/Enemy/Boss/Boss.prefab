@@ -54,6 +54,9 @@ MonoBehaviour:
   deactivateOnDeath: 1
   deathAnimationDuration: 1.3
   attackAudioSource: {fileID: -2972016673216555928}
+  healthComponent: {fileID: 8074713881867409728}
+  spriteRenderer: {fileID: 0}
+  spriteFacesRight: 1
 --- !u!114 &2387487189649788823
 MonoBehaviour:
   m_ObjectHideFlags: 0

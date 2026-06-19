@@ -53,7 +53,9 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 969c2ffbb740d44a58ae968f2bc38979, type: 2}
   playerTransform: {fileID: 0}
   deactivateOnDeath: 1
+  deathAnimationDuration: 0
   attackAudioSource: {fileID: -2972016673216555928}
+  healthComponent: {fileID: 8074713881867409728}
 --- !u!114 &2387487189649788823
 MonoBehaviour:
   m_ObjectHideFlags: 0
