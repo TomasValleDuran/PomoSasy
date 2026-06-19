@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using UnityEngine;
 using System.Collections;
 using Controllers;
@@ -92,6 +93,7 @@ public class CoinPickupScript : MonoBehaviour
     {
         var value = Utils.GetCoinValueFromType(coinType);
         WalletManagerScript.Instance.Add(value);
+        CoinPickupNotePlayer.PlayRandom(transform.position);
 
         Destroy(gameObject); // TODO: Replace with pooling
     }
