@@ -15,6 +15,10 @@ namespace UI
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text totalXpText;
         [SerializeField] private TMP_Text moneyText;
+        [SerializeField] private AudioClip uiWindowOpenSfx;
+        [SerializeField] private AudioSource uiAudioSource;
+        [SerializeField] private AudioClip buttonClickSfx;
+        [SerializeField] [Range(0f, 1f)] private float buttonClickVolume = 0.8f;
 
         [Header("Victory stats (optional)")]
         [SerializeField] private TMP_Text victoryLevelText;
@@ -30,6 +34,8 @@ namespace UI
 
         private void Awake()
         {
+            UIAudioPlayer.ConfigureButtonClick(buttonClickSfx, buttonClickVolume);
+
             if (pauseDialog != null)
                 pauseDialog.SetActive(false);
 
@@ -66,6 +72,8 @@ namespace UI
 
         public void OpenPause()
         {
+            UIAudioPlayer.PlayButtonClick();
+
             if (_isGameOver)
                 return;
 
@@ -76,11 +84,14 @@ namespace UI
 
         public void ClosePause()
         {
+            UIAudioPlayer.PlayButtonClick();
             SetPause(false);
         }
 
         public void TogglePause()
         {
+            UIAudioPlayer.PlayButtonClick();
+
             if (_isGameOver)
                 return;
 
@@ -90,6 +101,8 @@ namespace UI
 
         public void ExitGame()
         {
+            UIAudioPlayer.PlayButtonClick();
+
             // The save is the snapshot from the start of the current wave; leave it untouched.
             SetPause(false);
             SceneLoader.Instance.LoadMainMenu();
@@ -97,12 +110,14 @@ namespace UI
 
         public void ExitToMainMenuFromGameOver()
         {
+            UIAudioPlayer.PlayButtonClick();
             ReleaseGameOverPause();
             SceneLoader.Instance.LoadMainMenu();
         }
 
         public void ExitToMainMenuFromVictory()
         {
+            UIAudioPlayer.PlayButtonClick();
             ReleaseGameOverPause();
             SceneLoader.Instance.LoadMainMenu();
         }
@@ -191,6 +206,7 @@ namespace UI
 
         private void SetPause(bool paused)
         {
+            UIAudioPlayer.Play(uiAudioSource, uiWindowOpenSfx, 0.5f);
             if (GameManagerScript.Instance == null)
                 return;
 
@@ -209,7 +225,6 @@ namespace UI
 
             if (!_pauseRequestedByUi)
                 return;
-
             GameManagerScript.Instance.ReleasePause();
             _pauseRequestedByUi = false;
         }

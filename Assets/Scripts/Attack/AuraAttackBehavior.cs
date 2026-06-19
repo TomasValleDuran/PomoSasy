@@ -13,13 +13,19 @@ namespace Attack
 
         public override bool Execute(in AttackContext ctx)
         {
+            return ExecuteWithResult(ctx).Finished;
+        }
+
+        public override AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
             if (ctx.attacker == null)
-                return true;
+                return new AttackExecutionResult(true, false);
 
             float radius = ctx.range > 0f ? ctx.range : fallbackRadius;
             Collider2D[] hits = Physics2D.OverlapCircleAll(ctx.attacker.position, radius, hitMask);
             var damaged = new HashSet<GameObject>();
             Transform attackerRoot = ctx.attacker.root;
+            bool hitAny = false;
 
             for (int i = 0; i < hits.Length; i++)
             {
@@ -35,9 +41,10 @@ namespace Attack
                     continue;
 
                 damageable.TakeDamage(ctx.damage);
+                hitAny = true;
             }
 
-            return true;
+            return new AttackExecutionResult(true, hitAny);
         }
 
         public override GameObject CreateVisual(Transform attacker) => visualPrefab;

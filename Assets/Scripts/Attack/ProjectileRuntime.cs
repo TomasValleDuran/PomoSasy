@@ -17,6 +17,7 @@ namespace Attack
         private float _damage;
         private float _remainingDistance;
         private LayerMask _hitMask;
+        private AudioClip _attackSfx;
         private bool _initialized;
         private bool _isDespawning;
         private Animator _animator;
@@ -26,7 +27,7 @@ namespace Attack
             _animator = GetComponentInChildren<Animator>();
         }
 
-        public void Initialize(Transform owner, Vector2 direction, float speed, float damage, float maxDistance, LayerMask hitMask)
+        public void Initialize(Transform owner, Vector2 direction, float speed, float damage, float maxDistance, LayerMask hitMask, AudioClip attackSfx = null)
         {
             _owner = owner;
             _direction = direction.sqrMagnitude > 0.0001f ? direction.normalized : Vector2.right;
@@ -36,6 +37,7 @@ namespace Attack
             _damage = damage;
             _remainingDistance = Mathf.Max(maxDistance, 0.01f);
             _hitMask = hitMask;
+            _attackSfx = attackSfx;
             _initialized = true;
         }
 
@@ -53,7 +55,13 @@ namespace Attack
             RaycastHit2D hit = Physics2D.Raycast(start, _direction, castDistance, _hitMask);
             if (hit.collider != null && (_owner == null || hit.transform.root != _owner.root))
             {
-                hit.collider.GetComponentInParent<IDamageable>()?.TakeDamage(_damage);
+                IDamageable damageable = hit.collider.GetComponentInParent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.TakeDamage(_damage);
+                    AttackAudioPlayer.PlayAtPoint(hit.point, _attackSfx);
+                }
+
                 BeginDespawn();
                 return;
             }

@@ -5,6 +5,7 @@ using Attack;
 using Data;
 using Health;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = System.Random;
 
 namespace Controllers
@@ -15,6 +16,7 @@ namespace Controllers
         [SerializeField] private Transform playerTransform;
         [SerializeField] private bool deactivateOnDeath = true;
         [SerializeField] public AudioSource attackAudioSource;
+        [SerializeField] public HealthComponent healthComponent;
 
         public event Action<bool> OnMovingChanged;
 
@@ -25,10 +27,12 @@ namespace Controllers
         private bool _isRegistered;
 
         private float _stateTimer;
+        private AudioClip _attackSfx;
 
         private void Awake()
         {
             GetComponent<HealthComponent>().OnDeath += HandleDeath;
+            _attackSfx = data.AttackData.AttackSfx;
 
             if (!TryGetComponent(out attackAudioSource))
                 attackAudioSource = gameObject.AddComponent<AudioSource>();
@@ -122,15 +126,15 @@ namespace Controllers
                 playerTransform,
                 data.AttackData.Damage,
                 data.AttackData.AttackRange,
-                Time.deltaTime
+                Time.deltaTime,
+                data.AttackData.AttackSfx
             );
-            bool finished = data.AttackData.AttackBehavior.Execute(ctx);
-
-            if (finished)
-            {
-                AttackAudioPlayer.Play(attackAudioSource, data.AttackData);
+            Attack.AttackExecutionResult result = data.AttackData.AttackBehavior.ExecuteWithResult(ctx);
+            
+            if (result.PlaySfx) 
+                AttackAudioPlayer.Play(attackAudioSource, data.AttackData, 0.3f);
+            if (result.Finished)
                 EnterCooldown();
-            }
         }
 
         private void EnterCooldown()

@@ -2379,6 +2379,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d955f7a6604c80956a969f89429baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.GameplayUI
+  pauseDialog: {fileID: 0}
+  gameOverDialog: {fileID: 0}
+  victoryDialog: {fileID: 0}
+  levelText: {fileID: 0}
+  totalXpText: {fileID: 0}
+  moneyText: {fileID: 0}
+  uiWindowOpenSfx: {fileID: 0}
+  uiAudioSource: {fileID: 0}
+  buttonClickSfx: {fileID: 8300000, guid: 52b03355fa5a3204c9a8b2c78bf4ce59, type: 3}
+  buttonClickVolume: 0.8
+  victoryLevelText: {fileID: 0}
+  victoryMoneyText: {fileID: 0}
 --- !u!4 &1945450838
 Transform:
   m_ObjectHideFlags: 0

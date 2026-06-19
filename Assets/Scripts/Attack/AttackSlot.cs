@@ -32,8 +32,8 @@ namespace Attack
             {
                 _owner.TryGetComponent(out _upgradeModifiers);
                 _audioSource = null;
-                _owner.TryGetComponent(out _audioSource);
-                
+                if (!_owner.TryGetComponent(out _audioSource))
+                    _audioSource = _owner.gameObject.AddComponent<AudioSource>();
             }
 
             AttackBehavior behavior = attackData?.AttackBehavior;
@@ -77,15 +77,16 @@ namespace Attack
                 baseContext.target,
                 effectiveDamage,
                 effectiveRange,
-                baseContext.deltaTime
+                baseContext.deltaTime,
+                attackData.AttackSfx
             );
 
-            bool finished = behavior.Execute(slotContext);
-            if (finished)
-            {
+            AttackExecutionResult result = behavior.ExecuteWithResult(slotContext);
+            if (result.PlaySfx)
                 AttackAudioPlayer.Play(_audioSource, attackData);
+
+            if (result.Finished)
                 _cooldownTimer = effectiveCooldown;
-            }
         }
 
         public void Unequip()

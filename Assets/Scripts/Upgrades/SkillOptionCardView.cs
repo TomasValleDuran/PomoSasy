@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -65,6 +66,7 @@ namespace Upgrades
             if (_boundUpgrade == null)
                 return;
 
+            UIAudioPlayer.PlayButtonClick();
             _onSelected?.Invoke(_boundUpgrade);
         }
     }

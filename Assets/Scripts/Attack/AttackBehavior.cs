@@ -6,6 +6,11 @@ namespace Attack
     {
         public abstract bool Execute(in AttackContext ctx);
 
+        public virtual AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
+            return new AttackExecutionResult(Execute(ctx), false);
+        }
+
         public virtual GameObject CreateVisual(Transform attacker) => null;
 
         public virtual void OnEquip(Transform owner) { }

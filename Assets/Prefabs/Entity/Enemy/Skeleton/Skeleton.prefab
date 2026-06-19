@@ -54,6 +54,7 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   deactivateOnDeath: 1
   attackAudioSource: {fileID: -2972016673216555928}
+  healthComponent: {fileID: 8074713881867409728}
 --- !u!114 &2387487189649788823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +151,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 90416887cba726543b0a22e81710e489, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.44
   Loop: 0
   Mute: 0
   Spatialize: 0

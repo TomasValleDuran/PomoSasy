@@ -14,11 +14,17 @@ namespace Enemy
 
             EnemyController controller = GetComponent<EnemyController>();
             controller.OnMovingChanged += OnMovingChanged;
+            controller.healthComponent.OnDamaged += OnDamageTaken;
         }
 
         private void OnMovingChanged(bool isMoving)
         {
             _animator.SetBool(IsWalking, isMoving);
+        }
+        
+        private void OnDamageTaken(float _)
+        {
+            _animator.SetTrigger("IsDamaged");
         }
     }
 }

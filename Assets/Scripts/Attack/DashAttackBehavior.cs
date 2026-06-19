@@ -8,12 +8,18 @@ namespace Attack
     {
         [SerializeField] private float dashSpeed = 10f;
         [SerializeField] private GameObject visualPrefab;
+        [SerializeField] public AudioClip dashSfx;
         public float DashSpeed => dashSpeed;
 
         public override bool Execute(in AttackContext ctx)
         {
+            return ExecuteWithResult(ctx).Finished;
+        }
+
+        public override AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
             if (ctx.attacker == null || ctx.target == null)
-                return true;
+                return new AttackExecutionResult(true, false);
 
             DashAttackRuntime runtime = ctx.attacker.GetComponent<DashAttackRuntime>();
             if (runtime == null)
@@ -27,6 +33,7 @@ namespace Attack
 
                 float travelDistance = Mathf.Max(ctx.range, 0.1f);
                 runtime.Begin(direction, travelDistance);
+                AttackAudioPlayer.PlayAtPoint(ctx.attacker.position, dashSfx != null ? dashSfx : ctx.attackSfx);
             }
 
             float step = dashSpeed * ctx.deltaTime;
@@ -35,9 +42,16 @@ namespace Attack
             runtime.RemainingDistance -= moveAmount;
 
             float contactDistance = ctx.range > 0f ? Mathf.Min(ctx.range, 0.35f) : 0.1f;
+            bool hitThisFrame = false;
             if (!runtime.HasHit && Vector2.Distance(ctx.attacker.position, ctx.target.position) <= contactDistance)
             {
-                ctx.target.GetComponentInParent<IDamageable>()?.TakeDamage(ctx.damage);
+                IDamageable damageable = ctx.target.GetComponentInParent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.TakeDamage(ctx.damage);
+                    hitThisFrame = true;
+                }
+
                 runtime.HasHit = true;
             }
 
@@ -45,7 +59,7 @@ namespace Attack
             if (finished)
                 runtime.ResetState();
 
-            return finished;
+            return new AttackExecutionResult(finished, hitThisFrame, false);
         }
 
         public override GameObject CreateVisual(Transform attacker) => visualPrefab;

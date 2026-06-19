@@ -10,15 +10,24 @@ namespace Attack
 
         public override bool Execute(in AttackContext ctx)
         {
+            return ExecuteWithResult(ctx).Finished;
+        }
+
+        public override AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
             if (ctx.attacker == null || ctx.target == null)
-                return true;
+                return new AttackExecutionResult(true, false);
 
             if (ctx.range > 0f &&
                 Vector2.Distance(ctx.attacker.position, ctx.target.position) > ctx.range)
-                return true;
+                return new AttackExecutionResult(true, false);
 
-            ctx.target.GetComponentInParent<IDamageable>()?.TakeDamage(ctx.damage);
-            return true;
+            IDamageable damageable = ctx.target.GetComponentInParent<IDamageable>();
+            if (damageable == null)
+                return new AttackExecutionResult(true, false);
+
+            damageable.TakeDamage(ctx.damage);
+            return new AttackExecutionResult(true, true);
         }
 
         public override GameObject CreateVisual(Transform attacker) => visualPrefab;

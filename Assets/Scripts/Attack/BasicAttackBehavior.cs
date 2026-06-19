@@ -21,13 +21,19 @@ namespace Attack
         /// <summary>Area attack around the attacker. <paramref name="primaryTarget"/> is ignored.</summary>
         public override bool Execute(in AttackContext ctx)
         {
+            return ExecuteWithResult(ctx).Finished;
+        }
+
+        public override AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
             if (ctx.attacker == null)
-                return true;
+                return new AttackExecutionResult(true, false);
 
             float r = GetEffectiveRadius(ctx.range);
             var attackerRoot = ctx.attacker.root;
             var hits = Physics2D.OverlapCircleAll(ctx.attacker.position, r, hitMask);
             var damaged = new HashSet<GameObject>();
+            bool hitAny = false;
 
             foreach (Collider2D hit in hits)
             {
@@ -42,9 +48,10 @@ namespace Attack
                     continue;
 
                 damageable.TakeDamage(ctx.damage);
+                hitAny = true;
             }
 
-            return true;
+            return new AttackExecutionResult(true, hitAny);
         }
 
         public override GameObject CreateVisual(Transform attacker) => visualPrefab;

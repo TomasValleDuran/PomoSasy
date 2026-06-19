@@ -17,8 +17,13 @@ namespace Attack
 
         public override bool Execute(in AttackContext ctx)
         {
+            return ExecuteWithResult(ctx).Finished;
+        }
+
+        public override AttackExecutionResult ExecuteWithResult(in AttackContext ctx)
+        {
             if (ctx.attacker == null)
-                return true;
+                return new AttackExecutionResult(true, false);
 
             Vector2 direction = Vector2.right;
             if (ctx.target != null)
@@ -44,17 +49,25 @@ namespace Attack
                     projectileSpeed,
                     ctx.damage,
                     distance,
-                    hitMask
+                    hitMask,
+                    ctx.attackSfx
                 );
-            }
-            else
-            {
-                RaycastHit2D hit = Physics2D.Raycast(ctx.attacker.position, direction, distance, hitMask);
-                if (hit.collider != null && hit.transform.root != ctx.attacker.root)
-                    hit.collider.GetComponentInParent<IDamageable>()?.TakeDamage(ctx.damage);
+
+                return new AttackExecutionResult(true, false);
             }
 
-            return true;
+            RaycastHit2D hit = Physics2D.Raycast(ctx.attacker.position, direction, distance, hitMask);
+            if (hit.collider != null && hit.transform.root != ctx.attacker.root)
+            {
+                IDamageable damageable = hit.collider.GetComponentInParent<IDamageable>();
+                if (damageable != null)
+                {
+                    damageable.TakeDamage(ctx.damage);
+                    return new AttackExecutionResult(true, true);
+                }
+            }
+
+            return new AttackExecutionResult(true, false);
         }
 
         public override GameObject CreateVisual(Transform attacker) => equippedVisualPrefab;

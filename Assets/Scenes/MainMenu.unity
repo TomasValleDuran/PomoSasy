@@ -1496,6 +1496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.MainMenuUI
   continueButton: {fileID: 714435564}
+  buttonClickSfx: {fileID: 8300000, guid: 52b03355fa5a3204c9a8b2c78bf4ce59, type: 3}
+  buttonClickVolume: 0.8
 --- !u!4 &1847574629
 Transform:
   m_ObjectHideFlags: 0
