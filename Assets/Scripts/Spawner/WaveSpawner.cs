@@ -51,6 +51,9 @@ namespace Spawner
         public int CurrentWaveNumber { get; private set; }
         public int TotalWaves => _runtimeWaves?.Count ?? 0;
 
+        /// <summary>How many enemies the current wave will spawn in total (set when the wave starts).</summary>
+        public int CurrentWavePlannedEnemyCount { get; private set; }
+
         private readonly EnemyPool _pool = new();
         private readonly List<GameObject> _spawnBag = new();
         private List<WaveDefinition> _runtimeWaves;
@@ -115,6 +118,7 @@ namespace Spawner
         {
             WaveDefinition wave = _runtimeWaves[index];
             CurrentWaveNumber = index + 1;
+            CurrentWavePlannedEnemyCount = CountEnemies(wave);
 
             if (wave.startDelay > 0f)
                 yield return new WaitForSeconds(wave.startDelay);
@@ -236,6 +240,21 @@ namespace Spawner
         }
 
         // ---- Spawning -----------------------------------------------------
+
+        private static int CountEnemies(WaveDefinition wave)
+        {
+            if (wave?.spawnEntries == null)
+                return 0;
+
+            int total = 0;
+            foreach (var entry in wave.spawnEntries)
+            {
+                if (entry != null && entry.prefab != null && entry.amount > 0)
+                    total += entry.amount;
+            }
+
+            return total;
+        }
 
         private void BuildBag(WaveDefinition wave)
         {

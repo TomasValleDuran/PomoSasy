@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 573687363458933163}
   - component: {fileID: 896133568711477464}
   - component: {fileID: 6069789951499754823}
+  - component: {fileID: -2747810114242322068}
   m_Layer: 0
   m_Name: AuraAttackVisual
   m_TagString: Untagged
@@ -106,3 +107,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Attack.BasicAttackAreaVisual
   radiusVisual: {fileID: 573687363458933163}
   diameterScaleMultiplier: 1
+--- !u!114 &-2747810114242322068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412450066411065521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b1b89b30075462185832f7b5d10f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Attack.PulseVisual
+  targetRenderer: {fileID: 0}
+  frequency: 0.8
+  scaleAmplitude: 0.03
+  alphaAmplitude: 0.4
+  randomizePhase: 1
+  flareOnAttack: 1
+  flareScale: 0.1
+  flareAlpha: 0.8
+  flareDecay: 0.25

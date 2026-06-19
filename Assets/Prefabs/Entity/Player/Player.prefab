@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406461583499989989}
   - component: {fileID: 3143855073210463248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackRadiusVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2338187345708444817}
   - component: {fileID: 5652215753080120585}
   - component: {fileID: 3017765002932542335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: -1682030660124946218}
   - component: {fileID: 2442123933342732502}
   - component: {fileID: 7610517808864748225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -276,6 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerAnimator
   inputHandler: {fileID: 0}
+  loadout: {fileID: 0}
+  attackAnimationDuration: 0.2
 --- !u!114 &3513293577309779303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health.HealthComponent
   healthData: {fileID: 11400000, guid: d79d10fafce415142b3825ccd40275e3, type: 2}
-  logHealthEvents: 1
+  logHealthEvents: 0
 --- !u!114 &8897904175141533427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8063870366841347198}
   - component: {fileID: 2944177543152958613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

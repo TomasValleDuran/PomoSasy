@@ -1,6 +1,7 @@
 using Controllers;
 using Health;
 using Save;
+using Scores;
 using Spawner;
 using TMPro;
 using UnityEngine;
@@ -15,14 +16,18 @@ namespace UI
         [SerializeField] private TMP_Text levelText;
         [SerializeField] private TMP_Text totalXpText;
         [SerializeField] private TMP_Text moneyText;
+        [SerializeField] private TMP_Text survivedTimeText;
+        [Tooltip("Optional: shown on the game-over screen when the run made the leaderboard top 10.")]
+        [SerializeField] private TMP_Text gameOverRankText;
         [SerializeField] private AudioClip uiWindowOpenSfx;
         [SerializeField] private AudioSource uiAudioSource;
         [SerializeField] private AudioClip buttonClickSfx;
-        [SerializeField] [Range(0f, 1f)] private float buttonClickVolume = 0.8f;
-
+        [SerializeField] [Range(0f, 1f)]
         [Header("Victory stats (optional)")]
         [SerializeField] private TMP_Text victoryLevelText;
         [SerializeField] private TMP_Text victoryMoneyText;
+        [SerializeField] private TMP_Text victoryTimeText;
+        [SerializeField] private TMP_Text victoryRankText;
 
         private bool _pauseRequestedByUi;
         private bool _pauseRequestedByGameOver;
@@ -135,21 +140,27 @@ namespace UI
 
             SetPause(false);
             SetPlayerControlBlocked(true);
-            PopulateVictoryStats();
 
-            if (victoryDialog != null)
-                victoryDialog.SetActive(true);
+            int rank = RecordRun();
+            PopulateVictoryStats(rank);
+
+            DialogAnimator.Set(victoryDialog, true);
 
             RequestGameOverPause();
         }
 
-        private void PopulateVictoryStats()
+        private void PopulateVictoryStats(int rank)
         {
             if (XpManagerScript.Instance != null && victoryLevelText != null)
-                victoryLevelText.text = $"You reached level {XpManagerScript.Instance.CurrentLevel}.";
+                victoryLevelText.text = $"Level {XpManagerScript.Instance.CurrentLevel}";
 
             if (WalletManagerScript.Instance != null && victoryMoneyText != null)
-                victoryMoneyText.text = $"You earned {WalletManagerScript.Instance.CurrentMoney} coins.";
+                victoryMoneyText.text = $"{WalletManagerScript.Instance.CurrentMoney:N0}";
+
+            if (victoryTimeText != null && SurvivalTimer.Instance != null)
+                victoryTimeText.text = SurvivalTimer.Format(SurvivalTimer.Instance.ElapsedSeconds);
+
+            ApplyRankText(victoryRankText, rank);
         }
 
         private void HandlePlayerDeath()
@@ -165,27 +176,56 @@ namespace UI
 
             SetPause(false);
             SetPlayerControlBlocked(true);
-            PopulateGameOverStats();
 
-            if (gameOverDialog != null)
-                gameOverDialog.SetActive(true);
+            int rank = RecordRun();
+            PopulateGameOverStats(rank);
+
+            DialogAnimator.Set(gameOverDialog, true);
 
             RequestGameOverPause();
         }
 
-        private void PopulateGameOverStats()
+        private void PopulateGameOverStats(int rank)
         {
             if (XpManagerScript.Instance != null)
             {
                 if (levelText != null)
-                    levelText.text = $"You reached level {XpManagerScript.Instance.CurrentLevel}.";
+                    levelText.text = $"Level {XpManagerScript.Instance.CurrentLevel}";
 
                 if (totalXpText != null)
-                    totalXpText.text = $"You got a total of {XpManagerScript.Instance.CurrentXp} experience.";
+                    totalXpText.text = $"{XpManagerScript.Instance.CurrentXp:N0} XP";
             }
 
             if (WalletManagerScript.Instance != null && moneyText != null)
-                moneyText.text = $"You earned {WalletManagerScript.Instance.CurrentMoney} coins.";
+                moneyText.text = $"{WalletManagerScript.Instance.CurrentMoney:N0}";
+
+            if (survivedTimeText != null && SurvivalTimer.Instance != null)
+                survivedTimeText.text = SurvivalTimer.Format(SurvivalTimer.Instance.ElapsedSeconds);
+
+            ApplyRankText(gameOverRankText, rank);
+        }
+
+        /// <summary>Saves this run to the leaderboard and returns its rank (1-based, or -1 if unranked).</summary>
+        private int RecordRun()
+        {
+            float seconds = SurvivalTimer.Instance != null ? SurvivalTimer.Instance.ElapsedSeconds : 0f;
+            int level = XpManagerScript.Instance != null ? XpManagerScript.Instance.CurrentLevel : 0;
+            int coins = WalletManagerScript.Instance != null ? WalletManagerScript.Instance.CurrentMoney : 0;
+
+            return LeaderboardSystem.Record(seconds, level, coins);
+        }
+
+        private static void ApplyRankText(TMP_Text target, int rank)
+        {
+            if (target == null)
+                return;
+
+            if (rank == 1)
+                target.text = "New best!";
+            else if (rank > 0)
+                target.text = $"Leaderboard #{rank}";
+            else
+                target.text = string.Empty;
         }
 
         private void SetPlayerControlBlocked(bool blocked)
@@ -210,8 +250,7 @@ namespace UI
             if (GameManagerScript.Instance == null)
                 return;
 
-            if (pauseDialog != null)
-                pauseDialog.SetActive(paused);
+            DialogAnimator.Set(pauseDialog, paused);
 
             if (paused)
             {

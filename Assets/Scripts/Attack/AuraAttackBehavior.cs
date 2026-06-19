@@ -11,6 +11,9 @@ namespace Attack
         [SerializeField] private LayerMask hitMask = ~0;
         [SerializeField] private GameObject visualPrefab;
 
+        public override bool HasTargetInRange(in AttackContext ctx) =>
+            TargetWithinRange(ctx, ctx.range > 0f ? ctx.range : fallbackRadius);
+
         public override bool Execute(in AttackContext ctx)
         {
             return ExecuteWithResult(ctx).Finished;

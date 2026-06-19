@@ -328,6 +328,36 @@ sobre la escena, que el sonido vaya en prefabs/AudioManager, y/o activar Unity S
 
 ---
 
+### 2.17 Pulido de UI (timer, leaderboard, diálogos, safe area)
+**Estado: 🟢 Código ✅ (19/jun) — falta cablear en Unity (ver 3.7)**
+
+Pasada de UI para que el juego se vea menos "template" y tenga score real:
+
+- **Reloj de partida** ➕: `SurvivalTimer.cs` (cuenta mientras no estés en pausa/game over, se
+  resetea por corrida) + `TimerUI.cs` (muestra `mm:ss`). **Se persiste al Continuar** (campo
+  `elapsedSeconds` en `GameSaveData`, capturado/restaurado por `GameSaveCoordinator` al inicio
+  de cada oleada, igual que el resto del estado).
+- **Leaderboard local** ➕: `Scores/LeaderboardSystem.cs` (top 10 en su propio JSON
+  `leaderboard.json`, sobrevive a muerte/Nueva partida; ordena por tiempo → nivel → monedas) +
+  `UI/LeaderboardUI.cs` + `UI/LeaderboardRowView.cs`. Cada corrida se registra al morir/ganar y
+  el resultado muestra el puesto ("New best!" / "Leaderboard #3").
+- **Diálogos y wave banner animados**: `UI/DialogAnimator.cs` (fade + scale con tiempo
+  *unscaled*, así anima aunque el juego esté en pausa). `GameplayUI` y `WaveUI` ahora lo usan via
+  `DialogAnimator.Set(...)` — si el panel no tiene el componente, hace `SetActive` normal (100%
+  retrocompatible). El banner además muestra subtítulo ("12 enemies incoming").
+- **Stats de resultado más prolijos**: en vez de oraciones ("You reached level 5.") ahora son
+  bloques cortos (`Level 7`, `1,240 XP`, `30`) + tiempo sobrevivido + puesto.
+- **Safe Area (mobile)** ➕: `UI/SafeAreaFitter.cs` para que el HUD no quede bajo el notch.
+- **Fix**: se sacó un `Debug.Log` por frame que estaba en `XpUI.UpdateXp`.
+
+**Tipo: [UNITY]** — todo el código está; falta crear/asignar textos y agregar componentes en la
+escena. Pasos en **3.7**.
+
+> ⏳ **Pendiente de diseño (no-código):** sigue faltando una **fuente custom** (todo usa la
+> LiberationSans default de TMP). Es el cambio visual más barato; ver nota en sección 4.
+
+---
+
 ## 3. Guías paso a paso para el trabajo de Unity
 
 ### 3.1 Agregar barra de vida flotante a un enemigo (para 2.6)
@@ -466,6 +496,48 @@ la última, aparece el diálogo de victoria y el save se borra.
   de esa oleada (es el costo intencional para cerrar el exploit).
 - "Continuar" además te reposiciona en la oleada guardada (no arranca siempre de la 1).
 
+### 3.7 Cablear el pulido de UI (para 2.17)
+Todo el código ya está. Pasos en la escena (todo [UNITY]):
+
+**A) Reloj de partida:**
+1. En la escena `Gameplay`: Create Empty → `SurvivalTimer` → **Add Component → SurvivalTimer**.
+   (No tiene campos; se autorregistra.)
+2. En el Canvas, creá un **TMP Text** arriba al centro (ej. "00:00"). Add Component → **TimerUI**
+   → arrastrá ese texto al campo **Timer Text**.
+
+**B) Diálogos y banner animados:**
+1. A cada panel — `pauseDialog`, `gameOverDialog`, `victoryDialog` y el `waveBanner` — agregale
+   **Add Component → DialogAnimator** (te crea solo el `CanvasGroup`). Listo, ya animan.
+   *(Si no le ponés el componente, el panel sigue funcionando con on/off normal.)*
+2. Banner: creá un segundo **TMP Text** debajo del título del banner y arrastralo a
+   `WaveUI → Wave Banner Subtitle` (muestra "X enemies incoming").
+
+**C) Stats de resultado (en el objeto con `GameplayUI`):**
+- Asigná los campos nuevos (todos opcionales): **Survived Time Text**, **Game Over Rank Text**,
+  **Victory Time Text**, **Victory Rank Text**. Reusá/duplicá los textos que ya tengas en los
+  diálogos de game over / victoria.
+
+**D) Leaderboard:**
+1. En `MainMenu`, creá un panel `LeaderboardPanel` (desactivado por default) → Add Component →
+   **LeaderboardUI**.
+2. **Modo rápido:** arrastrá un **TMP Text** multilinea a **Fallback Text**. Con eso ya muestra
+   la tabla. **Modo lindo:** hacé un prefab de fila (3 TMP: rank/time/detail) con
+   **LeaderboardRowView** y asignale sus 3 campos; después en `LeaderboardUI` poné **Row Prefab**
+   y **Content** (un objeto con *Vertical Layout Group*). (Opcional: **Empty State** = un texto
+   "Sin scores todavía".)
+3. Un botón "Leaderboard" en el menú: en su **OnClick** poné el `LeaderboardPanel` →
+   `GameObject.SetActive(true)` (y un botón "Cerrar" con `SetActive(false)`). Se refresca solo al
+   activarse.
+
+**E) Safe Area (mobile):**
+1. Envolvé tu HUD en un panel raíz que llene la pantalla (anchors 0–1) y agregale
+   **Add Component → SafeAreaFitter**. Movó los elementos del HUD (y el joystick si querés)
+   dentro de ese panel. En notch/encoder ya no se cortan.
+
+**F) Probar:** jugá un rato (el reloj corre) → morí → el diálogo debe mostrar tiempo + puesto →
+volvé al menú → abrí el leaderboard y verificá que aparezca la corrida. Probá también
+pausar→Continuar y confirmá que el reloj **retoma** (no vuelve a 00:00).
+
 ## 4. Plan sugerido (orden de prioridad)
 
 ### ✅ Sprint cerrado (16/jun) — Menú + Guardado + Continuar
@@ -523,6 +595,11 @@ la última, aparece el diálogo de victoria y el save se borra.
 | Economía de monedas / loot | ✗ | ✓ | ➕ |
 | Sistema de upgrades (pasivos/ataque) | parcial | ✓✓ | ➕ |
 | Menú principal | ✓ | ✓ | ✅ terminado (título, New/Continue/Settings) |
+| Reloj de partida (timer) | ✗ | ✓ | ➕ código ✅ (persiste al Continuar), cablear (3.7) |
+| Leaderboard local (top 10) | ✗ | ✓ | ➕ código ✅, cablear (3.7) |
+| Diálogos / banner animados | ✗ | ✓ | ➕ código ✅, cablear (3.7) |
+| Safe Area (mobile) | ✗ | ✓ | ➕ código ✅, cablear (3.7) |
+| Fuente custom (no default TMP) | — | ✗ | ❌ pendiente de diseño (ver sección 4) |
 | Escenas / Build ordenado | ✓ | ✓ | 🟢 casi (falta sacar `Gameplay 1` del build) |
 | Audio / SFX / música | ✗ | en progreso | 🔄 compañero (no tocar) |
 

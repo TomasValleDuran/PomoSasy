@@ -2,36 +2,95 @@
   "waves": [
     {
       "waveName": "Warm-up",
-      "startDelay": 2.0,
-      "spawnInterval": 1.5,
+      "startDelay": 3.0,
+      "spawnInterval": 1.6,
       "entries": [
-        { "enemy": "Skeleton", "amount": 5 }
+        { "enemy": "Skeleton", "amount": 4 }
       ]
     },
     {
-      "waveName": "More bones",
+      "waveName": "Rattling Bones",
+      "startDelay": 4.0,
+      "spawnInterval": 1.4,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 7 }
+      ]
+    },
+    {
+      "waveName": "Bone Patrol",
       "startDelay": 4.0,
       "spawnInterval": 1.2,
       "entries": [
-        { "enemy": "Skeleton", "amount": 8 }
+        { "enemy": "Skeleton", "amount": 11 }
       ]
     },
     {
-      "waveName": "Mixed",
+      "waveName": "First Fangs",
       "startDelay": 4.0,
-      "spawnInterval": 1.0,
+      "spawnInterval": 1.1,
       "entries": [
         { "enemy": "Skeleton", "amount": 8 },
         { "enemy": "Vampire", "amount": 3 }
       ]
     },
     {
-      "waveName": "Swarm",
-      "startDelay": 5.0,
-      "spawnInterval": 0.7,
+      "waveName": "Night Hunt",
+      "startDelay": 4.0,
+      "spawnInterval": 1.0,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 10 },
+        { "enemy": "Vampire", "amount": 6 }
+      ]
+    },
+    {
+      "waveName": "Dark Arts",
+      "startDelay": 4.0,
+      "spawnInterval": 0.95,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 8 },
+        { "enemy": "Vampire", "amount": 5 },
+        { "enemy": "Mage", "amount": 3 }
+      ]
+    },
+    {
+      "waveName": "Onslaught",
+      "startDelay": 4.0,
+      "spawnInterval": 0.85,
       "entries": [
         { "enemy": "Skeleton", "amount": 12 },
-        { "enemy": "Vampire", "amount": 6 }
+        { "enemy": "Vampire", "amount": 7 },
+        { "enemy": "Mage", "amount": 4 }
+      ]
+    },
+    {
+      "waveName": "The Horde",
+      "startDelay": 5.0,
+      "spawnInterval": 0.75,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 16 },
+        { "enemy": "Vampire", "amount": 9 },
+        { "enemy": "Mage", "amount": 5 }
+      ]
+    },
+    {
+      "waveName": "Last Breath",
+      "startDelay": 5.0,
+      "spawnInterval": 0.65,
+      "entries": [
+        { "enemy": "Skeleton", "amount": 20 },
+        { "enemy": "Vampire", "amount": 11 },
+        { "enemy": "Mage", "amount": 6 }
+      ]
+    },
+    {
+      "waveName": "Final Stand",
+      "startDelay": 6.0,
+      "spawnInterval": 0.8,
+      "entries": [
+        { "enemy": "Boss", "amount": 1 },
+        { "enemy": "Skeleton", "amount": 8 },
+        { "enemy": "Vampire", "amount": 4 },
+        { "enemy": "Mage", "amount": 2 }
       ]
     }
   ]

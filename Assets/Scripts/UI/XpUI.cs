@@ -37,7 +37,6 @@ namespace UI
         private void UpdateXp(int xp, int xpForNextLevel)
         {
             var percentage = (float)xp / xpForNextLevel;
-            Debug.Log(percentage);
             _xpImage.fillAmount = percentage;
         }
 

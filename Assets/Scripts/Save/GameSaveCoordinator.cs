@@ -91,6 +91,9 @@ namespace Save
             if (_waveSpawner != null)
                 data.currentWave = Mathf.Max(0, _waveSpawner.CurrentWaveNumber - 1);
 
+            if (SurvivalTimer.Instance != null)
+                data.elapsedSeconds = SurvivalTimer.Instance.ElapsedSeconds;
+
             Transform player = ResolvePlayer();
             if (player != null)
             {
@@ -150,6 +153,9 @@ namespace Save
 
             if (WalletManagerScript.Instance != null)
                 WalletManagerScript.Instance.RestoreMoney(data.money);
+
+            if (SurvivalTimer.Instance != null)
+                SurvivalTimer.Instance.Restore(data.elapsedSeconds);
 
             Transform player = ResolvePlayer();
             Dictionary<string, AttackData> attackRegistry = BuildAttackRegistry(player);

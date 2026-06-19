@@ -52,16 +52,27 @@ namespace Attack
 
             float castDistance = Mathf.Min(step, _remainingDistance);
             Vector2 start = transform.position;
-            RaycastHit2D hit = Physics2D.Raycast(start, _direction, castDistance, _hitMask);
-            if (hit.collider != null && (_owner == null || hit.transform.root != _owner.root))
-            {
-                IDamageable damageable = hit.collider.GetComponentInParent<IDamageable>();
-                if (damageable != null)
-                {
-                    damageable.TakeDamage(_damage);
-                    AttackAudioPlayer.PlayAtPoint(hit.point, _attackSfx);
-                }
 
+            // Look at everything along this step, not just the closest collider, so the projectile
+            // flies *through* non-combat things (coins, walls, props) and the owner, and only
+            // reacts to the first thing that can actually take damage.
+            RaycastHit2D[] hits = Physics2D.RaycastAll(start, _direction, castDistance, _hitMask);
+            for (int i = 0; i < hits.Length; i++)
+            {
+                Collider2D collider = hits[i].collider;
+                if (collider == null)
+                    continue;
+
+                // Ignore the shooter itself.
+                if (_owner != null && hits[i].transform.root == _owner.root)
+                    continue;
+
+                // No health = not a target (coins, scenery). Pass through it.
+                IDamageable damageable = collider.GetComponentInParent<IDamageable>();
+                if (damageable == null)
+                    continue;
+                AttackAudioPlayer.PlayAtPoint(hit.point, _attackSfx);
+                damageable.TakeDamage(_damage);
                 BeginDespawn();
                 return;
             }
