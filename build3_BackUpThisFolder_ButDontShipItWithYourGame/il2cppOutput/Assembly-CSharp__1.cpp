@@ -1,0 +1,7994 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+
+struct Dictionary_2_t99A05EE4C09435381042AF0278FDDD542A02E918;
+struct HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2;
+struct HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885;
+struct IEqualityComparer_1_tFE667855A98BB6902B52DD03254BE42CC7CEB26E;
+struct IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A;
+struct IReadOnlyList_1_tE350322ECDE91C6952685482DD3FD5E4C7B45F35;
+struct List_1_t8A038D55EC7B5CC1BF6A3E744D3A0FF794F41DE8;
+struct List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85;
+struct List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27;
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E;
+struct SlotU5BU5D_tB1C42D5EF2511EFCBAB55800F2BA34053EA1DBD9;
+struct AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21;
+struct AttackDataU5BU5D_t35C44D4CFB79B2ED147EC8B2DBC65AE980207C30;
+struct AttackSlotU5BU5D_t68B5BF1B15133BDE81C0B9DA658CFBDAB466409C;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A;
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
+struct AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02;
+struct AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F;
+struct AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C;
+struct AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9;
+struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
+struct AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4;
+struct BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561;
+struct BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409;
+struct DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01;
+struct Delegate_t;
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF;
+struct IAttackVisual_tD5CE735818AC53555DA6E9C913FA489F45A9CC9E;
+struct IDamageable_t71232F086E9C4273F61117950CFC56580F472861;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+struct MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D;
+struct MethodInfo_t;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A;
+struct PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865;
+struct PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641;
+struct ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933;
+struct ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38;
+struct PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E;
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37;
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
+struct String_t;
+struct SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
+struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
+struct U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC;
+
+IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAttackVisual_tD5CE735818AC53555DA6E9C913FA489F45A9CC9E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IReadOnlyCollection_1_tDEF5BCBC33B100386EB99239BE2D255863E3BAED_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral092974159CE1F1442B5DED8E26FAD27DDF888AFA;
+IL2CPP_EXTERN_C String_t* _stringLiteral8860706E8C79EFFC13FDACE4F9DC41315288AE6C;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_mF91C27E4D059E4D58452587737BE40E4E0118FF9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_mEFB51A2FF71938F1041FD7A0AF9BD47802288E04_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_TryGetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m7034933F616CFE23B2EE068736F65D2EF60B5C30_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_TryGetComponent_TisPlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641_m65A6D18E691C824774E831A35A61E3B063E09FC4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_m353C72B948368BDE9DDC84F9DF0F49587EACA317_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_m98C1F7A03B14D57CC0A5B1A135E3C0F3340FA9CC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mA8D74F208D28C8961077841DC2D078EE6BB3B925_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_mE2C630A80140F4708FE9E10F306C543221CAE2B0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mC4BEAAF2F045D28227C1082AE46C94A91FE1FC59_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponentsInChildren_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m1F3D0B4970449808BFAA3D321888454603D2F99F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mBD9AE712B45BA40015BCEEAE11F3CDB4E3F0D5A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_mA947157D22888B2C6F11E609F4A952B936BAEB79_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m731571E455D25A25D8055A505D30253C522AB9F7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m399C001E8468176225C3FA8A56C1C0A4561E0658_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m50A090E34EAD6898E5FFB6C6F7A461BEBC9BB099_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PlayerAttackLoadout_RaiseAttackPerformed_mFB5802382D54418C634C0DAE276EB09899D2C1D1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CDestroyAfterHitAnimationU3Ed__17_System_Collections_IEnumerator_Reset_m0BC7961B200FA2005B7E3BAD33E92172EF2397B5_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21;
+struct Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034;
+struct IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A;
+struct MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2  : public RuntimeObject
+{
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets;
+	SlotU5BU5D_tB1C42D5EF2511EFCBAB55800F2BA34053EA1DBD9* ____slots;
+	int32_t ____count;
+	int32_t ____lastIndex;
+	int32_t ____freeList;
+	RuntimeObject* ____comparer;
+	int32_t ____version;
+	SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ____siInfo;
+};
+struct List_1_t8A038D55EC7B5CC1BF6A3E744D3A0FF794F41DE8  : public RuntimeObject
+{
+	AttackDataU5BU5D_t35C44D4CFB79B2ED147EC8B2DBC65AE980207C30* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85  : public RuntimeObject
+{
+	AttackSlotU5BU5D_t68B5BF1B15133BDE81C0B9DA658CFBDAB466409C* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27  : public RuntimeObject
+{
+	IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
+{
+};
+struct AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9  : public RuntimeObject
+{
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___attackData;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnAttackPerformed;
+	float ____cooldownTimer;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____owner;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____visualInstance;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____audioSource;
+	PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* ____upgradeModifiers;
+	IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* ____pulseTargets;
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+struct U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* ___U3CU3E4__this;
+};
+struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 
+{
+	bool ___hasValue;
+	bool ___value;
+};
+struct AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97 
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___attacker;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target;
+	float ___damage;
+	float ___range;
+	float ___deltaTime;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___attackSfx;
+};
+struct AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97_marshaled_pinvoke
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___attacker;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target;
+	float ___damage;
+	float ___range;
+	float ___deltaTime;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___attackSfx;
+};
+struct AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97_marshaled_com
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___attacker;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target;
+	float ___damage;
+	float ___range;
+	float ___deltaTime;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___attackSfx;
+};
+struct AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 
+{
+	bool ___U3CFinishedU3Ek__BackingField;
+	bool ___U3CHitU3Ek__BackingField;
+	bool ___U3CPlaySfxU3Ek__BackingField;
+};
+struct AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_pinvoke
+{
+	int32_t ___U3CFinishedU3Ek__BackingField;
+	int32_t ___U3CHitU3Ek__BackingField;
+	int32_t ___U3CPlaySfxU3Ek__BackingField;
+};
+struct AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_com
+{
+	int32_t ___U3CFinishedU3Ek__BackingField;
+	int32_t ___U3CHitU3Ek__BackingField;
+	int32_t ___U3CPlaySfxU3Ek__BackingField;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
+{
+	float ___r;
+	float ___g;
+	float ___b;
+	float ___a;
+};
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	double ___m_value;
+};
+struct EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 
+{
+	union
+	{
+		struct
+		{
+			int32_t ___m_Data;
+		};
+		uint8_t EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8__padding[4];
+	};
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB 
+{
+	int32_t ___m_Mask;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	float ___x;
+	float ___y;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds;
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D16_tFB2D94E174C3DFBC336BBEE6AD92E07462831A23 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D16_tFB2D94E174C3DFBC336BBEE6AD92E07462831A23__padding[16];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D2480_tA9C69754FC374C9AAFAF320941EBB6277DE49302 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D2480_tA9C69754FC374C9AAFAF320941EBB6277DE49302__padding[2480];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D3614_t1C7AC1AEF8DD87AC5FF5C81C0110D4F98CC9D655 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D3614_t1C7AC1AEF8DD87AC5FF5C81C0110D4F98CC9D655__padding[3614];
+	};
+};
+#pragma pack(pop, tp)
+struct AnimatorControllerParameterType_t2AD68F1C718AFCCBF9CF62AEBEAD0439276E4E6E 
+{
+	int32_t ___value__;
+};
+struct Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Center;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Extents;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct Delegate_t  : public RuntimeObject
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	RuntimeObject* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	bool ___method_is_virtual;
+};
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr;
+	intptr_t ___invoke_impl;
+	Il2CppIUnknown* ___m_target;
+	intptr_t ___method;
+	intptr_t ___delegate_trampoline;
+	intptr_t ___extra_arg;
+	intptr_t ___method_code;
+	intptr_t ___interp_method;
+	intptr_t ___interp_invoke_impl;
+	MethodInfo_t* ___method_info;
+	MethodInfo_t* ___original_method_info;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data;
+	int32_t ___method_is_virtual;
+};
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Centroid;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Point;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Normal;
+	float ___m_Distance;
+	float ___m_Fraction;
+	EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 ___m_Collider;
+};
+struct AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02  : public RuntimeObject
+{
+	String_t* ___m_Name;
+	int32_t ___m_Type;
+	float ___m_DefaultFloat;
+	int32_t ___m_DefaultInt;
+	bool ___m_DefaultBool;
+};
+struct AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02_marshaled_pinvoke
+{
+	char* ___m_Name;
+	int32_t ___m_Type;
+	float ___m_DefaultFloat;
+	int32_t ___m_DefaultInt;
+	int32_t ___m_DefaultBool;
+};
+struct AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02_marshaled_com
+{
+	Il2CppChar* ___m_Name;
+	int32_t ___m_Type;
+	float ___m_DefaultFloat;
+	int32_t ___m_DefaultInt;
+	int32_t ___m_DefaultBool;
+};
+struct AudioResource_t35B84706031E4F08C928B1640B804839F4B6500A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct MulticastDelegate_t  : public Delegate_t
+{
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates;
+};
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates;
+};
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates;
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+};
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+struct AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+};
+struct AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	float ___damage;
+	float ___cooldown;
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* ___attackBehavior;
+	float ___attackRange;
+	float ___windupDuration;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___attackSfx;
+};
+struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20  : public AudioResource_t35B84706031E4F08C928B1640B804839F4B6500A
+{
+	PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E* ___m_PCMReaderCallback;
+	PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072* ___m_PCMSetPositionCallback;
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	float ___moveSpeed;
+	float ___dashSpeed;
+	List_1_t8A038D55EC7B5CC1BF6A3E744D3A0FF794F41DE8* ___startingAttacks;
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4  : public AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F
+{
+	float ___fallbackRadius;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___hitMask;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___visualPrefab;
+};
+struct BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD  : public AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F
+{
+	float ___fallbackRadius;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___hitMask;
+	float ___arcAngleDegrees;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___swingVisualPrefab;
+	float ___visualSpawnOffset;
+	float ___visualLifetime;
+	float ___visualAngleOffset;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___visualPrefab;
+};
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409  : public AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F
+{
+	float ___dashSpeed;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___visualPrefab;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___dashSfx;
+};
+struct MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D  : public AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F
+{
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___visualPrefab;
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933  : public AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F
+{
+	float ___fallbackRange;
+	float ___projectileSpeed;
+	float ___spawnOffset;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___hitMask;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___projectilePrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___equippedVisualPrefab;
+};
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+	UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E* ___m_SpriteChangeEvent;
+};
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
+{
+};
+struct BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___radiusVisual;
+	float ___diameterScaleMultiplier;
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ____spriteRenderer;
+	float ____spriteDiameterAtScaleOne;
+};
+struct DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	bool ___U3CIsActiveU3Ek__BackingField;
+	bool ___U3CHasHitU3Ek__BackingField;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CDirectionU3Ek__BackingField;
+	float ___U3CRemainingDistanceU3Ek__BackingField;
+};
+struct PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* ___playerData;
+	List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* ____slots;
+	bool ____hasBuilt;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnAttackPerformed;
+};
+struct PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Dictionary_2_t99A05EE4C09435381042AF0278FDDD542A02E918* ____attackModifiers;
+	float ___U3CMoveSpeedMultiplierU3Ek__BackingField;
+	float ___U3CXpGainMultiplierU3Ek__BackingField;
+};
+struct ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___hitAnimationDuration;
+	float ___visualAngleOffset;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____owner;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____direction;
+	float ____speed;
+	float ____damage;
+	float ____remainingDistance;
+	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ____hitMask;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ____attackSfx;
+	bool ____initialized;
+	bool ____isDespawning;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ____animator;
+};
+struct PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___targetRenderer;
+	float ___frequency;
+	float ___scaleAmplitude;
+	float ___alphaAmplitude;
+	bool ___randomizePhase;
+	bool ___flareOnAttack;
+	float ___flareScale;
+	float ___flareAlpha;
+	float ___flareDecay;
+	bool ____captured;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____baseScale;
+	float ____baseAlpha;
+	float ____phase;
+	float ____flare;
+};
+struct SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	bool ___followAttacker;
+	bool ___animateProcedurally;
+	float ___startScale;
+	float ___endScale;
+	float ___fadeHoldFraction;
+	float ____elapsed;
+	float ____lifetime;
+	bool ____animating;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____baseScale;
+	SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* ____renderers;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ____baseAlphas;
+};
+struct List_1_t8A038D55EC7B5CC1BF6A3E744D3A0FF794F41DE8_StaticFields
+{
+	AttackDataU5BU5D_t35C44D4CFB79B2ED147EC8B2DBC65AE980207C30* ___s_emptyArray;
+};
+struct List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85_StaticFields
+{
+	AttackSlotU5BU5D_t68B5BF1B15133BDE81C0B9DA658CFBDAB466409C* ___s_emptyArray;
+};
+struct List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27_StaticFields
+{
+	IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* ___s_emptyArray;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D16_tFB2D94E174C3DFBC336BBEE6AD92E07462831A23 ___5FB121FDE45A73FA22442520D060944A42BAFC16C3988894AC00FB1371C92A90;
+	__StaticArrayInitTypeSizeU3D16_tFB2D94E174C3DFBC336BBEE6AD92E07462831A23 ___9E72A7E1829617D3B5DFC9FFF84470D7E83EE7D661437131931C5EC3124DB447;
+	__StaticArrayInitTypeSizeU3D3614_t1C7AC1AEF8DD87AC5FF5C81C0110D4F98CC9D655 ___C36FD98B302EF4F37F823D1E8408E3FA0F535EC9609D5071A883E5290E959A6A;
+	__StaticArrayInitTypeSizeU3D2480_tA9C69754FC374C9AAFAF320941EBB6277DE49302 ___F20E420F20164696F9F6015438953C1DBDE7A50044307CED2E73A4EEA8571DE6;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct IntPtr_t_StaticFields
+{
+	intptr_t ___Zero;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_StaticFields
+{
+	int32_t ___OnHitHash;
+};
+struct SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_StaticFields
+{
+	int32_t ___OnAttackHash;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7  : public RuntimeArray
+{
+	ALIGN_FIELD (8) MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* m_Items[1];
+
+	inline MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* m_Items[1];
+
+	inline Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA m_Items[1];
+
+	inline RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28  : public RuntimeArray
+{
+	ALIGN_FIELD (8) SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* m_Items[1];
+
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) float m_Items[1];
+
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21  : public RuntimeArray
+{
+	ALIGN_FIELD (8) AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* m_Items[1];
+
+	inline AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, RuntimeObject** ___0_component, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m5F38AE6B74636F569647D545E365C5579E5F59CE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___3_parent, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* GameObject_GetComponentsInChildren_TisRuntimeObject_m511E687BF2424F8D832EA2EAA459870887FB9540_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_includeInactive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5_gshared (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+
+inline bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01*, const RuntimeMethod*))Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline)(__this, method);
+}
+inline bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01*, const RuntimeMethod*))Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, bool ___0_finished, bool ___1_hit, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___2_playSfx, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Hit_m286A3FCA87F40E80C6559EC0F266C4E19CF93BE3_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_PlaySfx_m8CCDBB4974EFFC2EB4F7ECB534BF5CF264FA4F2B_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+inline bool Component_TryGetComponent_TisPlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641_m65A6D18E691C824774E831A35A61E3B063E09FC4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641** ___0_component, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641**, const RuntimeMethod*))Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared)(__this, ___0_component, method);
+}
+inline bool Component_TryGetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m7034933F616CFE23B2EE068736F65D2EF60B5C30 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299** ___0_component, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299**, const RuntimeMethod*))Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared)(__this, ___0_component, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* AttackData_get_AttackBehavior_m9970F5B7EEAB3297C73B0F56A391C09AD2A65E9D_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___3_parent, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m5F38AE6B74636F569647D545E365C5579E5F59CE_gshared)(___0_original, ___1_position, ___2_rotation, ___3_parent, method);
+}
+inline MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* GameObject_GetComponentsInChildren_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m1F3D0B4970449808BFAA3D321888454603D2F99F (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_includeInactive, const RuntimeMethod* method)
+{
+	return ((  MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, bool, const RuntimeMethod*))GameObject_GetComponentsInChildren_TisRuntimeObject_m511E687BF2424F8D832EA2EAA459870887FB9540_gshared)(__this, ___0_includeInactive, method);
+}
+inline void List_1__ctor_m50A090E34EAD6898E5FFB6C6F7A461BEBC9BB099 (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+inline void List_1_Add_mBD9AE712B45BA40015BCEEAE11F3CDB4E3F0D5A1_inline (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27*, RuntimeObject*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+inline IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* List_1_ToArray_m731571E455D25A25D8055A505D30253C522AB9F7 (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* __this, const RuntimeMethod* method)
+{
+	return ((  IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* (*) (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerUpgradeModifiers_GetCooldownMultiplier_mD0444578867AD4378E1F43C2D83B81014FC29D96 (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerUpgradeModifiers_GetDamageMultiplier_m98B5071260AB08E24D8CE5B8AF0C6F5E5EADC43B (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerUpgradeModifiers_GetRangeMultiplier_m2E6AC80F7BB498555E919E192DF7EED11D803A56 (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_Cooldown_m5FE85B793EDAC9BA25F6F788090BA0B24973546D_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_Damage_mFE564FC72C967403A8D383CD544AA72CF2C0269E_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_AttackRange_m45E3AC08E5A2558C70B57A157BB4A21CB841E53E_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* AttackData_get_AttackSfx_m29EB1C527D55B5D2642DD0B470C067CFAB8DCA42_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackContext__ctor_m78FD11211BC0EC25F52690DD00AB371D0134140D (AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_target, float ___2_damage, float ___3_range, float ___4_deltaTime, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___5_attackSfx, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackAudioPlayer_Play_m0DE30B97CAB4D000C0D615312E81608CE740B1DB (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___0_source, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___1_attackData, float ___2_volumeScale, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackBehavior_TargetWithinRange_m2696F8551494E0A777329DF0000F63F0D72ED433 (AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, float ___1_range, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D (LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_mask, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* Physics2D_OverlapCircleAll_mBEBE14F058D718FA90F44A662C106D9CCDF6B3D9 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_point, float ___1_radius, int32_t ___2_layerMask, const RuntimeMethod* method) ;
+inline void HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534 (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2*, const RuntimeMethod*))HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline RuntimeObject* Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared)(__this, method);
+}
+inline bool HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3 (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2*, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222 (int32_t ___0_intVal, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC (AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* __this, const RuntimeMethod* method) ;
+inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackAreaVisual_CacheSpriteDiameter_m8ABD1DCD0B0703243A70116051A5F02037DF53BA (BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* SpriteRenderer_get_sprite_mEEED0A9E872AE12E56CAF1641F2F592633181D44 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 Sprite_get_bounds_m042F847F6C5118E6B14A3F79A1E1C53E7DFBF452 (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BasicAttackBehavior_GetEffectiveRadius_m34BA7F3EB6BC54AFA2D1353D6D35707D1417BBEB (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, float ___0_attackRangeFromAttackData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Angle_mD94AAEA690169FE5882D60F8489C8BF63300C221_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_from, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_to, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackBehavior_SpawnSwingVisual_mB85E711154427DE227D6FFD595B937EA51E9A1B8 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_origin, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_swingDir, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared)(___0_original, ___1_position, ___2_rotation, method);
+}
+inline SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* GameObject_GetComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mC4BEAAF2F045D28227C1082AE46C94A91FE1FC59 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+inline SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* GameObject_AddComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mA8D74F208D28C8961077841DC2D078EE6BB3B925 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime_Initialize_mB865FB96DF11E77A26D2E1027263F24AE27E4242 (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_lifetime, float ___3_angleOffset, const RuntimeMethod* method) ;
+inline DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* Component_GetComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_mF91C27E4D059E4D58452587737BE40E4E0118FF9 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* GameObject_AddComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_m353C72B948368BDE9DDC84F9DF0F49587EACA317 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_IsActive_m8B7D3115CC1A7C1C16F0F6798AC4F376B4186241_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_Begin_m194ABFA094749820F63A9213C081D6FACD673FAE (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_direction, float ___1_travelDistance, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackAudioPlayer_PlayAtPoint_m2D2AC9EFDFE9872E1FFFBD6FB948137883CD321C (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___1_clip, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 DashAttackRuntime_get_Direction_m529437C1267F0A04A154277A81628FF21EC4F3F5_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_HasHit_m4AE3DE9E64F0799C7FDA5720DDDFB16E7EFD883A_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Distance_mBACBB1609E1894D68F882D86A93519E311810C89_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_ResetState_m8E302B3AF515C331D63119A870E1CAE8F527E20D (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) ;
+inline void Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5 (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, bool ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01*, bool, const RuntimeMethod*))Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5_gshared)(__this, ___0_value, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_IsActive_m5F9F37C37634E37FAAC29D1F90A033EE16C0AAED_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_Direction_m1F94F5A94781383AC6DEC456E9FCFFE45C3D57B2_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot__ctor_m0DE63EDCDF8991F85CC9B9645BABDEE43B31B8E2 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_add_OnAttackPerformed_m0D661DDFD51921D2DD65BF6715DD51C48F145DBF (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_Equip_m3829D62F21869E17D0A0703721D52E6F7AFB8B11 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_BuildFromPlayerData_m8BC17C4BF9BC28136DF24CE54366766657AD35E1 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) ;
+inline int32_t List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackSlot_get_IsEquipped_mD985852F2893D1DEA8FCC5C8CE63E90B291DEB4C (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) ;
+inline void List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_inline (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* PlayerData_get_StartingAttacks_mA51224A6BBC927F06D804E1C872E5C284B5FF484_inline (PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* PlayerAttackLoadout_CreateAndEquipSlot_m7B7B78C2D162B34A4A94786BDC4D9EB861616557 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) ;
+inline void List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_inline (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* AttackSlot_get_AttackData_m72091CFEB367C926C20ED7EB8F42099FF306D252_inline (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) ;
+inline void List_1_RemoveAt_mA947157D22888B2C6F11E609F4A952B936BAEB79 (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
+}
+inline void List_1__ctor_m399C001E8468176225C3FA8A56C1C0A4561E0658 (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+inline ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* GameObject_GetComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_mE2C630A80140F4708FE9E10F306C543221CAE2B0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+inline ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* GameObject_AddComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_m98C1F7A03B14D57CC0A5B1A135E3C0F3340FA9CC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_Initialize_m413EAD85CDE27710DCD2747481C8CEC74B18B379 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_speed, float ___3_damage, float ___4_maxDistance, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___5_hitMask, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___6_attackSfx, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA Physics2D_Raycast_m5BF2A59AAEE0B488FB3ECD1D3AF3537FD7789E7F (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_origin, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* RaycastHit2D_get_transform_mA5E3F8DC9914E79D3C9F6F3F2515B49EEBB4564A (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* __this, const RuntimeMethod* method) ;
+inline Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* Physics2D_RaycastAll_m06B06279D4E05F05198F57F4E35DEED4A5CF37E6 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_origin, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_BeginDespawn_mC8E180B3C554FBDC5E2E9F7FBC7E14861200D8B4 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_m2D9CACEFDE11FF9DB99207B5CBD251C1EC047939 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_id, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ProjectileRuntime_DestroyAfterHitAnimation_m719497F29E00E584AAD536C4D72BF620285B0E89 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDestroyAfterHitAnimationU3Ed__17__ctor_m97A07E773C0892D726F0499FB5196D5AC4A666A6 (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Animator_StringToHash_mD67B872C411BE37641F49D7AA1DBD45B67F63E3A (String_t* ___0_name, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F SpriteRenderer_get_color_mF19DA1B83ABD9A825127D4FBED9A111FE52F1F52 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual_Capture_m6C83F3544A4A7E467D604D508FD5CA87F860B164 (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_parent, bool ___1_worldPositionStays, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SwingVisualRuntime_HasParameter_mD51B8DC6A84B0F8DA330FB0EA720CF7F3625DD58 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___0_animator, int32_t ___1_hash, const RuntimeMethod* method) ;
+inline SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_mEFB51A2FF71938F1041FD7A0AF9BD47802288E04 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method)
+{
+	return ((  SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, bool, const RuntimeMethod*))Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared)(__this, ___0_includeInactive, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime_ApplyFrame_m749AC5F9C5CEC34641595F2AC20170809142EC4D (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, float ___0_t, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, float ___1_t, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_LerpUnclamped_mF35042F9D25A221BDD4B3FD6251224610AFC1F35_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* Animator_get_parameters_m3DE35688D8EBD3D1526346C7B71E468436A4463B (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimatorControllerParameter_get_nameHash_m92DA605E70604B1BBFD5EA5AE0CD0311F21400EE (AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_Normalize_m52526AC1D25ED668DF8A5DE540769FA7D5671FC7 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Dot_mD510FC4765B9CF4F06E6AC6FEC0215F401EFD4FB_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_lhs, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_euler, const RuntimeMethod* method) ;
+inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_pinvoke(const AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5& unmarshaled, AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_pinvoke& marshaled)
+{
+	marshaled.___U3CFinishedU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CFinishedU3Ek__BackingField);
+	marshaled.___U3CHitU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CHitU3Ek__BackingField);
+	marshaled.___U3CPlaySfxU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CPlaySfxU3Ek__BackingField);
+}
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_pinvoke_back(const AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_pinvoke& marshaled, AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5& unmarshaled)
+{
+	bool unmarshaledU3CFinishedU3Ek__BackingField_temp_0 = false;
+	unmarshaledU3CFinishedU3Ek__BackingField_temp_0 = static_cast<bool>(marshaled.___U3CFinishedU3Ek__BackingField);
+	unmarshaled.___U3CFinishedU3Ek__BackingField = unmarshaledU3CFinishedU3Ek__BackingField_temp_0;
+	bool unmarshaledU3CHitU3Ek__BackingField_temp_1 = false;
+	unmarshaledU3CHitU3Ek__BackingField_temp_1 = static_cast<bool>(marshaled.___U3CHitU3Ek__BackingField);
+	unmarshaled.___U3CHitU3Ek__BackingField = unmarshaledU3CHitU3Ek__BackingField_temp_1;
+	bool unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2 = false;
+	unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2 = static_cast<bool>(marshaled.___U3CPlaySfxU3Ek__BackingField);
+	unmarshaled.___U3CPlaySfxU3Ek__BackingField = unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2;
+}
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_pinvoke_cleanup(AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_com(const AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5& unmarshaled, AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_com& marshaled)
+{
+	marshaled.___U3CFinishedU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CFinishedU3Ek__BackingField);
+	marshaled.___U3CHitU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CHitU3Ek__BackingField);
+	marshaled.___U3CPlaySfxU3Ek__BackingField = static_cast<int32_t>(unmarshaled.___U3CPlaySfxU3Ek__BackingField);
+}
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_com_back(const AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_com& marshaled, AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5& unmarshaled)
+{
+	bool unmarshaledU3CFinishedU3Ek__BackingField_temp_0 = false;
+	unmarshaledU3CFinishedU3Ek__BackingField_temp_0 = static_cast<bool>(marshaled.___U3CFinishedU3Ek__BackingField);
+	unmarshaled.___U3CFinishedU3Ek__BackingField = unmarshaledU3CFinishedU3Ek__BackingField_temp_0;
+	bool unmarshaledU3CHitU3Ek__BackingField_temp_1 = false;
+	unmarshaledU3CHitU3Ek__BackingField_temp_1 = static_cast<bool>(marshaled.___U3CHitU3Ek__BackingField);
+	unmarshaled.___U3CHitU3Ek__BackingField = unmarshaledU3CHitU3Ek__BackingField_temp_1;
+	bool unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2 = false;
+	unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2 = static_cast<bool>(marshaled.___U3CPlaySfxU3Ek__BackingField);
+	unmarshaled.___U3CPlaySfxU3Ek__BackingField = unmarshaledU3CPlaySfxU3Ek__BackingField_temp_2;
+}
+IL2CPP_EXTERN_C void AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshal_com_cleanup(AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5_marshaled_com& marshaled)
+{
+}
+// Method Definition Index: 71283
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, bool ___0_finished, bool ___1_hit, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___2_playSfx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* G_B2_0 = NULL;
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* G_B1_0 = NULL;
+	bool G_B3_0 = false;
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* G_B3_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:7>
+		bool L_0 = ___0_finished;
+		__this->___U3CFinishedU3Ek__BackingField = L_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:8>
+		bool L_1 = ___1_hit;
+		__this->___U3CHitU3Ek__BackingField = L_1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:9>
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_2 = ___2_playSfx;
+		V_0 = L_2;
+		bool L_3;
+		L_3 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&V_0), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		if (L_3)
+		{
+			G_B2_0 = __this;
+			goto IL_001d;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		bool L_4 = ___1_hit;
+		G_B3_0 = L_4;
+		G_B3_1 = G_B1_0;
+		goto IL_0024;
+	}
+
+IL_001d:
+	{
+		bool L_5;
+		L_5 = Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline((&V_0), Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		G_B3_0 = L_5;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0024:
+	{
+		G_B3_1->___U3CPlaySfxU3Ek__BackingField = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:10>
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A_AdjustorThunk (RuntimeObject* __this, bool ___0_finished, bool ___1_hit, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___2_playSfx, const RuntimeMethod* method)
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5*>(__this + _offset);
+	AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A(_thisAdjusted, ___0_finished, ___1_hit, ___2_playSfx, method);
+}
+// Method Definition Index: 71284
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:12>
+		bool L_0 = __this->___U3CFinishedU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  bool AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+// Method Definition Index: 71285
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Hit_m286A3FCA87F40E80C6559EC0F266C4E19CF93BE3 (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:13>
+		bool L_0 = __this->___U3CHitU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  bool AttackExecutionResult_get_Hit_m286A3FCA87F40E80C6559EC0F266C4E19CF93BE3_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = AttackExecutionResult_get_Hit_m286A3FCA87F40E80C6559EC0F266C4E19CF93BE3_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+// Method Definition Index: 71286
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_PlaySfx_m8CCDBB4974EFFC2EB4F7ECB534BF5CF264FA4F2B (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:14>
+		bool L_0 = __this->___U3CPlaySfxU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  bool AttackExecutionResult_get_PlaySfx_m8CCDBB4974EFFC2EB4F7ECB534BF5CF264FA4F2B_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = AttackExecutionResult_get_PlaySfx_m8CCDBB4974EFFC2EB4F7ECB534BF5CF264FA4F2B_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71287
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_add_OnAttackPerformed_m0D661DDFD51921D2DD65BF6715DD51C48F145DBF (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___OnAttackPerformed;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07**)(&__this->___OnAttackPerformed);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// Method Definition Index: 71288
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_remove_OnAttackPerformed_m93C83B39A78BCD34B6C31D93BE0EAC36B502EC93 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___OnAttackPerformed;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07**)(&__this->___OnAttackPerformed);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// Method Definition Index: 71289
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* AttackSlot_get_AttackData_m72091CFEB367C926C20ED7EB8F42099FF306D252 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:23>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = __this->___attackData;
+		return L_0;
+	}
+}
+// Method Definition Index: 71290
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttackSlot_get_IsEquipped_mD985852F2893D1DEA8FCC5C8CE63E90B291DEB4C (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:24>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->____owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		return L_1;
+	}
+}
+// Method Definition Index: 71291
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot__ctor_m0DE63EDCDF8991F85CC9B9645BABDEE43B31B8E2 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:26>
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:28>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = ___0_attackData;
+		__this->___attackData = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___attackData), (void*)L_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:29>
+		__this->____cooldownTimer = (0.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:30>
+		return;
+	}
+}
+// Method Definition Index: 71292
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_Equip_m3829D62F21869E17D0A0703721D52E6F7AFB8B11 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_TryGetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m7034933F616CFE23B2EE068736F65D2EF60B5C30_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_TryGetComponent_TisPlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641_m65A6D18E691C824774E831A35A61E3B063E09FC4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponentsInChildren_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m1F3D0B4970449808BFAA3D321888454603D2F99F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAttackVisual_tD5CE735818AC53555DA6E9C913FA489F45A9CC9E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mBD9AE712B45BA40015BCEEAE11F3CDB4E3F0D5A1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m731571E455D25A25D8055A505D30253C522AB9F7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m50A090E34EAD6898E5FFB6C6F7A461BEBC9BB099_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* V_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
+	MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* V_2 = NULL;
+	List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* V_3 = NULL;
+	int32_t V_4 = 0;
+	RuntimeObject* V_5 = NULL;
+	RuntimeObject* V_6 = NULL;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B5_0 = NULL;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B4_0 = NULL;
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* G_B6_0 = NULL;
+	List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* G_B17_0 = NULL;
+	List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* G_B16_0 = NULL;
+	AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* G_B22_0 = NULL;
+	AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* G_B21_0 = NULL;
+	IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* G_B23_0 = NULL;
+	AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* G_B23_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:34>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_owner;
+		__this->____owner = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____owner), (void*)L_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:35>
+		__this->____cooldownTimer = (0.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:36>
+		__this->____upgradeModifiers = (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____upgradeModifiers), (void*)(PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:37>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->____owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:39>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->____owner;
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641** L_4 = (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641**)(&__this->____upgradeModifiers);
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = Component_TryGetComponent_TisPlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641_m65A6D18E691C824774E831A35A61E3B063E09FC4(L_3, L_4, Component_TryGetComponent_TisPlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641_m65A6D18E691C824774E831A35A61E3B063E09FC4_RuntimeMethod_var);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:40>
+		__this->____audioSource = (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____audioSource), (void*)(AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:41>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->____owner;
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299** L_7 = (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299**)(&__this->____audioSource);
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = Component_TryGetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m7034933F616CFE23B2EE068736F65D2EF60B5C30(L_6, L_7, Component_TryGetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m7034933F616CFE23B2EE068736F65D2EF60B5C30_RuntimeMethod_var);
+		if (L_8)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:42>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = __this->____owner;
+		NullCheck(L_9);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
+		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
+		NullCheck(L_10);
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_11;
+		L_11 = GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14(L_10, GameObject_AddComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m0E8EFDB9B3D8DF1ADE10C56D3168A9C1BA19BF14_RuntimeMethod_var);
+		__this->____audioSource = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____audioSource), (void*)L_11);
+	}
+
+IL_0069:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:45>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_12 = __this->___attackData;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_13 = L_12;
+		if (L_13)
+		{
+			G_B5_0 = L_13;
+			goto IL_0076;
+		}
+		G_B4_0 = L_13;
+	}
+	{
+		G_B6_0 = ((AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F*)(NULL));
+		goto IL_007b;
+	}
+
+IL_0076:
+	{
+		NullCheck(G_B5_0);
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_14;
+		L_14 = AttackData_get_AttackBehavior_m9970F5B7EEAB3297C73B0F56A391C09AD2A65E9D_inline(G_B5_0, NULL);
+		G_B6_0 = L_14;
+	}
+
+IL_007b:
+	{
+		V_0 = G_B6_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:46>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_15 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_15, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_16)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = ___0_owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
+		{
+			goto IL_008f;
+		}
+	}
+
+IL_008e:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:47>
+		return;
+	}
+
+IL_008f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:49>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_19 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = ___0_owner;
+		NullCheck(L_19);
+		VirtualActionInvoker1< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(8, L_19, L_20);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:51>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_21 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = ___0_owner;
+		NullCheck(L_21);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23;
+		L_23 = VirtualFuncInvoker1< GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(7, L_21, L_22);
+		V_1 = L_23;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:52>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_25;
+		L_25 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_24, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_25)
+		{
+			goto IL_00a8;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:53>
+		return;
+	}
+
+IL_00a8:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:55>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = V_1;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27 = ___0_owner;
+		NullCheck(L_27);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_27, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_29;
+		L_29 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30 = ___0_owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31;
+		L_31 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181(L_26, L_28, L_29, L_30, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mD136E37F696C00A3A1D4F65724ACAE903E385181_RuntimeMethod_var);
+		__this->____visualInstance = L_31;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____visualInstance), (void*)L_31);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:56>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->____visualInstance;
+		NullCheck(L_32);
+		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_33;
+		L_33 = GameObject_GetComponentsInChildren_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m1F3D0B4970449808BFAA3D321888454603D2F99F(L_32, (bool)1, GameObject_GetComponentsInChildren_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m1F3D0B4970449808BFAA3D321888454603D2F99F_RuntimeMethod_var);
+		V_2 = L_33;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:57>
+		V_3 = (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27*)NULL;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:58>
+		V_4 = 0;
+		goto IL_0119;
+	}
+
+IL_00d4:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:60>
+		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_34 = V_2;
+		int32_t L_35 = V_4;
+		NullCheck(L_34);
+		int32_t L_36 = L_35;
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_37 = (L_34)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
+		V_5 = ((RuntimeObject*)IsInst((RuntimeObject*)L_37, IAttackVisual_tD5CE735818AC53555DA6E9C913FA489F45A9CC9E_il2cpp_TypeInfo_var));
+		RuntimeObject* L_38 = V_5;
+		if (!L_38)
+		{
+			goto IL_00f1;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:61>
+		RuntimeObject* L_39 = V_5;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_40 = __this->___attackData;
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_41 = V_0;
+		NullCheck(L_39);
+		InterfaceActionInvoker2< AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C*, AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* >::Invoke(0, IAttackVisual_tD5CE735818AC53555DA6E9C913FA489F45A9CC9E_il2cpp_TypeInfo_var, L_39, L_40, L_41);
+	}
+
+IL_00f1:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:62>
+		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_42 = V_2;
+		int32_t L_43 = V_4;
+		NullCheck(L_42);
+		int32_t L_44 = L_43;
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_45 = (L_42)->GetAt(static_cast<il2cpp_array_size_t>(L_44));
+		V_6 = ((RuntimeObject*)IsInst((RuntimeObject*)L_45, IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF_il2cpp_TypeInfo_var));
+		RuntimeObject* L_46 = V_6;
+		if (!L_46)
+		{
+			goto IL_0113;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:63>
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_47 = V_3;
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_48 = L_47;
+		if (L_48)
+		{
+			G_B17_0 = L_48;
+			goto IL_010c;
+		}
+		G_B16_0 = L_48;
+	}
+	{
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_49 = (List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27*)il2cpp_codegen_object_new(List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27_il2cpp_TypeInfo_var);
+		List_1__ctor_m50A090E34EAD6898E5FFB6C6F7A461BEBC9BB099(L_49, List_1__ctor_m50A090E34EAD6898E5FFB6C6F7A461BEBC9BB099_RuntimeMethod_var);
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_50 = L_49;
+		V_3 = L_50;
+		G_B17_0 = L_50;
+	}
+
+IL_010c:
+	{
+		RuntimeObject* L_51 = V_6;
+		NullCheck(G_B17_0);
+		List_1_Add_mBD9AE712B45BA40015BCEEAE11F3CDB4E3F0D5A1_inline(G_B17_0, L_51, List_1_Add_mBD9AE712B45BA40015BCEEAE11F3CDB4E3F0D5A1_RuntimeMethod_var);
+	}
+
+IL_0113:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:58>
+		int32_t L_52 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_52, 1));
+	}
+
+IL_0119:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:58>
+		int32_t L_53 = V_4;
+		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_54 = V_2;
+		NullCheck(L_54);
+		if ((((int32_t)L_53) < ((int32_t)((int32_t)(((RuntimeArray*)L_54)->max_length)))))
+		{
+			goto IL_00d4;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:65>
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_55 = V_3;
+		if (L_55)
+		{
+			G_B22_0 = __this;
+			goto IL_0127;
+		}
+		G_B21_0 = __this;
+	}
+	{
+		G_B23_0 = ((IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A*)(NULL));
+		G_B23_1 = G_B21_0;
+		goto IL_012d;
+	}
+
+IL_0127:
+	{
+		List_1_t94D3501366414F1D2E7C5E452029A63B7144CB27* L_56 = V_3;
+		NullCheck(L_56);
+		IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* L_57;
+		L_57 = List_1_ToArray_m731571E455D25A25D8055A505D30253C522AB9F7(L_56, List_1_ToArray_m731571E455D25A25D8055A505D30253C522AB9F7_RuntimeMethod_var);
+		G_B23_0 = L_57;
+		G_B23_1 = G_B22_0;
+	}
+
+IL_012d:
+	{
+		NullCheck(G_B23_1);
+		G_B23_1->____pulseTargets = G_B23_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B23_1->____pulseTargets), (void*)G_B23_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:66>
+		return;
+	}
+}
+// Method Definition Index: 71293
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_Tick_mA6D8B869423F7AF40331CCC6BCD33841FA8160C8 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_baseContext, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* V_0 = NULL;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	float V_5 = 0.0f;
+	float V_6 = 0.0f;
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	int32_t V_8 = 0;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B2_0 = NULL;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B1_0 = NULL;
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* G_B3_0 = NULL;
+	float G_B9_0 = 0.0f;
+	float G_B12_0 = 0.0f;
+	float G_B15_0 = 0.0f;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B22_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B21_0 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:70>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = __this->___attackData;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000d;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		G_B3_0 = ((AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F*)(NULL));
+		goto IL_0012;
+	}
+
+IL_000d:
+	{
+		NullCheck(G_B2_0);
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_2;
+		L_2 = AttackData_get_AttackBehavior_m9970F5B7EEAB3297C73B0F56A391C09AD2A65E9D_inline(G_B2_0, NULL);
+		G_B3_0 = L_2;
+	}
+
+IL_0012:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:71>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_3 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_4)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->____owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_002b;
+		}
+	}
+
+IL_002a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:72>
+		return;
+	}
+
+IL_002b:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:74>
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_7 = __this->____upgradeModifiers;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_8)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		G_B9_0 = (1.0f);
+		goto IL_0051;
+	}
+
+IL_0040:
+	{
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_9 = __this->____upgradeModifiers;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_10 = __this->___attackData;
+		NullCheck(L_9);
+		float L_11;
+		L_11 = PlayerUpgradeModifiers_GetCooldownMultiplier_mD0444578867AD4378E1F43C2D83B81014FC29D96(L_9, L_10, NULL);
+		G_B9_0 = L_11;
+	}
+
+IL_0051:
+	{
+		V_1 = G_B9_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:75>
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_12 = __this->____upgradeModifiers;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_13;
+		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_13)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		G_B12_0 = (1.0f);
+		goto IL_0078;
+	}
+
+IL_0067:
+	{
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_14 = __this->____upgradeModifiers;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_15 = __this->___attackData;
+		NullCheck(L_14);
+		float L_16;
+		L_16 = PlayerUpgradeModifiers_GetDamageMultiplier_m98B5071260AB08E24D8CE5B8AF0C6F5E5EADC43B(L_14, L_15, NULL);
+		G_B12_0 = L_16;
+	}
+
+IL_0078:
+	{
+		V_2 = G_B12_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:76>
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_17 = __this->____upgradeModifiers;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_18)
+		{
+			goto IL_008e;
+		}
+	}
+	{
+		G_B15_0 = (1.0f);
+		goto IL_009f;
+	}
+
+IL_008e:
+	{
+		PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641* L_19 = __this->____upgradeModifiers;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_20 = __this->___attackData;
+		NullCheck(L_19);
+		float L_21;
+		L_21 = PlayerUpgradeModifiers_GetRangeMultiplier_m2E6AC80F7BB498555E919E192DF7EED11D803A56(L_19, L_20, NULL);
+		G_B15_0 = L_21;
+	}
+
+IL_009f:
+	{
+		V_3 = G_B15_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:77>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_22 = __this->___attackData;
+		NullCheck(L_22);
+		float L_23;
+		L_23 = AttackData_get_Cooldown_m5FE85B793EDAC9BA25F6F788090BA0B24973546D_inline(L_22, NULL);
+		float L_24 = V_1;
+		float L_25;
+		L_25 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.00999999978f), ((float)il2cpp_codegen_multiply(L_23, L_24)), NULL);
+		V_4 = L_25;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:78>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_26 = __this->___attackData;
+		NullCheck(L_26);
+		float L_27;
+		L_27 = AttackData_get_Damage_mFE564FC72C967403A8D383CD544AA72CF2C0269E_inline(L_26, NULL);
+		float L_28 = V_2;
+		V_5 = ((float)il2cpp_codegen_multiply(L_27, L_28));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:79>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_29 = __this->___attackData;
+		NullCheck(L_29);
+		float L_30;
+		L_30 = AttackData_get_AttackRange_m45E3AC08E5A2558C70B57A157BB4A21CB841E53E_inline(L_29, NULL);
+		float L_31 = V_3;
+		V_6 = ((float)il2cpp_codegen_multiply(L_30, L_31));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:81>
+		float L_32 = __this->____cooldownTimer;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_33 = ___0_baseContext;
+		float L_34 = L_33->___deltaTime;
+		__this->____cooldownTimer = ((float)il2cpp_codegen_subtract(L_32, L_34));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:82>
+		float L_35 = __this->____cooldownTimer;
+		if ((!(((float)L_35) > ((float)(0.0f)))))
+		{
+			goto IL_00f8;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:83>
+		return;
+	}
+
+IL_00f8:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:85>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:86>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:87>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:88>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:89>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:90>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:91>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:92>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = __this->____owner;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_37 = ___0_baseContext;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38 = L_37->___target;
+		float L_39 = V_5;
+		float L_40 = V_6;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_41 = ___0_baseContext;
+		float L_42 = L_41->___deltaTime;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_43 = __this->___attackData;
+		NullCheck(L_43);
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_44;
+		L_44 = AttackData_get_AttackSfx_m29EB1C527D55B5D2642DD0B470C067CFAB8DCA42_inline(L_43, NULL);
+		AttackContext__ctor_m78FD11211BC0EC25F52690DD00AB371D0134140D((&V_7), L_36, L_38, L_39, L_40, L_42, L_44, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:96>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_45 = V_0;
+		NullCheck(L_45);
+		bool L_46;
+		L_46 = VirtualFuncInvoker1< bool, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(6, L_45, (&V_7));
+		if (L_46)
+		{
+			goto IL_0136;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:98>
+		__this->____cooldownTimer = (0.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:99>
+		return;
+	}
+
+IL_0136:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:102>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_47 = V_0;
+		NullCheck(L_47);
+		bool L_48;
+		L_48 = VirtualFuncInvoker1< bool, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(4, L_47, (&V_7));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:103>
+		if (!L_48)
+		{
+			goto IL_019c;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:105>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_49 = __this->____audioSource;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_50 = __this->___attackData;
+		AttackAudioPlayer_Play_m0DE30B97CAB4D000C0D615312E81608CE740B1DB(L_49, L_50, (0.800000012f), NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:106>
+		float L_51 = V_4;
+		__this->____cooldownTimer = L_51;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:107>
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_52 = __this->___OnAttackPerformed;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_53 = L_52;
+		if (L_53)
+		{
+			G_B22_0 = L_53;
+			goto IL_016a;
+		}
+		G_B21_0 = L_53;
+	}
+	{
+		goto IL_016f;
+	}
+
+IL_016a:
+	{
+		NullCheck(G_B22_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B22_0, NULL);
+	}
+
+IL_016f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:109>
+		IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* L_54 = __this->____pulseTargets;
+		if (!L_54)
+		{
+			goto IL_019c;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:111>
+		V_8 = 0;
+		goto IL_0190;
+	}
+
+IL_017c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:112>
+		IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* L_55 = __this->____pulseTargets;
+		int32_t L_56 = V_8;
+		NullCheck(L_55);
+		int32_t L_57 = L_56;
+		RuntimeObject* L_58 = (L_55)->GetAt(static_cast<il2cpp_array_size_t>(L_57));
+		NullCheck(L_58);
+		InterfaceActionInvoker0::Invoke(0, IAttackPulse_t7EA0944989009F1257D24986504003367E4259FF_il2cpp_TypeInfo_var, L_58);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:111>
+		int32_t L_59 = V_8;
+		V_8 = ((int32_t)il2cpp_codegen_add(L_59, 1));
+	}
+
+IL_0190:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:111>
+		int32_t L_60 = V_8;
+		IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A* L_61 = __this->____pulseTargets;
+		NullCheck(L_61);
+		if ((((int32_t)L_60) < ((int32_t)((int32_t)(((RuntimeArray*)L_61)->max_length)))))
+		{
+			goto IL_017c;
+		}
+	}
+
+IL_019c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:115>
+		return;
+	}
+}
+// Method Definition Index: 71294
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3 (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* V_0 = NULL;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B2_0 = NULL;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* G_B1_0 = NULL;
+	AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* G_B3_0 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:119>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = __this->___attackData;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000d;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		G_B3_0 = ((AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F*)(NULL));
+		goto IL_0012;
+	}
+
+IL_000d:
+	{
+		NullCheck(G_B2_0);
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_2;
+		L_2 = AttackData_get_AttackBehavior_m9970F5B7EEAB3297C73B0F56A391C09AD2A65E9D_inline(G_B2_0, NULL);
+		G_B3_0 = L_2;
+	}
+
+IL_0012:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:120>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_3 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->____owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:121>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_7 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->____owner;
+		NullCheck(L_7);
+		VirtualActionInvoker1< Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* >::Invoke(9, L_7, L_8);
+	}
+
+IL_0036:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:123>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->____visualInstance;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_10)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:124>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->____visualInstance;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_11, NULL);
+	}
+
+IL_004f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:126>
+		__this->____visualInstance = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____visualInstance), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:127>
+		__this->____pulseTargets = (IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____pulseTargets), (void*)(IAttackPulseU5BU5D_t1EF5FDC475A7E50E396A819A630012DDC4CF362A*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:128>
+		__this->____owner = (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____owner), (void*)(Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:129>
+		__this->____audioSource = (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____audioSource), (void*)(AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:130>
+		__this->____upgradeModifiers = (PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____upgradeModifiers), (void*)(PlayerUpgradeModifiers_t05DB1397DF6409D87E16AB8D96E71BE7EB9B6641*)NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:131>
+		__this->____cooldownTimer = (0.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:132>
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71295
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuraAttackBehavior_HasTargetInRange_m9CC069360BA3DEF9C9F04E9D827200E60774A3AD (AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B2_0 = NULL;
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B1_0 = NULL;
+	float G_B3_0 = 0.0f;
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B3_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:15>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_1 = ___0_ctx;
+		float L_2 = L_1->___range;
+		if ((((float)L_2) > ((float)(0.0f))))
+		{
+			G_B2_0 = L_0;
+			goto IL_0016;
+		}
+		G_B1_0 = L_0;
+	}
+	{
+		float L_3 = __this->___fallbackRadius;
+		G_B3_0 = L_3;
+		G_B3_1 = G_B1_0;
+		goto IL_001c;
+	}
+
+IL_0016:
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_4 = ___0_ctx;
+		float L_5 = L_4->___range;
+		G_B3_0 = L_5;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_001c:
+	{
+		bool L_6;
+		L_6 = AttackBehavior_TargetWithinRange_m2696F8551494E0A777329DF0000F63F0D72ED433(G_B3_1, G_B3_0, NULL);
+		return L_6;
+	}
+}
+// Method Definition Index: 71296
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AuraAttackBehavior_Execute_m3B6047C7D27095C6FE5110A84844EE8B22696A02 (AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:19>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_1;
+		L_1 = VirtualFuncInvoker1< AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(5, __this, L_0);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline((&V_0), NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 71297
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 AuraAttackBehavior_ExecuteWithResult_m944A8894DF53DC2DE7F2AC31DD9D7F298594745A (AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* V_1 = NULL;
+	HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* V_2 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_3 = NULL;
+	bool V_4 = false;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	int32_t V_6 = 0;
+	Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* V_7 = NULL;
+	RuntimeObject* V_8 = NULL;
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* V_9 = NULL;
+	float G_B5_0 = 0.0f;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:24>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:25>
+		il2cpp_codegen_initobj((&V_5), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_3 = V_5;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_4), (bool)1, (bool)0, L_3, NULL);
+		return L_4;
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:27>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_5 = ___0_ctx;
+		float L_6 = L_5->___range;
+		if ((((float)L_6) > ((float)(0.0f))))
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		float L_7 = __this->___fallbackRadius;
+		G_B5_0 = L_7;
+		goto IL_003b;
+	}
+
+IL_0035:
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_8 = ___0_ctx;
+		float L_9 = L_8->___range;
+		G_B5_0 = L_9;
+	}
+
+IL_003b:
+	{
+		V_0 = G_B5_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:28>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_10 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = L_10->___attacker;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
+		L_13 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_12, NULL);
+		float L_14 = V_0;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_15 = __this->___hitMask;
+		int32_t L_16;
+		L_16 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_15, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_17;
+		L_17 = Physics2D_OverlapCircleAll_mBEBE14F058D718FA90F44A662C106D9CCDF6B3D9(L_13, L_14, L_16, NULL);
+		V_1 = L_17;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:29>
+		HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* L_18 = (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2*)il2cpp_codegen_object_new(HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2_il2cpp_TypeInfo_var);
+		HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534(L_18, HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534_RuntimeMethod_var);
+		V_2 = L_18;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:30>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_19 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = L_19->___attacker;
+		NullCheck(L_20);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_20, NULL);
+		V_3 = L_21;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:31>
+		V_4 = (bool)0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:33>
+		V_6 = 0;
+		goto IL_00cd;
+	}
+
+IL_0078:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:35>
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_22 = V_1;
+		int32_t L_23 = V_6;
+		NullCheck(L_22);
+		int32_t L_24 = L_23;
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+		V_7 = L_25;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:36>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_26 = V_7;
+		NullCheck(L_26);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_26, NULL);
+		NullCheck(L_27);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
+		L_28 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_27, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = V_3;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_30;
+		L_30 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_28, L_29, NULL);
+		if (L_30)
+		{
+			goto IL_00c7;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:39>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_31 = V_7;
+		NullCheck(L_31);
+		RuntimeObject* L_32;
+		L_32 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_31, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_8 = L_32;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:40>
+		RuntimeObject* L_33 = V_8;
+		V_9 = ((MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)IsInstClass((RuntimeObject*)L_33, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_il2cpp_TypeInfo_var));
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_34 = V_9;
+		if (!L_34)
+		{
+			goto IL_00c7;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:43>
+		HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* L_35 = V_2;
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_36 = V_9;
+		NullCheck(L_36);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37;
+		L_37 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_36, NULL);
+		NullCheck(L_35);
+		bool L_38;
+		L_38 = HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3(L_35, L_37, HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3_RuntimeMethod_var);
+		if (!L_38)
+		{
+			goto IL_00c7;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:46>
+		RuntimeObject* L_39 = V_8;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_40 = ___0_ctx;
+		float L_41 = L_40->___damage;
+		NullCheck(L_39);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_39, L_41);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:47>
+		V_4 = (bool)1;
+	}
+
+IL_00c7:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:33>
+		int32_t L_42 = V_6;
+		V_6 = ((int32_t)il2cpp_codegen_add(L_42, 1));
+	}
+
+IL_00cd:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:33>
+		int32_t L_43 = V_6;
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_44 = V_1;
+		NullCheck(L_44);
+		if ((((int32_t)L_43) < ((int32_t)((int32_t)(((RuntimeArray*)L_44)->max_length)))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:50>
+		bool L_45 = V_4;
+		il2cpp_codegen_initobj((&V_5), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_46 = V_5;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_47;
+		memset((&L_47), 0, sizeof(L_47));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_47), (bool)1, L_45, L_46, NULL);
+		return L_47;
+	}
+}
+// Method Definition Index: 71298
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* AuraAttackBehavior_CreateVisual_mB68D5336E1987FB9C6AE5F5935074D9BAB024235 (AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:53>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___visualPrefab;
+		return L_0;
+	}
+}
+// Method Definition Index: 71299
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuraAttackBehavior__ctor_mA846FCC382018262E93FC9A2213590F52CC7BEC8 (AuraAttackBehavior_t7D674BF693A2CA12FB2CF5CCC42CEE980D3A93B4* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:10>
+		__this->___fallbackRadius = (1.5f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AuraAttackBehavior.cs:11>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0;
+		L_0 = LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222((-1), NULL);
+		__this->___hitMask = L_0;
+		AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71300
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackAreaVisual_Awake_mEE742E6142DCF70BA1B68585CD1002EE9F46B650 (BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:15>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___radiusVisual;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:16>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		__this->___radiusVisual = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___radiusVisual), (void*)L_2);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:18>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___radiusVisual;
+		NullCheck(L_3);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_4;
+		L_4 = Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45(L_3, Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		__this->____spriteRenderer = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____spriteRenderer), (void*)L_4);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:19>
+		BasicAttackAreaVisual_CacheSpriteDiameter_m8ABD1DCD0B0703243A70116051A5F02037DF53BA(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:20>
+		return;
+	}
+}
+// Method Definition Index: 71301
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackAreaVisual_CacheSpriteDiameter_m8ABD1DCD0B0703243A70116051A5F02037DF53BA (BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:24>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_0 = __this->____spriteRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_2 = __this->____spriteRenderer;
+		NullCheck(L_2);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_3;
+		L_3 = SpriteRenderer_get_sprite_mEEED0A9E872AE12E56CAF1641F2F592633181D44(L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_002d;
+		}
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:26>
+		__this->____spriteDiameterAtScaleOne = (1.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:27>
+		return;
+	}
+
+IL_002d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:30>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_5 = __this->____spriteRenderer;
+		NullCheck(L_5);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_6;
+		L_6 = SpriteRenderer_get_sprite_mEEED0A9E872AE12E56CAF1641F2F592633181D44(L_5, NULL);
+		NullCheck(L_6);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_7;
+		L_7 = Sprite_get_bounds_m042F847F6C5118E6B14A3F79A1E1C53E7DFBF452(L_6, NULL);
+		V_1 = L_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline((&V_1), NULL);
+		V_0 = L_8;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:31>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		float L_10 = L_9.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_0;
+		float L_12 = L_11.___y;
+		float L_13;
+		L_13 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_10, L_12, NULL);
+		__this->____spriteDiameterAtScaleOne = L_13;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:32>
+		float L_14 = __this->____spriteDiameterAtScaleOne;
+		if ((!(((float)L_14) < ((float)(9.99999975E-05f)))))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:33>
+		__this->____spriteDiameterAtScaleOne = (1.0f);
+	}
+
+IL_0075:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:34>
+		return;
+	}
+}
+// Method Definition Index: 71302
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackAreaVisual_Initialize_m2735565CD14FA7A6CDDB3DF0C85DFDF9AEAB7C0E (BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* ___1_behavior, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* V_1 = NULL;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	float V_4 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	float G_B7_0 = 0.0f;
+	float G_B15_0 = 0.0f;
+	float G_B14_0 = 0.0f;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:38>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___radiusVisual;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:39>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		__this->___radiusVisual = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___radiusVisual), (void*)L_2);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:41>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_3 = __this->____spriteRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:43>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___radiusVisual;
+		NullCheck(L_5);
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_6;
+		L_6 = Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45(L_5, Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		__this->____spriteRenderer = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____spriteRenderer), (void*)L_6);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:44>
+		BasicAttackAreaVisual_CacheSpriteDiameter_m8ABD1DCD0B0703243A70116051A5F02037DF53BA(__this, NULL);
+	}
+
+IL_003f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:47>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_7 = ___0_attackData;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_8)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		G_B7_0 = (0.0f);
+		goto IL_0055;
+	}
+
+IL_004f:
+	{
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_9 = ___0_attackData;
+		NullCheck(L_9);
+		float L_10;
+		L_10 = AttackData_get_AttackRange_m45E3AC08E5A2558C70B57A157BB4A21CB841E53E_inline(L_9, NULL);
+		G_B7_0 = L_10;
+	}
+
+IL_0055:
+	{
+		V_0 = G_B7_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:48>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_11 = ___1_behavior;
+		V_1 = ((BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD*)IsInstClass((RuntimeObject*)L_11, BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD_il2cpp_TypeInfo_var));
+		BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* L_12 = V_1;
+		if (!L_12)
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:49>
+		BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* L_13 = V_1;
+		float L_14 = V_0;
+		NullCheck(L_13);
+		float L_15;
+		L_15 = BasicAttackBehavior_GetEffectiveRadius_m34BA7F3EB6BC54AFA2D1353D6D35707D1417BBEB(L_13, L_14, NULL);
+		V_0 = L_15;
+	}
+
+IL_0068:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:51>
+		float L_16 = V_0;
+		V_2 = (bool)((((float)L_16) > ((float)(0.0f)))? 1 : 0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:52>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_17 = __this->____spriteRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:53>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_19 = __this->____spriteRenderer;
+		bool L_20 = V_2;
+		NullCheck(L_19);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_19, L_20, NULL);
+	}
+
+IL_008b:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:55>
+		bool L_21 = V_2;
+		if (L_21)
+		{
+			goto IL_008f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:56>
+		return;
+	}
+
+IL_008f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:58>
+		float L_22 = V_0;
+		float L_23 = __this->___diameterScaleMultiplier;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:59>
+		V_3 = (1.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:60>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = __this->___radiusVisual;
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_24, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_26;
+		L_26 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_25, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_26)
+		{
+			G_B15_0 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_22, (2.0f))), L_23));
+			goto IL_00e6;
+		}
+		G_B14_0 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_22, (2.0f))), L_23));
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:62>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27 = __this->___radiusVisual;
+		NullCheck(L_27);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
+		L_28 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_27, NULL);
+		NullCheck(L_28);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07(L_28, NULL);
+		V_5 = L_29;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:63>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_5;
+		float L_31 = L_30.___x;
+		float L_32;
+		L_32 = fabsf(L_31);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_5;
+		float L_34 = L_33.___y;
+		float L_35;
+		L_35 = fabsf(L_34);
+		float L_36;
+		L_36 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_32, L_35, NULL);
+		V_3 = L_36;
+		G_B15_0 = G_B14_0;
+	}
+
+IL_00e6:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:66>
+		float L_37 = __this->____spriteDiameterAtScaleOne;
+		float L_38 = V_3;
+		V_4 = ((float)(G_B15_0/((float)il2cpp_codegen_multiply(L_37, L_38))));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:67>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39 = __this->___radiusVisual;
+		float L_40 = V_4;
+		float L_41 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
+		memset((&L_42), 0, sizeof(L_42));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_42), L_40, L_41, (1.0f), NULL);
+		NullCheck(L_39);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_39, L_42, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:68>
+		return;
+	}
+}
+// Method Definition Index: 71303
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackAreaVisual__ctor_m4752F514E91B27FB731E5C3472E40403CA542C7D (BasicAttackAreaVisual_t167B26E6381CD7AB3BD6E919D9B0499C997FD561* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:8>
+		__this->___diameterScaleMultiplier = (1.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackAreaVisual.cs:11>
+		__this->____spriteDiameterAtScaleOne = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71304
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BasicAttackBehavior_GetEffectiveRadius_m34BA7F3EB6BC54AFA2D1353D6D35707D1417BBEB (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, float ___0_attackRangeFromAttackData, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:37>
+		float L_0 = ___0_attackRangeFromAttackData;
+		if ((((float)L_0) > ((float)(0.0f))))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		float L_1 = __this->___fallbackRadius;
+		return L_1;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_attackRangeFromAttackData;
+		return L_2;
+	}
+}
+// Method Definition Index: 71305
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BasicAttackBehavior_HasTargetInRange_m83B91453DAE237201C9E7E73F85E343D99A4E505 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:40>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_1 = ___0_ctx;
+		float L_2 = L_1->___range;
+		float L_3;
+		L_3 = BasicAttackBehavior_GetEffectiveRadius_m34BA7F3EB6BC54AFA2D1353D6D35707D1417BBEB(__this, L_2, NULL);
+		bool L_4;
+		L_4 = AttackBehavior_TargetWithinRange_m2696F8551494E0A777329DF0000F63F0D72ED433(L_0, L_3, NULL);
+		return L_4;
+	}
+}
+// Method Definition Index: 71306
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BasicAttackBehavior_Execute_m04AB79D44F3E1DD294DB394859FA9771DCB019A7 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:49>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_1;
+		L_1 = VirtualFuncInvoker1< AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(5, __this, L_0);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline((&V_0), NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 71307
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 BasicAttackBehavior_ExecuteWithResult_m6BEE72895D8673D0E44CFA7E3691EDB3133E60F1 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	bool V_3 = false;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_4 = NULL;
+	HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* V_5 = NULL;
+	bool V_6 = false;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* V_9 = NULL;
+	int32_t V_10 = 0;
+	Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* V_11 = NULL;
+	RuntimeObject* V_12 = NULL;
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* V_13 = NULL;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_14;
+	memset((&V_14), 0, sizeof(V_14));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:54>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:55>
+		il2cpp_codegen_initobj((&V_7), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_3 = V_7;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_4), (bool)1, (bool)0, L_3, NULL);
+		return L_4;
+	}
+
+IL_0020:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:57>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_5 = ___0_ctx;
+		float L_6 = L_5->___range;
+		float L_7;
+		L_7 = BasicAttackBehavior_GetEffectiveRadius_m34BA7F3EB6BC54AFA2D1353D6D35707D1417BBEB(__this, L_6, NULL);
+		V_0 = L_7;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:58>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_8 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = L_8->___attacker;
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_9, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11;
+		L_11 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_10, NULL);
+		V_1 = L_11;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:61>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
+		L_12 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		V_2 = L_12;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:62>
+		V_3 = (bool)0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:63>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_13 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = L_13->___target;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_15)
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:65>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_16 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = L_16->___target;
+		NullCheck(L_17);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_19;
+		L_19 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_18, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_20 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
+		L_21 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_19, L_20, NULL);
+		V_8 = L_21;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:66>
+		float L_22;
+		L_22 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_8), NULL);
+		if ((!(((float)L_22) > ((float)(9.99999975E-05f)))))
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:68>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_23;
+		L_23 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&V_8), NULL);
+		V_2 = L_23;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:69>
+		float L_24 = __this->___arcAngleDegrees;
+		V_3 = (bool)((((float)L_24) < ((float)(360.0f)))? 1 : 0);
+	}
+
+IL_0090:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:73>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_25 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26 = L_25->___attacker;
+		NullCheck(L_26);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_26, NULL);
+		V_4 = L_27;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:74>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_28 = V_1;
+		float L_29 = V_0;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_30 = __this->___hitMask;
+		int32_t L_31;
+		L_31 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_30, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_32;
+		L_32 = Physics2D_OverlapCircleAll_mBEBE14F058D718FA90F44A662C106D9CCDF6B3D9(L_28, L_29, L_31, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:75>
+		HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* L_33 = (HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2*)il2cpp_codegen_object_new(HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2_il2cpp_TypeInfo_var);
+		HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534(L_33, HashSet_1__ctor_m78839548D7E3252DC1D5F2642AD73C49DD221534_RuntimeMethod_var);
+		V_5 = L_33;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:76>
+		V_6 = (bool)0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:78>
+		V_9 = L_32;
+		V_10 = 0;
+		goto IL_015b;
+	}
+
+IL_00c3:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:78>
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_34 = V_9;
+		int32_t L_35 = V_10;
+		NullCheck(L_34);
+		int32_t L_36 = L_35;
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_37 = (L_34)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
+		V_11 = L_37;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:80>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_38 = V_11;
+		NullCheck(L_38);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39;
+		L_39 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_38, NULL);
+		NullCheck(L_39);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_39, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_42;
+		L_42 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_40, L_41, NULL);
+		if (L_42)
+		{
+			goto IL_0155;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:83>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_43 = V_11;
+		NullCheck(L_43);
+		RuntimeObject* L_44;
+		L_44 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_43, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_12 = L_44;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:84>
+		RuntimeObject* L_45 = V_12;
+		V_13 = ((MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71*)IsInstClass((RuntimeObject*)L_45, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_il2cpp_TypeInfo_var));
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_46 = V_13;
+		if (!L_46)
+		{
+			goto IL_0155;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:87>
+		HashSet_1_tAA6C1F6337C1D573AEC249E1B9B43BFCADF908F2* L_47 = V_5;
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_48 = V_13;
+		NullCheck(L_48);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49;
+		L_49 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_48, NULL);
+		NullCheck(L_47);
+		bool L_50;
+		L_50 = HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3(L_47, L_49, HashSet_1_Add_m838292240F40A79A8FA7248252D9DFE734E6EDB3_RuntimeMethod_var);
+		if (!L_50)
+		{
+			goto IL_0155;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:91>
+		bool L_51 = V_3;
+		if (!L_51)
+		{
+			goto IL_0145;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:93>
+		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_52 = V_13;
+		NullCheck(L_52);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53;
+		L_53 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_52, NULL);
+		NullCheck(L_53);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
+		L_54 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_53, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_55;
+		L_55 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_54, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_56 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_57;
+		L_57 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_55, L_56, NULL);
+		V_14 = L_57;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:94>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:95>
+		float L_58;
+		L_58 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_14), NULL);
+		if ((!(((float)L_58) > ((float)(9.99999975E-05f)))))
+		{
+			goto IL_0145;
+		}
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_59 = V_2;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_60 = V_14;
+		float L_61;
+		L_61 = Vector2_Angle_mD94AAEA690169FE5882D60F8489C8BF63300C221_inline(L_59, L_60, NULL);
+		float L_62 = __this->___arcAngleDegrees;
+		if ((((float)L_61) > ((float)((float)il2cpp_codegen_multiply(L_62, (0.5f))))))
+		{
+			goto IL_0155;
+		}
+	}
+
+IL_0145:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:99>
+		RuntimeObject* L_63 = V_12;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_64 = ___0_ctx;
+		float L_65 = L_64->___damage;
+		NullCheck(L_63);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_63, L_65);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:100>
+		V_6 = (bool)1;
+	}
+
+IL_0155:
+	{
+		int32_t L_66 = V_10;
+		V_10 = ((int32_t)il2cpp_codegen_add(L_66, 1));
+	}
+
+IL_015b:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:78>
+		int32_t L_67 = V_10;
+		Collider2DU5BU5D_t4771A44B23D278BC01AB6ED33A9A28E48DC0B034* L_68 = V_9;
+		NullCheck(L_68);
+		if ((((int32_t)L_67) < ((int32_t)((int32_t)(((RuntimeArray*)L_68)->max_length)))))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:103>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_69 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_70 = L_69->___attacker;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_71 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_72 = V_2;
+		BasicAttackBehavior_SpawnSwingVisual_mB85E711154427DE227D6FFD595B937EA51E9A1B8(__this, L_70, L_71, L_72, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:104>
+		bool L_73 = V_6;
+		il2cpp_codegen_initobj((&V_7), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_74 = V_7;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_75;
+		memset((&L_75), 0, sizeof(L_75));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_75), (bool)1, L_73, L_74, NULL);
+		return L_75;
+	}
+}
+// Method Definition Index: 71308
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackBehavior_SpawnSwingVisual_mB85E711154427DE227D6FFD595B937EA51E9A1B8 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_origin, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_swingDir, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mA8D74F208D28C8961077841DC2D078EE6BB3B925_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mC4BEAAF2F045D28227C1082AE46C94A91FE1FC59_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
+	SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* V_3 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:109>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___swingVisualPrefab;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:110>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:112>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___2_swingDir;
+		float L_3 = L_2.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___2_swingDir;
+		float L_5 = L_4.___x;
+		float L_6;
+		L_6 = atan2f(L_3, L_5);
+		V_0 = ((float)il2cpp_codegen_multiply(L_6, (57.2957802f)));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:113>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = ___1_origin;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = ___2_swingDir;
+		float L_9 = __this->___visualSpawnOffset;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
+		L_10 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_8, L_9, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11;
+		L_11 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_7, L_10, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_11, NULL);
+		V_1 = L_12;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:114>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:115>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:116>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:117>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___swingVisualPrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_1;
+		float L_15 = V_0;
+		float L_16 = __this->___visualAngleOffset;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_17;
+		L_17 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_add(L_15, L_16)), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
+		L_18 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_13, L_14, L_17, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		V_2 = L_18;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:119>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_2;
+		NullCheck(L_19);
+		SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* L_20;
+		L_20 = GameObject_GetComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mC4BEAAF2F045D28227C1082AE46C94A91FE1FC59(L_19, GameObject_GetComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mC4BEAAF2F045D28227C1082AE46C94A91FE1FC59_RuntimeMethod_var);
+		V_3 = L_20;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:120>
+		SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* L_21 = V_3;
+		bool L_22;
+		L_22 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_22)
+		{
+			goto IL_007a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:121>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_2;
+		NullCheck(L_23);
+		SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* L_24;
+		L_24 = GameObject_AddComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mA8D74F208D28C8961077841DC2D078EE6BB3B925(L_23, GameObject_AddComponent_TisSwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_mA8D74F208D28C8961077841DC2D078EE6BB3B925_RuntimeMethod_var);
+		V_3 = L_24;
+	}
+
+IL_007a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:123>
+		SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* L_25 = V_3;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26 = ___0_attacker;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27 = ___2_swingDir;
+		float L_28 = __this->___visualLifetime;
+		float L_29 = __this->___visualAngleOffset;
+		NullCheck(L_25);
+		SwingVisualRuntime_Initialize_mB865FB96DF11E77A26D2E1027263F24AE27E4242(L_25, L_26, L_27, L_28, L_29, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:124>
+		return;
+	}
+}
+// Method Definition Index: 71309
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* BasicAttackBehavior_CreateVisual_m4652FD45022FE880B8E036BBA499D0D5D7525E20 (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:126>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___visualPrefab;
+		return L_0;
+	}
+}
+// Method Definition Index: 71310
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BasicAttackBehavior__ctor_m5C008937741C3A5B8B2108741ECA10189F8AF33A (BasicAttackBehavior_tDFC2C731ED82950C0C81D1460D36AEC82D96DCFD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:13>
+		__this->___fallbackRadius = (1.5f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:14>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0;
+		L_0 = LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222((-1), NULL);
+		__this->___hitMask = L_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:21>
+		__this->___arcAngleDegrees = (140.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:26>
+		__this->___visualSpawnOffset = (0.400000006f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/BasicAttackBehavior.cs:27>
+		__this->___visualLifetime = (0.200000003f);
+		AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71311
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DashAttackBehavior_get_DashSpeed_mECADA79ADAAD90B8A7688A973D539E8B167B5A29 (DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:12>
+		float L_0 = __this->___dashSpeed;
+		return L_0;
+	}
+}
+// Method Definition Index: 71312
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DashAttackBehavior_Execute_m6CD5909DB360C44B4E8239AD7ECED65CA63C8AD7 (DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:16>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_1;
+		L_1 = VirtualFuncInvoker1< AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(5, __this, L_0);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline((&V_0), NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 71313
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 DashAttackBehavior_ExecuteWithResult_m888142E8CCDEBEE7B55EF58D02AEC518E09354B8 (DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_mF91C27E4D059E4D58452587737BE40E4E0118FF9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_m353C72B948368BDE9DDC84F9DF0F49587EACA317_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* V_0 = NULL;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	bool V_3 = false;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	float V_6 = 0.0f;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	RuntimeObject* V_8 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B10_0;
+	memset((&G_B10_0), 0, sizeof(G_B10_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B9_0;
+	memset((&G_B9_0), 0, sizeof(G_B9_0));
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* G_B11_0 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B11_1;
+	memset((&G_B11_1), 0, sizeof(G_B11_1));
+	float G_B15_0 = 0.0f;
+	int32_t G_B23_0 = 0;
+	int32_t G_B25_0 = 0;
+	int32_t G_B24_0 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:21>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_3 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = L_3->___target;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
+		{
+			goto IL_002e;
+		}
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:22>
+		il2cpp_codegen_initobj((&V_4), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_6 = V_4;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_7), (bool)1, (bool)0, L_6, NULL);
+		return L_7;
+	}
+
+IL_002e:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:24>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_8 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = L_8->___attacker;
+		NullCheck(L_9);
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_10;
+		L_10 = Component_GetComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_mF91C27E4D059E4D58452587737BE40E4E0118FF9(L_9, Component_GetComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_mF91C27E4D059E4D58452587737BE40E4E0118FF9_RuntimeMethod_var);
+		V_0 = L_10;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:25>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_11 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_12)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:26>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_13 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = L_13->___attacker;
+		NullCheck(L_14);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
+		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_14, NULL);
+		NullCheck(L_15);
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_16;
+		L_16 = GameObject_AddComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_m353C72B948368BDE9DDC84F9DF0F49587EACA317(L_15, GameObject_AddComponent_TisDashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01_m353C72B948368BDE9DDC84F9DF0F49587EACA317_RuntimeMethod_var);
+		V_0 = L_16;
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:28>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_17 = V_0;
+		NullCheck(L_17);
+		bool L_18;
+		L_18 = DashAttackRuntime_get_IsActive_m8B7D3115CC1A7C1C16F0F6798AC4F376B4186241_inline(L_17, NULL);
+		if (L_18)
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:30>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_19 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = L_19->___target;
+		NullCheck(L_20);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_20, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22;
+		L_22 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_21, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_23 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = L_23->___attacker;
+		NullCheck(L_24);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_24, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26;
+		L_26 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_25, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
+		L_27 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_22, L_26, NULL);
+		V_7 = L_27;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_28;
+		L_28 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&V_7), NULL);
+		V_5 = L_28;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:31>
+		float L_29;
+		L_29 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_5), NULL);
+		if ((!(((float)L_29) < ((float)(9.99999975E-05f)))))
+		{
+			goto IL_00a4;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:32>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
+		L_30 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		V_5 = L_30;
+	}
+
+IL_00a4:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:34>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_31 = ___0_ctx;
+		float L_32 = L_31->___range;
+		float L_33;
+		L_33 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_32, (0.100000001f), NULL);
+		V_6 = L_33;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:35>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_34 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_35 = V_5;
+		float L_36 = V_6;
+		NullCheck(L_34);
+		DashAttackRuntime_Begin_m194ABFA094749820F63A9213C081D6FACD673FAE(L_34, L_35, L_36, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:36>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_37 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38 = L_37->___attacker;
+		NullCheck(L_38);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
+		L_39 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_38, NULL);
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_40 = __this->___dashSfx;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_41;
+		L_41 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_40, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_41)
+		{
+			G_B10_0 = L_39;
+			goto IL_00e1;
+		}
+		G_B9_0 = L_39;
+	}
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_42 = ___0_ctx;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_43 = L_42->___attackSfx;
+		G_B11_0 = L_43;
+		G_B11_1 = G_B9_0;
+		goto IL_00e7;
+	}
+
+IL_00e1:
+	{
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_44 = __this->___dashSfx;
+		G_B11_0 = L_44;
+		G_B11_1 = G_B10_0;
+	}
+
+IL_00e7:
+	{
+		AttackAudioPlayer_PlayAtPoint_m2D2AC9EFDFE9872E1FFFBD6FB948137883CD321C(G_B11_1, G_B11_0, NULL);
+	}
+
+IL_00ec:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:39>
+		float L_45 = __this->___dashSpeed;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_46 = ___0_ctx;
+		float L_47 = L_46->___deltaTime;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:40>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_48 = V_0;
+		NullCheck(L_48);
+		float L_49;
+		L_49 = DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A_inline(L_48, NULL);
+		float L_50;
+		L_50 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(((float)il2cpp_codegen_multiply(L_45, L_47)), L_49, NULL);
+		V_1 = L_50;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:41>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_51 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52 = L_51->___attacker;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53 = L_52;
+		NullCheck(L_53);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
+		L_54 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_53, NULL);
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_55 = V_0;
+		NullCheck(L_55);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_56;
+		L_56 = DashAttackRuntime_get_Direction_m529437C1267F0A04A154277A81628FF21EC4F3F5_inline(L_55, NULL);
+		float L_57 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_58;
+		L_58 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_56, L_57, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
+		L_59 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_58, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
+		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_54, L_59, NULL);
+		NullCheck(L_53);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_53, L_60, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:42>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_61 = V_0;
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_62 = L_61;
+		NullCheck(L_62);
+		float L_63;
+		L_63 = DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A_inline(L_62, NULL);
+		float L_64 = V_1;
+		NullCheck(L_62);
+		DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9_inline(L_62, ((float)il2cpp_codegen_subtract(L_63, L_64)), NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:44>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_65 = ___0_ctx;
+		float L_66 = L_65->___range;
+		if ((((float)L_66) > ((float)(0.0f))))
+		{
+			goto IL_014e;
+		}
+	}
+	{
+		G_B15_0 = (0.100000001f);
+		goto IL_015e;
+	}
+
+IL_014e:
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_67 = ___0_ctx;
+		float L_68 = L_67->___range;
+		float L_69;
+		L_69 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_68, (0.349999994f), NULL);
+		G_B15_0 = L_69;
+	}
+
+IL_015e:
+	{
+		V_2 = G_B15_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:45>
+		V_3 = (bool)0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:46>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_70 = V_0;
+		NullCheck(L_70);
+		bool L_71;
+		L_71 = DashAttackRuntime_get_HasHit_m4AE3DE9E64F0799C7FDA5720DDDFB16E7EFD883A_inline(L_70, NULL);
+		if (L_71)
+		{
+			goto IL_01b8;
+		}
+	}
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_72 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_73 = L_72->___attacker;
+		NullCheck(L_73);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
+		L_74 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_73, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_75;
+		L_75 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_74, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_76 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_77 = L_76->___target;
+		NullCheck(L_77);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78;
+		L_78 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_77, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_79;
+		L_79 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_78, NULL);
+		float L_80;
+		L_80 = Vector2_Distance_mBACBB1609E1894D68F882D86A93519E311810C89_inline(L_75, L_79, NULL);
+		float L_81 = V_2;
+		if ((!(((float)L_80) <= ((float)L_81))))
+		{
+			goto IL_01b8;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:48>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_82 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_83 = L_82->___target;
+		NullCheck(L_83);
+		RuntimeObject* L_84;
+		L_84 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_83, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_8 = L_84;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:49>
+		RuntimeObject* L_85 = V_8;
+		if (!L_85)
+		{
+			goto IL_01b1;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:51>
+		RuntimeObject* L_86 = V_8;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_87 = ___0_ctx;
+		float L_88 = L_87->___damage;
+		NullCheck(L_86);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_86, L_88);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:52>
+		V_3 = (bool)1;
+	}
+
+IL_01b1:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:55>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_89 = V_0;
+		NullCheck(L_89);
+		DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B_inline(L_89, (bool)1, NULL);
+	}
+
+IL_01b8:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:58>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_90 = V_0;
+		NullCheck(L_90);
+		bool L_91;
+		L_91 = DashAttackRuntime_get_HasHit_m4AE3DE9E64F0799C7FDA5720DDDFB16E7EFD883A_inline(L_90, NULL);
+		if (L_91)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_92 = V_0;
+		NullCheck(L_92);
+		float L_93;
+		L_93 = DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A_inline(L_92, NULL);
+		G_B23_0 = ((((int32_t)((!(((float)L_93) <= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_01d3;
+	}
+
+IL_01d2:
+	{
+		G_B23_0 = 1;
+	}
+
+IL_01d3:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:59>
+		int32_t L_94 = G_B23_0;
+		if (!L_94)
+		{
+			G_B25_0 = L_94;
+			goto IL_01dc;
+		}
+		G_B24_0 = L_94;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:60>
+		DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* L_95 = V_0;
+		NullCheck(L_95);
+		DashAttackRuntime_ResetState_m8E302B3AF515C331D63119A870E1CAE8F527E20D(L_95, NULL);
+		G_B25_0 = G_B24_0;
+	}
+
+IL_01dc:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:62>
+		bool L_96 = V_3;
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_97;
+		memset((&L_97), 0, sizeof(L_97));
+		Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5((&L_97), (bool)0, Nullable_1__ctor_m4FAA8281CB4EFFD8B817734351FB3AC20A0CD6F5_RuntimeMethod_var);
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_98;
+		memset((&L_98), 0, sizeof(L_98));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_98), (bool)G_B25_0, L_96, L_97, NULL);
+		return L_98;
+	}
+}
+// Method Definition Index: 71314
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* DashAttackBehavior_CreateVisual_m19ADD3BCF2ABF0CA4FECF28E5CBA2DC4F1A48932 (DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:65>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___visualPrefab;
+		return L_0;
+	}
+}
+// Method Definition Index: 71315
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackBehavior__ctor_m9C798B0CEE360F580AE9963E3F3A99DFF4165403 (DashAttackBehavior_tC5A19CD60655821B5787EF1E86C0995B8AA9D409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackBehavior.cs:9>
+		__this->___dashSpeed = (10.0f);
+		AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71316
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_IsActive_m8B7D3115CC1A7C1C16F0F6798AC4F376B4186241 (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:11>
+		bool L_0 = __this->___U3CIsActiveU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71317
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_set_IsActive_m5F9F37C37634E37FAAC29D1F90A033EE16C0AAED (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:11>
+		bool L_0 = ___0_value;
+		__this->___U3CIsActiveU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71318
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_HasHit_m4AE3DE9E64F0799C7FDA5720DDDFB16E7EFD883A (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:12>
+		bool L_0 = __this->___U3CHasHitU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71319
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:12>
+		bool L_0 = ___0_value;
+		__this->___U3CHasHitU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71320
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 DashAttackRuntime_get_Direction_m529437C1267F0A04A154277A81628FF21EC4F3F5 (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:13>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___U3CDirectionU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71321
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_set_Direction_m1F94F5A94781383AC6DEC456E9FCFFE45C3D57B2 (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:13>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_value;
+		__this->___U3CDirectionU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71322
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:14>
+		float L_0 = __this->___U3CRemainingDistanceU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71323
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9 (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:14>
+		float L_0 = ___0_value;
+		__this->___U3CRemainingDistanceU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71324
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_Begin_m194ABFA094749820F63A9213C081D6FACD673FAE (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_direction, float ___1_travelDistance, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:18>
+		DashAttackRuntime_set_IsActive_m5F9F37C37634E37FAAC29D1F90A033EE16C0AAED_inline(__this, (bool)1, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:19>
+		DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B_inline(__this, (bool)0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:20>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
+		L_0 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&___0_direction), NULL);
+		DashAttackRuntime_set_Direction_m1F94F5A94781383AC6DEC456E9FCFFE45C3D57B2_inline(__this, L_0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:21>
+		float L_1 = ___1_travelDistance;
+		float L_2;
+		L_2 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), L_1, NULL);
+		DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9_inline(__this, L_2, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 71325
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_ResetState_m8E302B3AF515C331D63119A870E1CAE8F527E20D (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:26>
+		DashAttackRuntime_set_IsActive_m5F9F37C37634E37FAAC29D1F90A033EE16C0AAED_inline(__this, (bool)0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:27>
+		DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B_inline(__this, (bool)0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:28>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
+		L_0 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
+		DashAttackRuntime_set_Direction_m1F94F5A94781383AC6DEC456E9FCFFE45C3D57B2_inline(__this, L_0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:29>
+		DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9_inline(__this, (0.0f), NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:30>
+		return;
+	}
+}
+// Method Definition Index: 71326
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime_OnDisable_m4AF113C746930FE4FC1429ED9FF4FAFEA8357182 (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:35>
+		DashAttackRuntime_ResetState_m8E302B3AF515C331D63119A870E1CAE8F527E20D(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:36>
+		return;
+	}
+}
+// Method Definition Index: 71327
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DashAttackRuntime__ctor_mE77C95D309A526C3888444B604187C5E442F1B9E (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71330
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeleeAttackBehavior_Execute_mF47AD8B6EEF4701F4F40EE2A7D41396F0C5BBCAF (MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:13>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_1;
+		L_1 = VirtualFuncInvoker1< AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(5, __this, L_0);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline((&V_0), NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 71331
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 MeleeAttackBehavior_ExecuteWithResult_m5458A7142EEE3A5918D2590EEDA46F9403005DFB (MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:18>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_3 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = L_3->___target;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_5)
+		{
+			goto IL_002d;
+		}
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:19>
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_6 = V_1;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_7), (bool)1, (bool)0, L_6, NULL);
+		return L_7;
+	}
+
+IL_002d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:21>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:22>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_8 = ___0_ctx;
+		float L_9 = L_8->___range;
+		if ((!(((float)L_9) > ((float)(0.0f)))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_10 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = L_10->___attacker;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
+		L_13 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_12, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_14 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = L_14->___target;
+		NullCheck(L_15);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_15, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_17;
+		L_17 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_16, NULL);
+		float L_18;
+		L_18 = Vector2_Distance_mBACBB1609E1894D68F882D86A93519E311810C89_inline(L_13, L_17, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_19 = ___0_ctx;
+		float L_20 = L_19->___range;
+		if ((!(((float)L_18) > ((float)L_20))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:23>
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_21 = V_1;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_22;
+		memset((&L_22), 0, sizeof(L_22));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_22), (bool)1, (bool)0, L_21, NULL);
+		return L_22;
+	}
+
+IL_0078:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:25>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_23 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = L_23->___target;
+		NullCheck(L_24);
+		RuntimeObject* L_25;
+		L_25 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_24, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_0 = L_25;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:26>
+		RuntimeObject* L_26 = V_0;
+		if (L_26)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:27>
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_27 = V_1;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_28;
+		memset((&L_28), 0, sizeof(L_28));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_28), (bool)1, (bool)0, L_27, NULL);
+		return L_28;
+	}
+
+IL_0098:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:29>
+		RuntimeObject* L_29 = V_0;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_30 = ___0_ctx;
+		float L_31 = L_30->___damage;
+		NullCheck(L_29);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_29, L_31);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:30>
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_32 = V_1;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_33;
+		memset((&L_33), 0, sizeof(L_33));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_33), (bool)1, (bool)1, L_32, NULL);
+		return L_33;
+	}
+}
+// Method Definition Index: 71332
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* MeleeAttackBehavior_CreateVisual_m2C05A5BB195769B21BB5987ED157AA3C7C436907 (MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/MeleeAttackBehavior.cs:33>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___visualPrefab;
+		return L_0;
+	}
+}
+// Method Definition Index: 71333
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeleeAttackBehavior__ctor_m34798AF5866413DAC6BD8CE3BFCC984FA5C7A9F4 (MeleeAttackBehavior_tAC07AAA2248AA36DF8F62883A027C841964DCE4D* __this, const RuntimeMethod* method) 
+{
+	{
+		AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71334
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayerAttackLoadout_get_Slots_mEB8E3C7726697FC1E89378AE7CBCCC0B90EE4DB5 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:15>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_0 = __this->____slots;
+		return L_0;
+	}
+}
+// Method Definition Index: 71335
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_add_OnAttackPerformed_mE93688225DF39E5E691654ED29019A5365848BBB (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___OnAttackPerformed;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07**)(&__this->___OnAttackPerformed);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// Method Definition Index: 71336
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_remove_OnAttackPerformed_m7E36645D1FA92F08F4AD3F3782A748FD7E0FAF38 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_2 = NULL;
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___OnAttackPerformed;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = V_0;
+		V_1 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_4, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07** L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07**)(&__this->___OnAttackPerformed);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_2;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_8;
+		L_8 = InterlockedCompareExchangeImpl<Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = V_1;
+		if ((!(((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_9) == ((RuntimeObject*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// Method Definition Index: 71337
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* PlayerAttackLoadout_CreateAndEquipSlot_m7B7B78C2D162B34A4A94786BDC4D9EB861616557 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerAttackLoadout_RaiseAttackPerformed_mFB5802382D54418C634C0DAE276EB09899D2C1D1_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:23>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = ___0_attackData;
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_1 = (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9*)il2cpp_codegen_object_new(AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9_il2cpp_TypeInfo_var);
+		AttackSlot__ctor_m0DE63EDCDF8991F85CC9B9645BABDEE43B31B8E2(L_1, L_0, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:24>
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_2 = L_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_3, __this, (intptr_t)((void*)PlayerAttackLoadout_RaiseAttackPerformed_mFB5802382D54418C634C0DAE276EB09899D2C1D1_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		AttackSlot_add_OnAttackPerformed_m0D661DDFD51921D2DD65BF6715DD51C48F145DBF(L_2, L_3, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:25>
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_4 = L_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_4);
+		AttackSlot_Equip_m3829D62F21869E17D0A0703721D52E6F7AFB8B11(L_4, L_5, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:26>
+		return L_4;
+	}
+}
+// Method Definition Index: 71338
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_RaiseAttackPerformed_mFB5802382D54418C634C0DAE276EB09899D2C1D1 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B2_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B1_0 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:29>
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = __this->___OnAttackPerformed;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		NullCheck(G_B2_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B2_0, NULL);
+		return;
+	}
+}
+// Method Definition Index: 71339
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_Awake_m6449E64FD4026F35AB6C212382A93272B26B9015 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:33>
+		PlayerAttackLoadout_BuildFromPlayerData_m8BC17C4BF9BC28136DF24CE54366766657AD35E1(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:34>
+		return;
+	}
+}
+// Method Definition Index: 71340
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_OnEnable_mA9EDE1EC3A96EE1F5603D70580A30E2A0CD4706E (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:38>
+		bool L_0 = __this->____hasBuilt;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:39>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:41>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_1 = __this->____slots;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_1, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:43>
+		PlayerAttackLoadout_BuildFromPlayerData_m8BC17C4BF9BC28136DF24CE54366766657AD35E1(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:44>
+		return;
+	}
+
+IL_001d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:47>
+		V_0 = 0;
+		goto IL_004f;
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:49>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_3 = __this->____slots;
+		int32_t L_4 = V_0;
+		NullCheck(L_3);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_5;
+		L_5 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_3, L_4, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = AttackSlot_get_IsEquipped_mD985852F2893D1DEA8FCC5C8CE63E90B291DEB4C(L_5, NULL);
+		if (L_6)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:50>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_7 = __this->____slots;
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_9;
+		L_9 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_7, L_8, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_9);
+		AttackSlot_Equip_m3829D62F21869E17D0A0703721D52E6F7AFB8B11(L_9, L_10, NULL);
+	}
+
+IL_004b:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:47>
+		int32_t L_11 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_11, 1));
+	}
+
+IL_004f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:47>
+		int32_t L_12 = V_0;
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_13 = __this->____slots;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_13, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		if ((((int32_t)L_12) < ((int32_t)L_14)))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:52>
+		return;
+	}
+}
+// Method Definition Index: 71341
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_OnDisable_m76E3D4405417E05731E8682374FBF6D900E88E31 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:56>
+		V_0 = 0;
+		goto IL_0019;
+	}
+
+IL_0004:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:57>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_0 = __this->____slots;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_2;
+		L_2 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_0, L_1, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_2);
+		AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3(L_2, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:56>
+		int32_t L_3 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:56>
+		int32_t L_4 = V_0;
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_5 = __this->____slots;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_5, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		if ((((int32_t)L_4) < ((int32_t)L_6)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:58>
+		return;
+	}
+}
+// Method Definition Index: 71342
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_BuildFromPlayerData_m8BC17C4BF9BC28136DF24CE54366766657AD35E1 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IReadOnlyCollection_1_tDEF5BCBC33B100386EB99239BE2D255863E3BAED_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	int32_t V_1 = 0;
+	AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* V_2 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:62>
+		__this->____hasBuilt = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:63>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_0 = __this->____slots;
+		NullCheck(L_0);
+		List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_inline(L_0, List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_RuntimeMethod_var);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:65>
+		PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* L_1 = __this->___playerData;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:66>
+		return;
+	}
+
+IL_0021:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:68>
+		PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* L_3 = __this->___playerData;
+		NullCheck(L_3);
+		RuntimeObject* L_4;
+		L_4 = PlayerData_get_StartingAttacks_mA51224A6BBC927F06D804E1C872E5C284B5FF484_inline(L_3, NULL);
+		V_0 = L_4;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:69>
+		V_1 = 0;
+		goto IL_0058;
+	}
+
+IL_0031:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:71>
+		RuntimeObject* L_5 = V_0;
+		int32_t L_6 = V_1;
+		NullCheck(L_5);
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_7;
+		L_7 = InterfaceFuncInvoker1< AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C*, int32_t >::Invoke(0, IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var, L_5, L_6);
+		V_2 = L_7;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:72>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_8 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_9)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:75>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_10 = __this->____slots;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_11 = V_2;
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_12;
+		L_12 = PlayerAttackLoadout_CreateAndEquipSlot_m7B7B78C2D162B34A4A94786BDC4D9EB861616557(__this, L_11, NULL);
+		NullCheck(L_10);
+		List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_inline(L_10, L_12, List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+	}
+
+IL_0054:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:69>
+		int32_t L_13 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+	}
+
+IL_0058:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:69>
+		int32_t L_14 = V_1;
+		RuntimeObject* L_15 = V_0;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IReadOnlyCollection_1_tDEF5BCBC33B100386EB99239BE2D255863E3BAED_il2cpp_TypeInfo_var, L_15);
+		if ((((int32_t)L_14) < ((int32_t)L_16)))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 71343
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_Initialize_mC8395BCE558708B06D1ACBC28A1D29D20A1A2787 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* ___0_sourcePlayerData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:81>
+		PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* L_0 = ___0_sourcePlayerData;
+		__this->___playerData = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___playerData), (void*)L_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:82>
+		bool L_1 = __this->____hasBuilt;
+		if (!L_1)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:84>
+		V_0 = 0;
+		goto IL_0028;
+	}
+
+IL_0013:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:85>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_2 = __this->____slots;
+		int32_t L_3 = V_0;
+		NullCheck(L_2);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_4;
+		L_4 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_2, L_3, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_4);
+		AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3(L_4, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:84>
+		int32_t L_5 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+	}
+
+IL_0028:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:84>
+		int32_t L_6 = V_0;
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_7 = __this->____slots;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_7, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		if ((((int32_t)L_6) < ((int32_t)L_8)))
+		{
+			goto IL_0013;
+		}
+	}
+
+IL_0036:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:88>
+		PlayerAttackLoadout_BuildFromPlayerData_m8BC17C4BF9BC28136DF24CE54366766657AD35E1(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:89>
+		return;
+	}
+}
+// Method Definition Index: 71344
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_AddAttack_m6BD0068114CE2EA5CB44354AA5EA69C72CF9936B (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:93>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = ___0_attackData;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:94>
+		return;
+	}
+
+IL_000a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:96>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_2 = __this->____slots;
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_3 = ___0_attackData;
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_4;
+		L_4 = PlayerAttackLoadout_CreateAndEquipSlot_m7B7B78C2D162B34A4A94786BDC4D9EB861616557(__this, L_3, NULL);
+		NullCheck(L_2);
+		List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_inline(L_2, L_4, List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 71345
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_RemoveAttack_m7A032CDEBAF7BF593F61398AD24C3DE9E11EF916 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* ___0_attackData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_mA947157D22888B2C6F11E609F4A952B936BAEB79_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:101>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = ___0_attackData;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:102>
+		return;
+	}
+
+IL_000a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:104>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_2 = __this->____slots;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_2, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
+		goto IL_0055;
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:106>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_4 = __this->____slots;
+		int32_t L_5 = V_0;
+		NullCheck(L_4);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_6;
+		L_6 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_4, L_5, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_6);
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_7;
+		L_7 = AttackSlot_get_AttackData_m72091CFEB367C926C20ED7EB8F42099FF306D252_inline(L_6, NULL);
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_8 = ___0_attackData;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, L_8, NULL);
+		if (L_9)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:109>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_10 = __this->____slots;
+		int32_t L_11 = V_0;
+		NullCheck(L_10);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_12;
+		L_12 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_10, L_11, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_12);
+		AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3(L_12, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:110>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_13 = __this->____slots;
+		int32_t L_14 = V_0;
+		NullCheck(L_13);
+		List_1_RemoveAt_mA947157D22888B2C6F11E609F4A952B936BAEB79(L_13, L_14, List_1_RemoveAt_mA947157D22888B2C6F11E609F4A952B936BAEB79_RuntimeMethod_var);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:111>
+		return;
+	}
+
+IL_0051:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:104>
+		int32_t L_15 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_subtract(L_15, 1));
+	}
+
+IL_0055:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:104>
+		int32_t L_16 = V_0;
+		if ((((int32_t)L_16) >= ((int32_t)0)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:113>
+		return;
+	}
+}
+// Method Definition Index: 71346
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout_RebuildFrom_mBD5EBD443D6BF2297B180A78145E19008769FE76 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, RuntimeObject* ___0_attacks, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IReadOnlyCollection_1_tDEF5BCBC33B100386EB99239BE2D255863E3BAED_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:118>
+		V_0 = 0;
+		goto IL_0019;
+	}
+
+IL_0004:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:119>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_0 = __this->____slots;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_2;
+		L_2 = List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E(L_0, L_1, List_1_get_Item_mC734B982218BB40907628EE48B280EDCB3E67D9E_RuntimeMethod_var);
+		NullCheck(L_2);
+		AttackSlot_Unequip_m3502ABC644E7C0FDFFE4B494C17324C092C8CAF3(L_2, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:118>
+		int32_t L_3 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
+	}
+
+IL_0019:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:118>
+		int32_t L_4 = V_0;
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_5 = __this->____slots;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_inline(L_5, List_1_get_Count_mE10056E7CF7B5704CFD0E9B2C3C739CDF8385B04_RuntimeMethod_var);
+		if ((((int32_t)L_4) < ((int32_t)L_6)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:120>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_7 = __this->____slots;
+		NullCheck(L_7);
+		List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_inline(L_7, List_1_Clear_m398013EDA2723AF6EF2058463C400FD3E297541F_RuntimeMethod_var);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:122>
+		__this->____hasBuilt = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:124>
+		RuntimeObject* L_8 = ___0_attacks;
+		if (L_8)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:125>
+		return;
+	}
+
+IL_003d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:127>
+		V_1 = 0;
+		goto IL_006c;
+	}
+
+IL_0041:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:129>
+		RuntimeObject* L_9 = ___0_attacks;
+		int32_t L_10 = V_1;
+		NullCheck(L_9);
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_11;
+		L_11 = InterfaceFuncInvoker1< AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C*, int32_t >::Invoke(0, IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var, L_9, L_10);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_12)
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:132>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_13 = __this->____slots;
+		RuntimeObject* L_14 = ___0_attacks;
+		int32_t L_15 = V_1;
+		NullCheck(L_14);
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_16;
+		L_16 = InterfaceFuncInvoker1< AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C*, int32_t >::Invoke(0, IReadOnlyList_1_t847B17950068BE28BC467FFBFCBA59F353F8FA7A_il2cpp_TypeInfo_var, L_14, L_15);
+		AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* L_17;
+		L_17 = PlayerAttackLoadout_CreateAndEquipSlot_m7B7B78C2D162B34A4A94786BDC4D9EB861616557(__this, L_16, NULL);
+		NullCheck(L_13);
+		List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_inline(L_13, L_17, List_1_Add_mCC14A7383E026C52BA160D92A9C17A30E57E18BC_RuntimeMethod_var);
+	}
+
+IL_0068:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:127>
+		int32_t L_18 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_18, 1));
+	}
+
+IL_006c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:127>
+		int32_t L_19 = V_1;
+		RuntimeObject* L_20 = ___0_attacks;
+		NullCheck(L_20);
+		int32_t L_21;
+		L_21 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IReadOnlyCollection_1_tDEF5BCBC33B100386EB99239BE2D255863E3BAED_il2cpp_TypeInfo_var, L_20);
+		if ((((int32_t)L_19) < ((int32_t)L_21)))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:134>
+		return;
+	}
+}
+// Method Definition Index: 71347
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAttackLoadout__ctor_mDFB68327018F9A26AEB3A994AB2FE171B5B8DF88 (PlayerAttackLoadout_tCA01E33FCA5EF261A9AEADCB6CEDC931C8487F1A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m399C001E8468176225C3FA8A56C1C0A4561E0658_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PlayerAttackLoadout.cs:12>
+		List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85* L_0 = (List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85*)il2cpp_codegen_object_new(List_1_t2166F161CDA1BC2944A14F62EC3BF3150FB6BB85_il2cpp_TypeInfo_var);
+		List_1__ctor_m399C001E8468176225C3FA8A56C1C0A4561E0658(L_0, List_1__ctor_m399C001E8468176225C3FA8A56C1C0A4561E0658_RuntimeMethod_var);
+		__this->____slots = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____slots), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71348
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ProjectileAttackBehavior_HasTargetInRange_m7031B5C6AB0EC1842131E0FC82B5BFCF95791806 (ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B2_0 = NULL;
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B1_0 = NULL;
+	float G_B3_0 = 0.0f;
+	AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* G_B3_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:19>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_1 = ___0_ctx;
+		float L_2 = L_1->___range;
+		if ((((float)L_2) > ((float)(0.0f))))
+		{
+			G_B2_0 = L_0;
+			goto IL_0016;
+		}
+		G_B1_0 = L_0;
+	}
+	{
+		float L_3 = __this->___fallbackRange;
+		G_B3_0 = L_3;
+		G_B3_1 = G_B1_0;
+		goto IL_001c;
+	}
+
+IL_0016:
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_4 = ___0_ctx;
+		float L_5 = L_4->___range;
+		G_B3_0 = L_5;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_001c:
+	{
+		bool L_6;
+		L_6 = AttackBehavior_TargetWithinRange_m2696F8551494E0A777329DF0000F63F0D72ED433(G_B3_1, G_B3_0, NULL);
+		return L_6;
+	}
+}
+// Method Definition Index: 71349
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ProjectileAttackBehavior_Execute_m3ADDA64C44B348C3724AE052855B46F64733F3B5 (ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:23>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_1;
+		L_1 = VirtualFuncInvoker1< AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* >::Invoke(5, __this, L_0);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline((&V_0), NULL);
+		return L_2;
+	}
+}
+// Method Definition Index: 71350
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 ProjectileAttackBehavior_ExecuteWithResult_m7FD453F41291DCC211A67080321E211C104A410B (ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933* __this, AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* ___0_ctx, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_m98C1F7A03B14D57CC0A5B1A135E3C0F3340FA9CC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_mE2C630A80140F4708FE9E10F306C543221CAE2B0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_6 = NULL;
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* V_7 = NULL;
+	RuntimeObject* V_8 = NULL;
+	float G_B8_0 = 0.0f;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:28>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_0 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:29>
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_3 = V_3;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_4), (bool)1, (bool)0, L_3, NULL);
+		return L_4;
+	}
+
+IL_001f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:31>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		V_0 = L_5;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:32>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_6 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = L_6->___target;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_0076;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:34>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_9 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = L_9->___target;
+		NullCheck(L_10);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
+		L_12 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_11, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_13 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = L_13->___attacker;
+		NullCheck(L_14);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_14, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
+		L_16 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_15, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_17;
+		L_17 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_12, L_16, NULL);
+		V_4 = L_17;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_18;
+		L_18 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&V_4), NULL);
+		V_0 = L_18;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:35>
+		float L_19;
+		L_19 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&V_0), NULL);
+		if ((!(((float)L_19) < ((float)(9.99999975E-05f)))))
+		{
+			goto IL_0076;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:36>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_20;
+		L_20 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		V_0 = L_20;
+	}
+
+IL_0076:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:39>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_21 = ___0_ctx;
+		float L_22 = L_21->___range;
+		if ((((float)L_22) > ((float)(0.0f))))
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		float L_23 = __this->___fallbackRange;
+		G_B8_0 = L_23;
+		goto IL_0091;
+	}
+
+IL_008b:
+	{
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_24 = ___0_ctx;
+		float L_25 = L_24->___range;
+		G_B8_0 = L_25;
+	}
+
+IL_0091:
+	{
+		V_1 = G_B8_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:41>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___projectilePrefab;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_27;
+		L_27 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_27)
+		{
+			goto IL_012e;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:43>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_28 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = L_28->___attacker;
+		NullCheck(L_29);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
+		L_30 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_29, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_31 = V_0;
+		float L_32 = __this->___spawnOffset;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33;
+		L_33 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_31, L_32, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_33, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_30, L_34, NULL);
+		V_5 = L_35;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:44>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = __this->___projectilePrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_5;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38;
+		L_38 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39;
+		L_39 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_36, L_37, L_38, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		V_6 = L_39;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:45>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_6;
+		NullCheck(L_40);
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_41;
+		L_41 = GameObject_GetComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_mE2C630A80140F4708FE9E10F306C543221CAE2B0(L_40, GameObject_GetComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_mE2C630A80140F4708FE9E10F306C543221CAE2B0_RuntimeMethod_var);
+		V_7 = L_41;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:46>
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_42 = V_7;
+		bool L_43;
+		L_43 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_42, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_43)
+		{
+			goto IL_00f6;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:47>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_44 = V_6;
+		NullCheck(L_44);
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_45;
+		L_45 = GameObject_AddComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_m98C1F7A03B14D57CC0A5B1A135E3C0F3340FA9CC(L_44, GameObject_AddComponent_TisProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_m98C1F7A03B14D57CC0A5B1A135E3C0F3340FA9CC_RuntimeMethod_var);
+		V_7 = L_45;
+	}
+
+IL_00f6:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:49>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:50>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:51>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:52>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:53>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:54>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:55>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:56>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:57>
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_46 = V_7;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_47 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48 = L_47->___attacker;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_49 = V_0;
+		float L_50 = __this->___projectileSpeed;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_51 = ___0_ctx;
+		float L_52 = L_51->___damage;
+		float L_53 = V_1;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_54 = __this->___hitMask;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_55 = ___0_ctx;
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_56 = L_55->___attackSfx;
+		NullCheck(L_46);
+		ProjectileRuntime_Initialize_m413EAD85CDE27710DCD2747481C8CEC74B18B379(L_46, L_48, L_49, L_50, L_52, L_53, L_54, L_56, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:59>
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_57 = V_3;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_58;
+		memset((&L_58), 0, sizeof(L_58));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_58), (bool)1, (bool)0, L_57, NULL);
+		return L_58;
+	}
+
+IL_012e:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:62>
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_59 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60 = L_59->___attacker;
+		NullCheck(L_60);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
+		L_61 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_60, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_62;
+		L_62 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_61, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_63 = V_0;
+		float L_64 = V_1;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_65 = __this->___hitMask;
+		int32_t L_66;
+		L_66 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_65, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA L_67;
+		L_67 = Physics2D_Raycast_m5BF2A59AAEE0B488FB3ECD1D3AF3537FD7789E7F(L_62, L_63, L_64, L_66, NULL);
+		V_2 = L_67;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:63>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_68;
+		L_68 = RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD((&V_2), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_69;
+		L_69 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_68, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_69)
+		{
+			goto IL_01ae;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_70;
+		L_70 = RaycastHit2D_get_transform_mA5E3F8DC9914E79D3C9F6F3F2515B49EEBB4564A((&V_2), NULL);
+		NullCheck(L_70);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71;
+		L_71 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_70, NULL);
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_72 = ___0_ctx;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_73 = L_72->___attacker;
+		NullCheck(L_73);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_74;
+		L_74 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_73, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_75;
+		L_75 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_71, L_74, NULL);
+		if (!L_75)
+		{
+			goto IL_01ae;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:65>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_76;
+		L_76 = RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD((&V_2), NULL);
+		NullCheck(L_76);
+		RuntimeObject* L_77;
+		L_77 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_76, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_8 = L_77;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:66>
+		RuntimeObject* L_78 = V_8;
+		if (!L_78)
+		{
+			goto IL_01ae;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:68>
+		RuntimeObject* L_79 = V_8;
+		AttackContext_t4023441964EFD79CC288FE1EF00255FD800AFB97* L_80 = ___0_ctx;
+		float L_81 = L_80->___damage;
+		NullCheck(L_79);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_79, L_81);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:69>
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_82 = V_3;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_83;
+		memset((&L_83), 0, sizeof(L_83));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_83), (bool)1, (bool)1, L_82, NULL);
+		return L_83;
+	}
+
+IL_01ae:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:73>
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01));
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_84 = V_3;
+		AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5 L_85;
+		memset((&L_85), 0, sizeof(L_85));
+		AttackExecutionResult__ctor_mE6976ED01CDD8BAB7FE78EE4609EEA4063AE319A((&L_85), (bool)1, (bool)0, L_84, NULL);
+		return L_85;
+	}
+}
+// Method Definition Index: 71351
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ProjectileAttackBehavior_CreateVisual_m0C6026F972BB1D33EC551FC81FE970BDAAC5CB7A (ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:76>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___equippedVisualPrefab;
+		return L_0;
+	}
+}
+// Method Definition Index: 71352
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileAttackBehavior__ctor_mB95EC724EB33F764BA68F7BA5C0C9F982EBB8B58 (ProjectileAttackBehavior_t4CA2DF67B36FAECE00F54C3585C19848F24A7933* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:10>
+		__this->___fallbackRange = (8.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:11>
+		__this->___projectileSpeed = (12.0f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:12>
+		__this->___spawnOffset = (0.200000003f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileAttackBehavior.cs:13>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_0;
+		L_0 = LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222((-1), NULL);
+		__this->___hitMask = L_0;
+		AttackBehavior__ctor_m70421AFC9F1F7C668B83CACC3411DFDAC592CBBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71353
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_Awake_mFE788B6DEC6DC015808E6CE3C0146D70DC4118FC (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:27>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_0;
+		L_0 = Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000(__this, Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000_RuntimeMethod_var);
+		__this->____animator = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____animator), (void*)L_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:28>
+		return;
+	}
+}
+// Method Definition Index: 71354
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_Initialize_m413EAD85CDE27710DCD2747481C8CEC74B18B379 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_speed, float ___3_damage, float ___4_maxDistance, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___5_hitMask, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___6_attackSfx, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* G_B2_0 = NULL;
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* G_B1_0 = NULL;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B3_0;
+	memset((&G_B3_0), 0, sizeof(G_B3_0));
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* G_B3_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:32>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_owner;
+		__this->____owner = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____owner), (void*)L_0);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:33>
+		float L_1;
+		L_1 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&___1_direction), NULL);
+		if ((((float)L_1) > ((float)(9.99999975E-05f))))
+		{
+			G_B2_0 = __this;
+			goto IL_001d;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		G_B3_0 = L_2;
+		G_B3_1 = G_B1_0;
+		goto IL_0024;
+	}
+
+IL_001d:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
+		L_3 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&___1_direction), NULL);
+		G_B3_0 = L_3;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0024:
+	{
+		NullCheck(G_B3_1);
+		G_B3_1->____direction = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:34>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_4 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____direction);
+		float L_5 = L_4->___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_6 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____direction);
+		float L_7 = L_6->___x;
+		float L_8;
+		L_8 = atan2f(L_5, L_7);
+		V_0 = ((float)il2cpp_codegen_multiply(L_8, (57.2957802f)));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:35>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_10 = V_0;
+		float L_11 = __this->___visualAngleOffset;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12;
+		L_12 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_add(L_10, L_11)), NULL);
+		NullCheck(L_9);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_9, L_12, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:36>
+		float L_13 = ___2_speed;
+		float L_14;
+		L_14 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_13, (0.00999999978f), NULL);
+		__this->____speed = L_14;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:37>
+		float L_15 = ___3_damage;
+		__this->____damage = L_15;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:38>
+		float L_16 = ___4_maxDistance;
+		float L_17;
+		L_17 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_16, (0.00999999978f), NULL);
+		__this->____remainingDistance = L_17;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:39>
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_18 = ___5_hitMask;
+		__this->____hitMask = L_18;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:40>
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_19 = ___6_attackSfx;
+		__this->____attackSfx = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____attackSfx), (void*)L_19);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:41>
+		__this->____initialized = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:42>
+		return;
+	}
+}
+// Method Definition Index: 71355
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_Update_m9007EFFD16CEC8329715A7F64187A8C3248F12EB (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* V_3 = NULL;
+	int32_t V_4 = 0;
+	Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* V_5 = NULL;
+	RuntimeObject* V_6 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:46>
+		bool L_0 = __this->____initialized;
+		if (!L_0)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		bool L_1 = __this->____isDespawning;
+		if (!L_1)
+		{
+			goto IL_0011;
+		}
+	}
+
+IL_0010:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:47>
+		return;
+	}
+
+IL_0011:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:49>
+		float L_2 = __this->____speed;
+		float L_3;
+		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		V_0 = ((float)il2cpp_codegen_multiply(L_2, L_3));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:50>
+		float L_4 = V_0;
+		if ((!(((float)L_4) <= ((float)(0.0f)))))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:51>
+		return;
+	}
+
+IL_0027:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:53>
+		float L_5 = V_0;
+		float L_6 = __this->____remainingDistance;
+		float L_7;
+		L_7 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_5, L_6, NULL);
+		V_1 = L_7;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:54>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
+		L_10 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_9, NULL);
+		V_2 = L_10;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:59>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = V_2;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = __this->____direction;
+		float L_13 = V_1;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_14 = __this->____hitMask;
+		int32_t L_15;
+		L_15 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_14, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_il2cpp_TypeInfo_var);
+		RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* L_16;
+		L_16 = Physics2D_RaycastAll_m06B06279D4E05F05198F57F4E35DEED4A5CF37E6(L_11, L_12, L_13, L_15, NULL);
+		V_3 = L_16;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:60>
+		V_4 = 0;
+		goto IL_00d5;
+	}
+
+IL_0063:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:62>
+		RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* L_17 = V_3;
+		int32_t L_18 = V_4;
+		NullCheck(L_17);
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_19;
+		L_19 = RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD(((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))), NULL);
+		V_5 = L_19;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:63>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_20 = V_5;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_21)
+		{
+			goto IL_00cf;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:67>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = __this->____owner;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_23;
+		L_23 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_22, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_23)
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* L_24 = V_3;
+		int32_t L_25 = V_4;
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = RaycastHit2D_get_transform_mA5E3F8DC9914E79D3C9F6F3F2515B49EEBB4564A(((L_24)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_25))), NULL);
+		NullCheck(L_26);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_26, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28 = __this->____owner;
+		NullCheck(L_28);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Transform_get_root_m3AE09E7A2C0B2C4A649570498F25E4B4F69A1284(L_28, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_30;
+		L_30 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_27, L_29, NULL);
+		if (L_30)
+		{
+			goto IL_00cf;
+		}
+	}
+
+IL_00ae:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:71>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_31 = V_5;
+		NullCheck(L_31);
+		RuntimeObject* L_32;
+		L_32 = Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE(L_31, Component_GetComponentInParent_TisIDamageable_t71232F086E9C4273F61117950CFC56580F472861_mE62D5D420AA48C18ED7A89A733FA0DADD9016BCE_RuntimeMethod_var);
+		V_6 = L_32;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:72>
+		RuntimeObject* L_33 = V_6;
+		if (!L_33)
+		{
+			goto IL_00cf;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:74>
+		RuntimeObject* L_34 = V_6;
+		float L_35 = __this->____damage;
+		NullCheck(L_34);
+		InterfaceActionInvoker1< float >::Invoke(0, IDamageable_t71232F086E9C4273F61117950CFC56580F472861_il2cpp_TypeInfo_var, L_34, L_35);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:75>
+		ProjectileRuntime_BeginDespawn_mC8E180B3C554FBDC5E2E9F7FBC7E14861200D8B4(__this, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:76>
+		return;
+	}
+
+IL_00cf:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:60>
+		int32_t L_36 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_36, 1));
+	}
+
+IL_00d5:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:60>
+		int32_t L_37 = V_4;
+		RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* L_38 = V_3;
+		NullCheck(L_38);
+		if ((((int32_t)L_37) < ((int32_t)((int32_t)(((RuntimeArray*)L_38)->max_length)))))
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:79>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39;
+		L_39 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_40 = V_2;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_41 = __this->____direction;
+		float L_42 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_43;
+		L_43 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_41, L_42, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_44;
+		L_44 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_40, L_43, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
+		L_45 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_44, NULL);
+		NullCheck(L_39);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_39, L_45, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:80>
+		float L_46 = __this->____remainingDistance;
+		float L_47 = V_1;
+		__this->____remainingDistance = ((float)il2cpp_codegen_subtract(L_46, L_47));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:82>
+		float L_48 = __this->____remainingDistance;
+		if ((!(((float)L_48) <= ((float)(0.0f)))))
+		{
+			goto IL_011f;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:83>
+		ProjectileRuntime_BeginDespawn_mC8E180B3C554FBDC5E2E9F7FBC7E14861200D8B4(__this, NULL);
+	}
+
+IL_011f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:84>
+		return;
+	}
+}
+// Method Definition Index: 71356
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime_BeginDespawn_mC8E180B3C554FBDC5E2E9F7FBC7E14861200D8B4 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:88>
+		bool L_0 = __this->____isDespawning;
+		if (!L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:89>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:91>
+		__this->____isDespawning = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:93>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_1 = __this->____animator;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:95>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_3, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:96>
+		return;
+	}
+
+IL_002a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:99>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_4 = __this->____animator;
+		il2cpp_codegen_runtime_class_init_inline(ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_StaticFields*)il2cpp_codegen_static_fields_for(ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var))->___OnHitHash;
+		NullCheck(L_4);
+		Animator_SetTrigger_m2D9CACEFDE11FF9DB99207B5CBD251C1EC047939(L_4, L_5, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:101>
+		float L_6 = __this->___hitAnimationDuration;
+		if ((!(((float)L_6) <= ((float)(0.0f)))))
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:103>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_7, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:104>
+		return;
+	}
+
+IL_0053:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:107>
+		RuntimeObject* L_8;
+		L_8 = ProjectileRuntime_DestroyAfterHitAnimation_m719497F29E00E584AAD536C4D72BF620285B0E89(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_9;
+		L_9 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_8, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:108>
+		return;
+	}
+}
+// Method Definition Index: 71357
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ProjectileRuntime_DestroyAfterHitAnimation_m719497F29E00E584AAD536C4D72BF620285B0E89 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* L_0 = (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC*)il2cpp_codegen_object_new(U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC_il2cpp_TypeInfo_var);
+		U3CDestroyAfterHitAnimationU3Ed__17__ctor_m97A07E773C0892D726F0499FB5196D5AC4A666A6(L_0, 0, NULL);
+		U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 71358
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime__ctor_m662FDB35D4CFDC2C1CC159594CD78011039F0117 (ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:11>
+		__this->___hitAnimationDuration = (0.200000003f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 71359
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProjectileRuntime__cctor_mBFCFB2967E6AD66CD05BAE56851B6F2DCE8FF572 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral092974159CE1F1442B5DED8E26FAD27DDF888AFA);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:9>
+		int32_t L_0;
+		L_0 = Animator_StringToHash_mD67B872C411BE37641F49D7AA1DBD45B67F63E3A(_stringLiteral092974159CE1F1442B5DED8E26FAD27DDF888AFA, NULL);
+		((ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_StaticFields*)il2cpp_codegen_static_fields_for(ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38_il2cpp_TypeInfo_var))->___OnHitHash = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71360
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDestroyAfterHitAnimationU3Ed__17__ctor_m97A07E773C0892D726F0499FB5196D5AC4A666A6 (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71361
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDestroyAfterHitAnimationU3Ed__17_System_IDisposable_Dispose_mF5F0A9854E00F089267890D0102CD896D636E602 (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 71362
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDestroyAfterHitAnimationU3Ed__17_MoveNext_mC5470E183D1E37B9291DAD759863D275115530BE (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:112>
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_4 = V_1;
+		NullCheck(L_4);
+		float L_5 = L_4->___hitAnimationDuration;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, L_5, NULL);
+		__this->___U3CU3E2__current = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_6);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:113>
+		ProjectileRuntime_tF76A0383102D99A6201C6482706412CBB0E73E38* L_7 = V_1;
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_8, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/ProjectileRuntime.cs:114>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 71363
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDestroyAfterHitAnimationU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4402F0123746FD0B7FA327E4137382C8CBF3B2CA (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 71364
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDestroyAfterHitAnimationU3Ed__17_System_Collections_IEnumerator_Reset_m0BC7961B200FA2005B7E3BAD33E92172EF2397B5 (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDestroyAfterHitAnimationU3Ed__17_System_Collections_IEnumerator_Reset_m0BC7961B200FA2005B7E3BAD33E92172EF2397B5_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 71365
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDestroyAfterHitAnimationU3Ed__17_System_Collections_IEnumerator_get_Current_mCE01B627F3CC325791F66145C8926D5456E1C753 (U3CDestroyAfterHitAnimationU3Ed__17_t18D1F271FB0816CD36F51AB955A2F966E9D5E0DC* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71366
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual_OnEnable_m394852F8B6EE4C49F2E74C2B412DA331258149D8 (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:57>
+		__this->____captured = (bool)0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:58>
+		return;
+	}
+}
+// Method Definition Index: 71367
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual_Pulse_m4AC64BD7B888BA51719A237C26C12E16B63AF534 (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:63>
+		bool L_0 = __this->___flareOnAttack;
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:64>
+		__this->____flare = (1.0f);
+	}
+
+IL_0013:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:65>
+		return;
+	}
+}
+// Method Definition Index: 71368
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual_Capture_m6C83F3544A4A7E467D604D508FD5CA87F860B164 (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B4_0 = NULL;
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B3_0 = NULL;
+	float G_B5_0 = 0.0f;
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B5_1 = NULL;
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B7_0 = NULL;
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B6_0 = NULL;
+	float G_B8_0 = 0.0f;
+	PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* G_B8_1 = NULL;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:69>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_0 = __this->___targetRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:70>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_2;
+		L_2 = Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF(__this, Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF_RuntimeMethod_var);
+		__this->___targetRenderer = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___targetRenderer), (void*)L_2);
+	}
+
+IL_001a:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:72>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_3, NULL);
+		__this->____baseScale = L_4;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:73>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_5 = __this->___targetRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_6)
+		{
+			G_B4_0 = __this;
+			goto IL_0041;
+		}
+		G_B3_0 = __this;
+	}
+	{
+		G_B5_0 = (1.0f);
+		G_B5_1 = G_B3_0;
+		goto IL_0051;
+	}
+
+IL_0041:
+	{
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_7 = __this->___targetRenderer;
+		NullCheck(L_7);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
+		L_8 = SpriteRenderer_get_color_mF19DA1B83ABD9A825127D4FBED9A111FE52F1F52(L_7, NULL);
+		float L_9 = L_8.___a;
+		G_B5_0 = L_9;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_0051:
+	{
+		NullCheck(G_B5_1);
+		G_B5_1->____baseAlpha = G_B5_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:74>
+		bool L_10 = __this->___randomizePhase;
+		if (L_10)
+		{
+			G_B7_0 = __this;
+			goto IL_0066;
+		}
+		G_B6_0 = __this;
+	}
+	{
+		G_B8_0 = (0.0f);
+		G_B8_1 = G_B6_0;
+		goto IL_0077;
+	}
+
+IL_0066:
+	{
+		float L_11;
+		L_11 = Random_get_value_m2CEA87FADF5222EF9E13D32695F15E2BA282E24B(NULL);
+		G_B8_0 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_11, (3.14159274f))), (2.0f)));
+		G_B8_1 = G_B7_0;
+	}
+
+IL_0077:
+	{
+		NullCheck(G_B8_1);
+		G_B8_1->____phase = G_B8_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:75>
+		__this->____captured = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:76>
+		return;
+	}
+}
+// Method Definition Index: 71369
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual_Update_m54EAAB428B3F486A779BF916D990738262BEAE5D (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:81>
+		bool L_0 = __this->____captured;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:82>
+		PulseVisual_Capture_m6C83F3544A4A7E467D604D508FD5CA87F860B164(__this, NULL);
+	}
+
+IL_000e:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:84>
+		float L_1;
+		L_1 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_2 = __this->___frequency;
+		float L_3 = __this->____phase;
+		float L_4;
+		L_4 = sinf(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_1, (6.28318548f))), L_2)), L_3)));
+		V_0 = L_4;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:86>
+		float L_5 = __this->____flare;
+		if ((!(((float)L_5) > ((float)(0.0f)))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:87>
+		float L_6 = __this->____flare;
+		float L_7;
+		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_8 = __this->___flareDecay;
+		float L_9;
+		L_9 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), ((float)il2cpp_codegen_subtract(L_6, ((float)(L_7/L_8)))), NULL);
+		__this->____flare = L_9;
+	}
+
+IL_005d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:89>
+		float L_10 = __this->___scaleAmplitude;
+		float L_11 = V_0;
+		float L_12 = __this->___flareScale;
+		float L_13 = __this->____flare;
+		V_1 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add((1.0f), ((float)il2cpp_codegen_multiply(L_10, L_11)))), ((float)il2cpp_codegen_multiply(L_12, L_13))));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:90>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
+		L_14 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = __this->____baseScale;
+		float L_16 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, L_16, NULL);
+		NullCheck(L_14);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_14, L_17, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:92>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_18 = __this->___targetRenderer;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_19;
+		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_19)
+		{
+			goto IL_00eb;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:94>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_20 = __this->___targetRenderer;
+		NullCheck(L_20);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
+		L_21 = SpriteRenderer_get_color_mF19DA1B83ABD9A825127D4FBED9A111FE52F1F52(L_20, NULL);
+		V_2 = L_21;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:95>
+		float L_22 = __this->____baseAlpha;
+		float L_23 = __this->___alphaAmplitude;
+		float L_24 = V_0;
+		float L_25 = __this->___flareAlpha;
+		float L_26 = __this->____flare;
+		float L_27;
+		L_27 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), ((float)il2cpp_codegen_multiply(L_22, ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add((1.0f), ((float)il2cpp_codegen_multiply(L_23, L_24)))), ((float)il2cpp_codegen_multiply(L_25, L_26)))))), NULL);
+		(&V_2)->___a = L_27;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:96>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_28 = __this->___targetRenderer;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29 = V_2;
+		NullCheck(L_28);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_28, L_29, NULL);
+	}
+
+IL_00eb:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:98>
+		return;
+	}
+}
+// Method Definition Index: 71370
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PulseVisual__ctor_m408F552409C8F2F83DDABE1F91D729F3900032A7 (PulseVisual_t4875EF55DB2F94F641D59EF73929BA9095B78A9E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:25>
+		__this->___frequency = (0.800000012f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:28>
+		__this->___scaleAmplitude = (0.0599999987f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:31>
+		__this->___alphaAmplitude = (0.600000024f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:33>
+		__this->___randomizePhase = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:37>
+		__this->___flareOnAttack = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:40>
+		__this->___flareScale = (0.25f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:43>
+		__this->___flareAlpha = (1.5f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:46>
+		__this->___flareDecay = (0.25f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:49>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		__this->____baseScale = L_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/PulseVisual.cs:50>
+		__this->____baseAlpha = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 71371
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime_Initialize_mB865FB96DF11E77A26D2E1027263F24AE27E4242 (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_attacker, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_direction, float ___2_lifetime, float ___3_angleOffset, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_mEFB51A2FF71938F1041FD7A0AF9BD47802288E04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* V_2 = NULL;
+	int32_t V_3 = 0;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 G_B3_0;
+	memset((&G_B3_0), 0, sizeof(G_B3_0));
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:45>
+		float L_0;
+		L_0 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&___1_direction), NULL);
+		if ((((float)L_0) > ((float)(9.99999975E-05f))))
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
+		L_1 = Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline(NULL);
+		G_B3_0 = L_1;
+		goto IL_001c;
+	}
+
+IL_0015:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&___1_direction), NULL);
+		G_B3_0 = L_2;
+	}
+
+IL_001c:
+	{
+		V_0 = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:46>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = V_0;
+		float L_4 = L_3.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5 = V_0;
+		float L_6 = L_5.___x;
+		float L_7;
+		L_7 = atan2f(L_4, L_6);
+		V_1 = ((float)il2cpp_codegen_multiply(L_7, (57.2957802f)));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:47>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_9 = V_1;
+		float L_10 = ___3_angleOffset;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11;
+		L_11 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_add(L_9, L_10)), NULL);
+		NullCheck(L_8);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_8, L_11, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:49>
+		bool L_12 = __this->___followAttacker;
+		if (!L_12)
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = ___0_attacker;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_14;
+		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_14)
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:50>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = ___0_attacker;
+		NullCheck(L_15);
+		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_15, L_16, (bool)1, NULL);
+	}
+
+IL_0071:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:52>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_17;
+		L_17 = Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000(__this, Component_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mDB9FC26B94B8EE9CF1F88BFEC75DF06CC2E3A000_RuntimeMethod_var);
+		V_2 = L_17;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:53>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_18 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_19;
+		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_19)
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_20 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var);
+		int32_t L_21 = ((SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_StaticFields*)il2cpp_codegen_static_fields_for(SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var))->___OnAttackHash;
+		bool L_22;
+		L_22 = SwingVisualRuntime_HasParameter_mD51B8DC6A84B0F8DA330FB0EA720CF7F3625DD58(L_20, L_21, NULL);
+		if (!L_22)
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:54>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_23 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var);
+		int32_t L_24 = ((SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_StaticFields*)il2cpp_codegen_static_fields_for(SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var))->___OnAttackHash;
+		NullCheck(L_23);
+		Animator_SetTrigger_m2D9CACEFDE11FF9DB99207B5CBD251C1EC047939(L_23, L_24, NULL);
+	}
+
+IL_0099:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:56>
+		float L_25 = ___2_lifetime;
+		if ((!(((float)L_25) <= ((float)(0.0f)))))
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:58>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26;
+		L_26 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_26, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:59>
+		return;
+	}
+
+IL_00ad:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:62>
+		float L_27 = ___2_lifetime;
+		__this->____lifetime = L_27;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:64>
+		bool L_28 = __this->___animateProcedurally;
+		if (!L_28)
+		{
+			goto IL_012d;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:66>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_29);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
+		L_30 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_29, NULL);
+		__this->____baseScale = L_30;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:67>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_31;
+		L_31 = Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_mEFB51A2FF71938F1041FD7A0AF9BD47802288E04(__this, (bool)1, Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_mEFB51A2FF71938F1041FD7A0AF9BD47802288E04_RuntimeMethod_var);
+		__this->____renderers = L_31;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____renderers), (void*)L_31);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:68>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_32 = __this->____renderers;
+		NullCheck(L_32);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_33 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_32)->max_length)));
+		__this->____baseAlphas = L_33;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____baseAlphas), (void*)L_33);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:69>
+		V_3 = 0;
+		goto IL_010f;
+	}
+
+IL_00f1:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:70>
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_34 = __this->____baseAlphas;
+		int32_t L_35 = V_3;
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_36 = __this->____renderers;
+		int32_t L_37 = V_3;
+		NullCheck(L_36);
+		int32_t L_38 = L_37;
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
+		NullCheck(L_39);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_40;
+		L_40 = SpriteRenderer_get_color_mF19DA1B83ABD9A825127D4FBED9A111FE52F1F52(L_39, NULL);
+		float L_41 = L_40.___a;
+		NullCheck(L_34);
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(L_35), (float)L_41);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:69>
+		int32_t L_42 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_42, 1));
+	}
+
+IL_010f:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:69>
+		int32_t L_43 = V_3;
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_44 = __this->____renderers;
+		NullCheck(L_44);
+		if ((((int32_t)L_43) < ((int32_t)((int32_t)(((RuntimeArray*)L_44)->max_length)))))
+		{
+			goto IL_00f1;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:72>
+		SwingVisualRuntime_ApplyFrame_m749AC5F9C5CEC34641595F2AC20170809142EC4D(__this, (0.0f), NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:73>
+		__this->____animating = (bool)1;
+		return;
+	}
+
+IL_012d:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:78>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45;
+		L_45 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		float L_46 = ___2_lifetime;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(L_45, L_46, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:80>
+		return;
+	}
+}
+// Method Definition Index: 71372
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime_Update_mE2962A4CB2BE92D04C0DA37F471D28B6190A7272 (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:84>
+		bool L_0 = __this->____animating;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:85>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:87>
+		float L_1 = __this->____elapsed;
+		float L_2;
+		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->____elapsed = ((float)il2cpp_codegen_add(L_1, L_2));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:88>
+		float L_3 = __this->____elapsed;
+		float L_4 = __this->____lifetime;
+		float L_5;
+		L_5 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_3/L_4)), NULL);
+		V_0 = L_5;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:89>
+		float L_6 = V_0;
+		SwingVisualRuntime_ApplyFrame_m749AC5F9C5CEC34641595F2AC20170809142EC4D(__this, L_6, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:91>
+		float L_7 = V_0;
+		if ((!(((float)L_7) >= ((float)(1.0f)))))
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:92>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_8, NULL);
+	}
+
+IL_0048:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:93>
+		return;
+	}
+}
+// Method Definition Index: 71373
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime_ApplyFrame_m749AC5F9C5CEC34641595F2AC20170809142EC4D (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, float ___0_t, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	int32_t V_3 = 0;
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* V_4 = NULL;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	float G_B3_0 = 0.0f;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:98>
+		float L_0 = ___0_t;
+		float L_1 = ___0_t;
+		V_0 = ((float)il2cpp_codegen_subtract((1.0f), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract((1.0f), L_0)), ((float)il2cpp_codegen_subtract((1.0f), L_1))))));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:99>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->____baseScale;
+		float L_4 = __this->___startScale;
+		float L_5 = __this->___endScale;
+		float L_6 = V_0;
+		float L_7;
+		L_7 = Mathf_LerpUnclamped_mF35042F9D25A221BDD4B3FD6251224610AFC1F35_inline(L_4, L_5, L_6, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_3, L_7, NULL);
+		NullCheck(L_2);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_2, L_8, NULL);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:102>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:103>
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:104>
+		float L_9 = __this->___fadeHoldFraction;
+		if ((((float)L_9) >= ((float)(1.0f))))
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		float L_10 = ___0_t;
+		float L_11 = __this->___fadeHoldFraction;
+		float L_12 = __this->___fadeHoldFraction;
+		float L_13;
+		L_13 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(((float)il2cpp_codegen_subtract(L_10, L_11))/((float)il2cpp_codegen_subtract((1.0f), L_12)))), NULL);
+		G_B3_0 = L_13;
+		goto IL_006c;
+	}
+
+IL_0067:
+	{
+		G_B3_0 = (1.0f);
+	}
+
+IL_006c:
+	{
+		V_1 = G_B3_0;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:105>
+		float L_14 = V_1;
+		float L_15 = V_1;
+		V_2 = ((float)il2cpp_codegen_subtract((1.0f), ((float)il2cpp_codegen_multiply(L_14, L_15))));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:107>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_16 = __this->____renderers;
+		if (L_16)
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:108>
+		return;
+	}
+
+IL_0080:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:110>
+		V_3 = 0;
+		goto IL_00bf;
+	}
+
+IL_0084:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:112>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_17 = __this->____renderers;
+		int32_t L_18 = V_3;
+		NullCheck(L_17);
+		int32_t L_19 = L_18;
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
+		V_4 = L_20;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:113>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_21 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_22;
+		L_22 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_22)
+		{
+			goto IL_00bb;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:116>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_23 = V_4;
+		NullCheck(L_23);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
+		L_24 = SpriteRenderer_get_color_mF19DA1B83ABD9A825127D4FBED9A111FE52F1F52(L_23, NULL);
+		V_5 = L_24;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:117>
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = __this->____baseAlphas;
+		int32_t L_26 = V_3;
+		NullCheck(L_25);
+		int32_t L_27 = L_26;
+		float L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
+		float L_29 = V_2;
+		(&V_5)->___a = ((float)il2cpp_codegen_multiply(L_28, L_29));
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:118>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_30 = V_4;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_31 = V_5;
+		NullCheck(L_30);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_30, L_31, NULL);
+	}
+
+IL_00bb:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:110>
+		int32_t L_32 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_32, 1));
+	}
+
+IL_00bf:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:110>
+		int32_t L_33 = V_3;
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_34 = __this->____renderers;
+		NullCheck(L_34);
+		if ((((int32_t)L_33) < ((int32_t)((int32_t)(((RuntimeArray*)L_34)->max_length)))))
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:120>
+		return;
+	}
+}
+// Method Definition Index: 71374
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SwingVisualRuntime_HasParameter_mD51B8DC6A84B0F8DA330FB0EA720CF7F3625DD58 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___0_animator, int32_t ___1_hash, const RuntimeMethod* method) 
+{
+	AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:125>
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_0 = ___0_animator;
+		NullCheck(L_0);
+		AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* L_1;
+		L_1 = Animator_get_parameters_m3DE35688D8EBD3D1526346C7B71E468436A4463B(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:126>
+		V_1 = 0;
+		goto IL_001c;
+	}
+
+IL_000b:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:128>
+		AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* L_2 = V_0;
+		int32_t L_3 = V_1;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		AnimatorControllerParameter_t1FA67485445446540D4F2857762C960AE6980E02* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = AnimatorControllerParameter_get_nameHash_m92DA605E70604B1BBFD5EA5AE0CD0311F21400EE(L_5, NULL);
+		int32_t L_7 = ___1_hash;
+		if ((!(((uint32_t)L_6) == ((uint32_t)L_7))))
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:129>
+		return (bool)1;
+	}
+
+IL_0018:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:126>
+		int32_t L_8 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_001c:
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:126>
+		int32_t L_9 = V_1;
+		AnimatorControllerParameterU5BU5D_tAB05125F5DC0D98F59351CD7D8C9880DFFA8EA21* L_10 = V_0;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:132>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 71375
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime__ctor_mA14F1089ACC78E50FEA82D6639720CA6439C3AEC (SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:19>
+		__this->___followAttacker = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:23>
+		__this->___animateProcedurally = (bool)1;
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:25>
+		__this->___startScale = (0.649999976f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:27>
+		__this->___endScale = (1.10000002f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:30>
+		__this->___fadeHoldFraction = (0.25f);
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:35>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		__this->____baseScale = L_0;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// Method Definition Index: 71376
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwingVisualRuntime__cctor_m1664BC0429CFBBDB09778396E0149AB1F39FA3B4 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8860706E8C79EFFC13FDACE4F9DC41315288AE6C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/SwingVisualRuntime.cs:16>
+		int32_t L_0;
+		L_0 = Animator_StringToHash_mD67B872C411BE37641F49D7AA1DBD45B67F63E3A(_stringLiteral8860706E8C79EFFC13FDACE4F9DC41315288AE6C, NULL);
+		((SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_StaticFields*)il2cpp_codegen_static_fields_for(SwingVisualRuntime_tC0B2F5AB19327D4D7036603F85D9C19E00809346_il2cpp_TypeInfo_var))->___OnAttackHash = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 71284
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Finished_m4CBE0E7E366EDEB59FFBF62D1426E55494B74DDE_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:12>
+		bool L_0 = __this->___U3CFinishedU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71285
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_Hit_m286A3FCA87F40E80C6559EC0F266C4E19CF93BE3_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:13>
+		bool L_0 = __this->___U3CHitU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71286
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool AttackExecutionResult_get_PlaySfx_m8CCDBB4974EFFC2EB4F7ECB534BF5CF264FA4F2B_inline (AttackExecutionResult_t0146F2DE45F460E740D2E1E5F5D3B87783EDF0D5* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackExecutionResult.cs:14>
+		bool L_0 = __this->___U3CPlaySfxU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71278
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* AttackData_get_AttackBehavior_m9970F5B7EEAB3297C73B0F56A391C09AD2A65E9D_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackData.cs:27>
+		AttackBehavior_t2731534B040D6676D3F7B98BAE4B8D8B5E056C7F* L_0 = __this->___attackBehavior;
+		return L_0;
+	}
+}
+// Method Definition Index: 35275
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
+		return L_0;
+	}
+}
+// Method Definition Index: 71277
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_Cooldown_m5FE85B793EDAC9BA25F6F788090BA0B24973546D_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackData.cs:26>
+		float L_0 = __this->___cooldown;
+		return L_0;
+	}
+}
+// Method Definition Index: 35324
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		if ((((float)L_0) > ((float)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		float L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		float L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 71276
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_Damage_mFE564FC72C967403A8D383CD544AA72CF2C0269E_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackData.cs:25>
+		float L_0 = __this->___damage;
+		return L_0;
+	}
+}
+// Method Definition Index: 71280
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float AttackData_get_AttackRange_m45E3AC08E5A2558C70B57A157BB4A21CB841E53E_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackData.cs:29>
+		float L_0 = __this->___attackRange;
+		return L_0;
+	}
+}
+// Method Definition Index: 71281
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* AttackData_get_AttackSfx_m29EB1C527D55B5D2642DD0B470C067CFAB8DCA42_inline (AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackData.cs:30>
+		AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_0 = __this->___attackSfx;
+		return L_0;
+	}
+}
+// Method Definition Index: 12413
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+// Method Definition Index: 35395
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 33681
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_1 = L_0->___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, (2.0f)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_3 = L_2->___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_3, (2.0f)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_5 = L_4->___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_5, (2.0f)));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 35209
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 35402
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_right_m99043ED6B3D5AEA5033313FE3DA9571F39D1B280_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___rightVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 35386
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = V_0;
+		return L_8;
+	}
+}
+// Method Definition Index: 35378
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___x;
+		float L_1 = __this->___x;
+		float L_2 = __this->___y;
+		float L_3 = __this->___y;
+		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3))));
+	}
+}
+// Method Definition Index: 35368
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
+		L_0 = Vector2_Normalize_m52526AC1D25ED668DF8A5DE540769FA7D5671FC7(__this, NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 35379
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Angle_mD94AAEA690169FE5882D60F8489C8BF63300C221_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_from, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_to, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	{
+		float L_0;
+		L_0 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&___0_from), NULL);
+		float L_1;
+		L_1 = Vector2_get_sqrMagnitude_mA16336720C14EEF8BA9B55AE33B98C9EE2082BDC_inline((&___1_to), NULL);
+		V_0 = ((float)il2cpp_codegen_multiply(L_0, L_1));
+		float L_2 = V_0;
+		V_2 = (bool)((((float)L_2) < ((float)(1.0E-30f)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		V_3 = (0.0f);
+		goto IL_005a;
+	}
+
+IL_0025:
+	{
+		float L_4 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_5;
+		L_5 = sqrt(((double)L_4));
+		V_0 = ((float)L_5);
+		float L_6;
+		L_6 = Vector2_Dot_mD510FC4765B9CF4F06E6AC6FEC0215F401EFD4FB_inline((&___0_from), (&___1_to), NULL);
+		float L_7 = V_0;
+		float L_8;
+		L_8 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_6/L_7)), (-1.0f), (1.0f), NULL);
+		V_1 = L_8;
+		float L_9 = V_1;
+		double L_10;
+		L_10 = acos(((double)L_9));
+		V_3 = ((float)il2cpp_codegen_multiply(((float)L_10), (57.2957802f)));
+		goto IL_005a;
+	}
+
+IL_005a:
+	{
+		float L_11 = V_3;
+		return L_11;
+	}
+}
+// Method Definition Index: 35390
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 35385
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = V_0;
+		return L_8;
+	}
+}
+// Method Definition Index: 35396
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		(&V_0)->___z = (0.0f);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 35286
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		float L_0 = ___0_x;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_0, (0.0174532924f)));
+		float L_1 = ___1_y;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_1, (0.0174532924f)));
+		float L_2 = ___2_z;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_2, (0.0174532924f)));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3;
+		L_3 = Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49((&V_0), NULL);
+		return L_3;
+	}
+}
+// Method Definition Index: 71316
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_IsActive_m8B7D3115CC1A7C1C16F0F6798AC4F376B4186241_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:11>
+		bool L_0 = __this->___U3CIsActiveU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71322
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float DashAttackRuntime_get_RemainingDistance_m3DB87051860676DB43E595400AFB7E64EF097C9A_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:14>
+		float L_0 = __this->___U3CRemainingDistanceU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 35322
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		if ((((float)L_0) < ((float)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		float L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		float L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 71320
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 DashAttackRuntime_get_Direction_m529437C1267F0A04A154277A81628FF21EC4F3F5_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:13>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___U3CDirectionU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 35246
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 71323
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_RemainingDistance_m0D67742EDAB07F9ECEA03457C4E68ECE2E9524A9_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:14>
+		float L_0 = ___0_value;
+		__this->___U3CRemainingDistanceU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71318
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DashAttackRuntime_get_HasHit_m4AE3DE9E64F0799C7FDA5720DDDFB16E7EFD883A_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:12>
+		bool L_0 = __this->___U3CHasHitU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 35380
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Distance_mBACBB1609E1894D68F882D86A93519E311810C89_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		float L_8 = V_0;
+		float L_9 = V_0;
+		float L_10 = V_1;
+		float L_11 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_12;
+		L_12 = sqrt(((double)((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_8, L_9)), ((float)il2cpp_codegen_multiply(L_10, L_11))))));
+		V_2 = ((float)L_12);
+		goto IL_002e;
+	}
+
+IL_002e:
+	{
+		float L_13 = V_2;
+		return L_13;
+	}
+}
+// Method Definition Index: 71319
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_HasHit_mB99B1C7FF30F4CDA0585673D70EC63BBA83A853B_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:12>
+		bool L_0 = ___0_value;
+		__this->___U3CHasHitU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71317
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_IsActive_m5F9F37C37634E37FAAC29D1F90A033EE16C0AAED_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:11>
+		bool L_0 = ___0_value;
+		__this->___U3CIsActiveU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 71321
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DashAttackRuntime_set_Direction_m1F94F5A94781383AC6DEC456E9FCFFE45C3D57B2_inline (DashAttackRuntime_tB376697243E7497E8D4BD3C3EC8D8E037B850E01* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/DashAttackRuntime.cs:13>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_value;
+		__this->___U3CDirectionU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 35397
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___zeroVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 71172
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* PlayerData_get_StartingAttacks_mA51224A6BBC927F06D804E1C872E5C284B5FF484_inline (PlayerData_tD3E2F652712832661B0316F4A3E50EFE5553A865* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Data/PlayerData.cs:18>
+		List_1_t8A038D55EC7B5CC1BF6A3E744D3A0FF794F41DE8* L_0 = __this->___startingAttacks;
+		return L_0;
+	}
+}
+// Method Definition Index: 71289
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* AttackSlot_get_AttackData_m72091CFEB367C926C20ED7EB8F42099FF306D252_inline (AttackSlot_t0AD0FB1E68AA1845D39F5F386FB933FBC360EAF9* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/pomo/projects/games-mobile/TP Integrador/Assets/Scripts/Attack/AttackSlot.cs:23>
+		AttackData_tC34249029F318196984B5CBB70BAB7BAD18C469C* L_0 = __this->___attackData;
+		return L_0;
+	}
+}
+// Method Definition Index: 35249
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 35239
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___oneVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 35341
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	{
+		float L_0 = ___0_value;
+		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		V_1 = (0.0f);
+		goto IL_002d;
+	}
+
+IL_0015:
+	{
+		float L_2 = ___0_value;
+		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		V_1 = (1.0f);
+		goto IL_002d;
+	}
+
+IL_0029:
+	{
+		float L_4 = ___0_value;
+		V_1 = L_4;
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_5 = V_1;
+		return L_5;
+	}
+}
+// Method Definition Index: 35343
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_LerpUnclamped_mF35042F9D25A221BDD4B3FD6251224610AFC1F35_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		float L_2 = ___0_a;
+		float L_3 = ___2_t;
+		V_0 = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), L_3))));
+		goto IL_000b;
+	}
+
+IL_000b:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 13511
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___hasValue;
+		return L_0;
+	}
+}
+// Method Definition Index: 13513
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___value;
+		return L_0;
+	}
+}
+// Method Definition Index: 20777
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___0_item;
+		List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 20767
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 20785
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+	}
+	{
+		int32_t L_1 = __this->____size;
+		V_0 = L_1;
+		__this->____size = 0;
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = __this->____items;
+		int32_t L_4 = V_0;
+		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_3, 0, L_4, NULL);
+		return;
+	}
+
+IL_003c:
+	{
+		return;
+	}
+}
+// Method Definition Index: 35376
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_Dot_mD510FC4765B9CF4F06E6AC6FEC0215F401EFD4FB_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_lhs, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___1_rhs, const RuntimeMethod* method) 
+{
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_0 = ___0_lhs;
+		float L_1 = L_0->___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2 = ___1_rhs;
+		float L_3 = L_2->___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_4 = ___0_lhs;
+		float L_5 = L_4->___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_6 = ___1_rhs;
+		float L_7 = L_6->___y;
+		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7))));
+	}
+}
+// Method Definition Index: 35339
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}

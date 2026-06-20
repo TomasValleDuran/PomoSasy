@@ -46,6 +46,16 @@ namespace Enemy
                 _animator.SetBool(IsAttacking, false);
             if (_animator != null && _hasDeadParam)
                 _animator.SetBool(IsDead, false);
+            // A killing blow queues the isDamaged trigger but the death/deactivation steals the
+            // transition before it's consumed, so it stays pending and would fire the Hit (red)
+            // reaction the instant this enemy is revived from the pool. Clear it.
+            if (_animator != null && _hasDamagedParam)
+                _animator.ResetTrigger(IsDamaged);
+
+            // Reset the damage baseline so the spawn-time ResetHealth (HP going back up to full)
+            // isn't mistaken for damage. Using MaxHealth is order-independent vs HealthComponent.OnEnable.
+            if (_controller != null && _controller.healthComponent != null)
+                _lastHealth = _controller.healthComponent.MaxHealth;
         }
 
         private void OnDisable()
